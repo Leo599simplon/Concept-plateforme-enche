@@ -12,17 +12,17 @@ Déclinaison typographique:
 
 **2eme proposition (Riesling)**
 
-![alt text](project/Thème1(casino)/TYPO/prop2)
+![alt text](Theme1/TYPO/prop2/titre2.png)
 
   **TEXTE**
  
  **1er** **proposition** **(Police Casino queen)** 
-![alt text](project/Thème1(casino)/TYPO/prop1)
+![alt text](Theme1/TYPO/prop1/minus2.png)
 
 
 **2eme proposition** **(Police Casino queen)** 
 
-![alt text](project/Thème1(casino)/TYPO/prop2)
+![alt text](Thème1/TYPO/prop2/rieslingmin.png)
    
 
 Déclinaison couleur:
@@ -34,8 +34,9 @@ Déclinaison couleur:
 Le rouge est un choix de couleurs audacieux associé à l’excitation, la passion, le danger, le frisson, l’énergie et l’action. Vous remarquerez peut-être que certaines marques utilisent du rouge pour leurs boutons «appel à l’action» («commandez maintenant», «achetez maintenant», etc.).En effet, le rouge est une couleur intense qui peut provoquer de fortes émotions qui peuvent vous inciter à acheter des choses
 **Background**
 
-IMG
-  
+
+  ![alt text](Theme1/Couleur/background.png)
+   
   
 -   Audace
     
@@ -51,6 +52,8 @@ IMG
 
 Deux des choses qui font tourner le monde sont associées au vert : la nature et… l’argent (le dollar est vert). Le vert peut signifier la croissance, la fertilité, la santé, la richesse, le bien-être ou la générosité.
 
+![alt text](Theme1/Couleur/background2.png)
+
 Cette couleur est associée a :
 
 -   L’abondance
@@ -58,4 +61,12 @@ Cette couleur est associée a :
 -   Génorisité
     
 -   L’argent
+
+Logo & icons: 
+
+![alt text](Theme1/Logo/affaireconclu.png)
+![alt text](Theme1/Logo/enchere.png)
+![alt text](Theme1/Logo/securise.png)
+
+
   
