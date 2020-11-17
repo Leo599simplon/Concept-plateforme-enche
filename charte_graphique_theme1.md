@@ -8,7 +8,7 @@ Déclinaison typographique:
 **TITRE**
 **1er** **proposition** **(Police Casino queen)** 
 
-![alt text](project/Thème 1 (Casino)/TYPO/prop1/Policetitre.png)
+
 !(test.png)
 
 **2eme proposition (Riesling)**
