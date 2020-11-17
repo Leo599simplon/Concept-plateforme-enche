@@ -22,7 +22,7 @@ Déclinaison typographique:
 
 **2eme proposition** **(Police Casino queen)** 
 
-![alt text](Thème1/TYPO/prop2/rieslingmin.png)
+![alt text](Theme1/TYPO/prop2/rieslingmin.png)
    
 
 Déclinaison couleur:
@@ -35,7 +35,7 @@ Le rouge est un choix de couleurs audacieux associé à l’excitation, la passi
 **Background**
 
 
-  ![alt text](Theme1/Couleur/background.png)
+  ![alt text](Theme1/Couleur/background.jpg)
    
   
 -   Audace
@@ -52,7 +52,7 @@ Le rouge est un choix de couleurs audacieux associé à l’excitation, la passi
 
 Deux des choses qui font tourner le monde sont associées au vert : la nature et… l’argent (le dollar est vert). Le vert peut signifier la croissance, la fertilité, la santé, la richesse, le bien-être ou la générosité.
 
-![alt text](Theme1/Couleur/background2.png)
+![alt text](Theme1/Couleur/background 2.jpg)
 
 Cette couleur est associée a :
 
@@ -64,9 +64,11 @@ Cette couleur est associée a :
 
 Logo & icons: 
 
-![alt text](Theme1/Logo/affaireconclu.png)
-![alt text](Theme1/Logo/enchere.png)
-![alt text](Theme1/Logo/securise.png)
+![alt text](Theme1/Logo/Affaire conclu .png)
+
+![alt text](Theme1/Logo/Enchère.png)
+
+![alt text](Theme1/Logo/ Paiement sécurisé .png)
 
 
-  
+
