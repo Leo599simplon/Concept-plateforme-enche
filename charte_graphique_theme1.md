@@ -22,7 +22,7 @@ Déclinaison typographique:
 
 **2eme proposition** **(Police Casino queen)** 
 
-![alt text](Thème1/TYPO/prop2/rieslingmin.png)
+![alt text](Theme1/TYPO/prop2/rieslingmin.png)
    
 
 Déclinaison couleur:
