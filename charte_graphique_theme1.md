@@ -12,7 +12,7 @@ Déclinaison typographique:
 
 **2eme proposition (Riesling)**
 
-![alt text](Theme1/TYPO/prop2/titre2)
+![alt text](Theme1/TYPO/prop2/titre2.png)
 
   **TEXTE**
  
