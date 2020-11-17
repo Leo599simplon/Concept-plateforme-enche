@@ -9,7 +9,7 @@ Déclinaison typographique:
 **1er** **proposition** **(Police Casino queen)** 
 
 
-!(test.png)
+![alt text](test.png)
 
 **2eme proposition (Riesling)**
 
