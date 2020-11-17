@@ -52,7 +52,7 @@ Le rouge est un choix de couleurs audacieux associé à l’excitation, la passi
 
 Deux des choses qui font tourner le monde sont associées au vert : la nature et… l’argent (le dollar est vert). Le vert peut signifier la croissance, la fertilité, la santé, la richesse, le bien-être ou la générosité.
 
-![alt text](Theme1/Couleur/background 2.jpg)
+![alt text](Theme1/Couleur/background 2.jpg) (Error)
 
 COLOR: ##1F5F27
 
@@ -66,11 +66,11 @@ Cette couleur est associée a :
 
 Logo & icons: 
 
-![alt text](Theme1/Logo/Affaire conclu .png)
+![alt text](Theme1/Logo/Affaire conclu .png) (Error)
 
 ![alt text](Theme1/Logo/Enchère.png)
 
-![alt text](Theme1/Logo/ Paiement sécurisé .png)
+![alt text](Theme1/Logo/ Paiement sécurisé .png) (Error)
 
 
 
