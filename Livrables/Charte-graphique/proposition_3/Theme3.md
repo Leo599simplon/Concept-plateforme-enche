@@ -32,7 +32,7 @@ Déclinaison typographique:
 Déclinaison couleur:
 
    ****Palette Sunset Tropique****
-![alt text](Theme3/Couleurs/Palette2.JPEG)
+![alt text](Livrables/Charte-graphique/proposition_3/Couleurs/Palette2.jpg)
 ![alt text](Theme3/Couleurs/Tropical1.PNG)
   
 
