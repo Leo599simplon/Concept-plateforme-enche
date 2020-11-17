@@ -53,7 +53,7 @@ IMG
 
  ****Palette Tropique****
 
-![alt text](Theme3/Couleurs/Palette2.PNG)
+![alt text](Livrables/Charte-graphique/proposition_3/Couleurs/Palette2.PNG)
 ![alt text](Theme3/Couleurs/Tropical2.PNG)
 
 Palette classique représentant les couleurs de la forêt tropicale
