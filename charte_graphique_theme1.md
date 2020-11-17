@@ -64,9 +64,11 @@ Cette couleur est associée a :
 
 Logo & icons: 
 
-![alt text](Theme1/Logo/ Affaire conclu .png)
+![alt text](Theme1/Logo/Affaire conclu .png)
+
 ![alt text](Theme1/Logo/Enchère.png)
+
 ![alt text](Theme1/Logo/ Paiement sécurisé .png)
 
 
-  
+
