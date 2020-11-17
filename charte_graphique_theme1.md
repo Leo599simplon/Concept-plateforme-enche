@@ -12,7 +12,7 @@ Déclinaison typographique:
 
 **2eme proposition (Riesling)**
 
-![alt text](project/Thème1(casino)/TYPO/prop2)
+![alt text](Theme1/TYPO/prop2/titre2)
 
   **TEXTE**
  
