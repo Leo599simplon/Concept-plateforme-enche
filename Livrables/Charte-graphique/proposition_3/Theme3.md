@@ -6,7 +6,7 @@ Déclinaison typographique:
 
 **TITRE**
 **1er** **proposition** **(Police Pacifico)** 
-![alt text](Theme3/Typo/PolicePacifico.PNG)
+![alt text](Livrables/Charte-graphique/proposition_3/Typo/PolicePacifico.PNG)
 
 
 **2eme proposition (HelloTropical)**
