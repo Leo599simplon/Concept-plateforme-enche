@@ -1,23 +1,23 @@
 # ****Création d’un proof of concept d’une plateforme d'enchères au centime****
 
 ## Concept de l'application web :
-En tant que client, je souhaite pouvoir enchérir sur un produit proposé afin de pouvoir remporter l'enchère jusqu'à la fin du temps imparti.
+Création d'un proof of concept d'une plateforme d'enchères au centime.
 
-## client :
+## Client :
 ToTo Corp.
 
 ## User Stories 
-| Role                      | Quoi?                                                     | Pourquoi?                                         |
+| Rôle                      | Quoi?                                                     | Pourquoi?                                         |
 | :------------------------ | :-------------------------------------------------------- | :------------------------------------------------ |
 | En tant qu’utilisateur    | Consulter le produit dont l'enchère est en cours          | Savoir si le produit est toujours disponible      |
-| En tant qu’utilisateur    | Connaître le temps restant de l’enchère                   | Savoir le temps restant pour enchérir             |
+| En tant qu’utilisateur    | Connaître le temps restant de l’enchère                   | Savoir le temps restant pour renchérir            |
 | En tant qu’utilisateur    | Connaître le prix actuel                                  | Savoir le prix du produit lors de la consultation |
 | En tant qu’utilisateur    | Pouvoir naviguer de façon simple sur l'application        | Faciliter l'utilisation pour l'utilisateur        |
-| En tant qu’utilisateur    | Que l'application soit responsive                         | Pouvoir encherir sur tous types d'écran           |
 | En tant qu’utilisateur    | Identifier l'application au premier regard                | Reconnaitre l'application du premier regard       |
 | En tant qu’utilisateur    | Connaître le coût du clic                                 | Savoir le tarif du clic                           |
+| En tant qu’utilisateur    | Connaître de combien le temps de l'enchère augmente       | Savoir que le clic augmente la durée              |
 | En tant qu'administrateur | Initialiser le prix de départ                             | Choisir le prix de départ du produit              |
-| En tant qu'administrateur | Augmenter les modalités des enchères                      | Choisir le prix de l'enchère et de la durée       |
+| En tant qu'administrateur | Définir les modalités des enchères                      | Définir de combien le prix et le temps de l'enchère va augmenter |
 
 ## Wireframe
 
