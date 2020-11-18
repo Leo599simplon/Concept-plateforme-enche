@@ -19,15 +19,15 @@ ToTo Corp.
 
 ## Wireframe
 
-![sparkles](resources/Wireframe/wireframe.jpg)
+![sparkles](ressources/Wireframe/wireframe.jpg)
 
 ## Palettes de couleurs retenu par le client :
 
-![sparkles](resources/img/palette-couleur/palette1.png)
+![sparkles](ressources/img/palette-couleur/palette1.png)
 
-![sparkles](resources/img/palette-couleur/palette2.png)
+![sparkles](ressources/img/palette-couleur/palette2.png)
 
-![sparkles](resources/img/palette-couleur/palette3.png)
+![sparkles](ressources/img/palette-couleur/palette3.png)
 
 * Orange : #FF9800
   * Plus agressif, l’orange est parfait pour les « call to action » et provoque l’envie d’acheter ou de s’abonner. 
