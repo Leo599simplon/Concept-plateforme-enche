@@ -12,10 +12,13 @@ ToTo Corp.
 | En tant qu’utilisateur    | Consulter le produit dont enchère est en cours            | Savoir si le produit est toujours disponible      |
 | En tant qu’utilisateur    | Connaître le temps restant de l’enchère                   | Savoir le temps restant pour enchérir             |
 | En tant qu’utilisateur    | Pouvoir naviguer de façon simple sur le site              | Comprendre rapidement le fonctionnement           |
-| En tant qu’utilisateur    | Que l'application soit responsive                                 | Pouvoir encherir sur tous les support écrans      |
+| En tant qu’utilisateur    | Que l'application soit responsive                         | Pouvoir encherir sur tous les support écrans      |
 | En tant qu’utilisateur    | Voir le titre du site sur homepage                        | Reconnaitre apply du premier regard               |
-
-
+| En tant qu’utilisateur    | Connaître le coup du clic                                 | Savoir le tarifs du clic                          |
+| En tant qu’utilisateur    | Connaître le prix actuel                                  | Savoir le prix du produit lors de la consultation |
+| En tant qu'administrateur | Voir le titre du site sur homepage                        | Mettre un produits en vente                       |
+| En tant qu'administrateur | Initialiser prix de départ                                | choisir le prix de départ du produit              |
+| En tant qu'administrateur | Augmenter les modalités des enchères                      | choisir le prix enchère  et de la durée           |
 
 ## Wireframe
 
