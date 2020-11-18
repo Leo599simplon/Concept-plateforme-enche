@@ -44,6 +44,10 @@ ToTo Corp.
   * Attire l'attention (exemple le feu vert d'un feu de circulation et donne le GO)
   * Couleur de l'espoir, méditation, inspiration
 
+* Typographie :  ROBOTO
 
+https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap
 
+* Pictos : Font Awesome
 
+https://fontawesome.com/
