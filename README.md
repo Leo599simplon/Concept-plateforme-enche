@@ -35,7 +35,7 @@ ToTo Corp.
   * Plus agressif, l’orange est parfait pour les « call to action » et provoque l’envie d’acheter ou de s’abonner. 
   * Fanta, qui vise un public jeune dans son marketing, propose un orange vif qui capte l’attention d’un public très demandé et provoque un sentiment de confiance lors de l’achat.
 
-* Blanc : #ECf0f1
+* Blanc : #ECF0f1
   * Assimilé à la pureté, à la paix et qu'il est le symbole de la sagesse, l'innocence, la pureté et le Divin.
 
 * Vert :  #81C784
