@@ -1,7 +1,7 @@
 # ****Création d’un proof of concept d’une plateforme d'enchères au centime****
 
 ## Concept de l'application web :
-En tant que client, je souhaite pouvoir enchérir sur un produit proposé afin de pouvoir remporter enchère jusqu'a la fin du temps imparti.
+En tant que client, je souhaite pouvoir enchérir sur un produit proposé afin de pouvoir remporter l'enchère jusqu'à la fin du temps imparti.
 
 ## client :
 ToTo Corp.
@@ -9,11 +9,11 @@ ToTo Corp.
 ## User Stories 
 | Role                      | Quoi?                                                     | Pourquoi?                                         |
 | :------------------------ | :-------------------------------------------------------- | :------------------------------------------------ |
-| En tant qu’utilisateur    | Consulter le produit dont enchère est en cours            | savoir si le produit est toujours disponible      |
-| En tant qu’utilisateur    | Connaître le temps restant de l’enchère                   | savoir le temps restant pour enchérir             |
+| En tant qu’utilisateur    | Consulter le produit dont enchère est en cours            | Savoir si le produit est toujours disponible      |
+| En tant qu’utilisateur    | Connaître le temps restant de l’enchère                   | Savoir le temps restant pour enchérir             |
 | En tant qu’utilisateur    | Pouvoir naviguer de façon simple sur le site              | Comprendre rapidement le fonctionnement           |
-| En tant qu’utilisateur    | Que apply soit responsive                                 | pouvoir encherir sur tous les support écrans      |
-| En tant qu’utilisateur    | Voir le titre du site sur homepage                        | reconnaitre apply du premier regard               |
+| En tant qu’utilisateur    | Que l'application soit responsive                                 | Pouvoir encherir sur tous les support écrans      |
+| En tant qu’utilisateur    | Voir le titre du site sur homepage                        | Reconnaitre apply du premier regard               |
 
 
 
