@@ -23,6 +23,8 @@ ToTo Corp.
 
 ![sparkles](ressources/Wireframe/wireframe.jpg)
 
+![sparkles](ressources/Wireframe/page-ajout-produit.jpg)
+
 ## Palettes de couleurs retenues par le client :
 
 ![sparkles](ressources/img/palette-couleur/palette1.png)
