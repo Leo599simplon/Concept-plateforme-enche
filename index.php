@@ -22,223 +22,630 @@
     </header>
 
     <section class="container-fluid">
-        <div class="row d-flex flex-align bg-dark pt-5">
-
-            <div class="col-4 col-12 col-md-6 col-lg-4 ">
-                <div class="card-deck ">
-                    <div class="card border-primary mb-3" style="max-width: 400px;">
-                        <div class="card-header text-center">IPHONE</div>
-                        <div class="card-body text-primary">
-                            <h5 class="card-title">Description</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                        <div class="card">
-                            <img class="card-img-top" src="media/iphone.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Prix du clic: 50cts/clic</h5>
-                                <p class="card-text"></p>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Prix de l'enchère: +2cts/clics</h5>
-                                <p class="card-text"></p>
-                            </div>
-
-                            <div class="card-footer">
-                                <h5 class="card-title">Durée: 00:15:60</h5>
-
-                                <div class="prix">1euros </div><br>
-                                <small class="text-muted">Last updated 3 mins ago</small>
-
-                                <a class="btn btn-primary float-right" href="#" role="button">Enchère</a>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators align-self-bottom">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
 
 
+            <!--------------------- 1er slide -------------------------------->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row d-flex flex-align bg-dark pt-5">
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        <div class="col-4 col-12 col-md-6 col-lg-4">
+                            <div class="card-deck ">
+                                <div class="card border-primary mb-3" style="max-width: 400px;">
+                                    <div class="card-header text-center">IPHONE</div>
+                                    <div class="card-body text-primary">
+                                        <h5 class="card-title">Description</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img-top" src="media/iphone.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Prix du clic: 50cts/clic</h5>
+                                            <p class="card-text"></p>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Prix de l'enchère: +2cts/clics</h5>
+                                            <p class="card-text"></p>
+                                        </div>
 
-            <div class="col-4 col-12 col-md-6 col-lg-4 ">
-                <div class="card-deck ">
-                    <div class="card border-primary mb-3" style="max-width: 400px;">
-                        <div class="card-header text-center">IPHONE</div>
-                        <div class="card-body text-primary">
-                            <h5 class="card-title">Description</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                        <div class="card">
-                            <img class="card-img-top" src="media/iphone.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Prix du clic: 50cts/clic</h5>
-                                <p class="card-text"></p>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Prix de l'enchère: +2cts/clics</h5>
-                                <p class="card-text"></p>
-                            </div>
+                                        <div class="card-footer">
+                                            <h5 class="card-title">Durée: 00:15:60</h5>
 
-                            <div class="card-footer">
-                                <h5 class="card-title">Durée: 00:15:60</h5>
+                                            <div class="prix">1euros </div><br>
+                                            <small class="text-muted">Last updated 3 mins ago</small>
 
-                                <div class="prix">1euros </div><br>
-                                <small class="text-muted">Last updated 3 mins ago</small>
-
-                                <a class="btn btn-primary float-right" href="#" role="button">Enchère</a>
-
-
-
+                                            <a class="btn btn-primary float-right" href="#" role="button">Enchère</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="col-4 col-12 col-md-6 col-lg-4 ">
-                <div class="card-deck ">
-                    <div class="card border-primary mb-3" style="max-width: 400px;">
-                        <div class="card-header text-center">IPHONE</div>
-                        <div class="card-body text-primary">
-                            <h5 class="card-title">Description</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                        <div class="card">
-                            <img class="card-img-top" src="media/iphone.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Prix du clic: 50cts/clic</h5>
-                                <p class="card-text"></p>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Prix de l'enchère: +2cts/clics</h5>
-                                <p class="card-text"></p>
-                            </div>
+                        <div class="col-4 col-12 col-md-6 col-lg-4 ">
+                            <div class="card-deck ">
+                                <div class="card border-primary mb-3" style="max-width: 400px;">
+                                    <div class="card-header text-center">IPHONE</div>
+                                    <div class="card-body text-primary">
+                                        <h5 class="card-title">Description</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img-top" src="media/iphone.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Prix du clic: 50cts/clic</h5>
+                                            <p class="card-text"></p>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Prix de l'enchère: +2cts/clics</h5>
+                                            <p class="card-text"></p>
+                                        </div>
 
-                            <div class="card-footer">
-                                <h5 class="card-title">Durée: 00:15:60</h5>
+                                        <div class="card-footer">
+                                            <h5 class="card-title">Durée: 00:15:60</h5>
 
-                                <div class="prix">1euros </div><br>
-                                <small class="text-muted">Last updated 3 mins ago</small>
+                                            <div class="prix">1euros </div><br>
+                                            <small class="text-muted">Last updated 3 mins ago</small>
 
-                                <a class="btn btn-primary float-right" href="#" role="button">Enchère</a>
-
-
-
+                                            <a class="btn btn-primary float-right" href="#" role="button">Enchère</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="col-4 col-12 col-md-6 col-lg-4 ">
-                <div class="card-deck ">
-                    <div class="card border-primary mb-3" style="max-width: 400px;">
-                        <div class="card-header text-center">IPHONE</div>
-                        <div class="card-body text-primary">
-                            <h5 class="card-title">Description</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                        <div class="card">
-                            <img class="card-img-top" src="media/iphone.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Prix du clic: 50cts/clic</h5>
-                                <p class="card-text"></p>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Prix de l'enchère: +2cts/clics</h5>
-                                <p class="card-text"></p>
-                            </div>
+                        <div class="col-4 col-12 col-md-6 col-lg-4 ">
+                            <div class="card-deck ">
+                                <div class="card border-primary mb-3" style="max-width: 400px;">
+                                    <div class="card-header text-center">IPHONE</div>
+                                    <div class="card-body text-primary">
+                                        <h5 class="card-title">Description</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img-top" src="media/iphone.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Prix du clic: 50cts/clic</h5>
+                                            <p class="card-text"></p>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Prix de l'enchère: +2cts/clics</h5>
+                                            <p class="card-text"></p>
+                                        </div>
 
-                            <div class="card-footer">
-                                <h5 class="card-title">Durée: 00:15:60</h5>
+                                        <div class="card-footer">
+                                            <h5 class="card-title">Durée: 00:15:60</h5>
 
-                                <div class="prix">1euros </div><br>
-                                <small class="text-muted">Last updated 3 mins ago</small>
+                                            <div class="prix">1euros </div><br>
+                                            <small class="text-muted">Last updated 3 mins ago</small>
 
-                                <a class="btn btn-primary float-right" href="#" role="button">Enchère</a>
-
-
-
+                                            <a class="btn btn-primary float-right" href="#" role="button">Enchère</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="col-4 col-12 col-md-6 col-lg-4 ">
-                <div class="card-deck ">
-                    <div class="card border-primary mb-3" style="max-width: 400px;">
-                        <div class="card-header text-center">IPHONE</div>
-                        <div class="card-body text-primary">
-                            <h5 class="card-title">Description</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                        <div class="card">
-                            <img class="card-img-top" src="media/iphone.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Prix du clic: 50cts/clic</h5>
-                                <p class="card-text"></p>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Prix de l'enchère: +2cts/clics</h5>
-                                <p class="card-text"></p>
-                            </div>
+                        <div class="col-4 col-12 col-md-6 col-lg-4 ">
+                            <div class="card-deck ">
+                                <div class="card border-primary mb-3" style="max-width: 400px;">
+                                    <div class="card-header text-center">IPHONE</div>
+                                    <div class="card-body text-primary">
+                                        <h5 class="card-title">Description</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img-top" src="media/iphone.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Prix du clic: 50cts/clic</h5>
+                                            <p class="card-text"></p>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Prix de l'enchère: +2cts/clics</h5>
+                                            <p class="card-text"></p>
+                                        </div>
 
-                            <div class="card-footer">
-                                <h5 class="card-title">Durée: 00:15:60</h5>
+                                        <div class="card-footer">
+                                            <h5 class="card-title">Durée: 00:15:60</h5>
 
-                                <div class="prix">1euros </div><br>
-                                <small class="text-muted">Last updated 3 mins ago</small>
+                                            <div class="prix">1euros </div><br>
+                                            <small class="text-muted">Last updated 3 mins ago</small>
 
-                                <a class="btn btn-primary float-right" href="#" role="button">Enchère</a>
-
-
-
+                                            <a class="btn btn-primary float-right" href="#" role="button">Enchère</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="col-4 col-12 col-md-6 col-lg-4 ">
-                <div class="card-deck ">
-                    <div class="card border-primary mb-3" style="max-width: 400px;">
-                        <div class="card-header text-center">IPHONE</div>
-                        <div class="card-body text-primary">
-                            <h5 class="card-title">Description</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="col-4 col-12 col-md-6 col-lg-4 ">
+                            <div class="card-deck ">
+                                <div class="card border-primary mb-3" style="max-width: 400px;">
+                                    <div class="card-header text-center">IPHONE</div>
+                                    <div class="card-body text-primary">
+                                        <h5 class="card-title">Description</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img-top" src="media/iphone.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Prix du clic: 50cts/clic</h5>
+                                            <p class="card-text"></p>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Prix de l'enchère: +2cts/clics</h5>
+                                            <p class="card-text"></p>
+                                        </div>
+
+                                        <div class="card-footer">
+                                            <h5 class="card-title">Durée: 00:15:60</h5>
+
+                                            <div class="prix">1euros </div><br>
+                                            <small class="text-muted">Last updated 3 mins ago</small>
+
+                                            <a class="btn btn-primary float-right" href="#" role="button">Enchère</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card">
-                            <img class="card-img-top" src="media/iphone.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Prix du clic: 50cts/clic</h5>
-                                <p class="card-text"></p>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Prix de l'enchère: +2cts/clics</h5>
-                                <p class="card-text"></p>
-                            </div>
 
-                            <div class="card-footer">
-                                <h5 class="card-title">Durée: 00:15:60</h5>
+                        <div class="col-4 col-12 col-md-6 col-lg-4 ">
+                            <div class="card-deck ">
+                                <div class="card border-primary mb-3" style="max-width: 400px;">
+                                    <div class="card-header text-center">IPHONE</div>
+                                    <div class="card-body text-primary">
+                                        <h5 class="card-title">Description</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img-top" src="media/iphone.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Prix du clic: 50cts/clic</h5>
+                                            <p class="card-text"></p>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Prix de l'enchère: +2cts/clics</h5>
+                                            <p class="card-text"></p>
+                                        </div>
 
-                                <div class="prix">1euros </div><br>
-                                <small class="text-muted">Last updated 3 mins ago</small>
+                                        <div class="card-footer">
+                                            <h5 class="card-title">Durée: 00:15:60</h5>
 
-                                <a class="btn btn-primary float-right" href="#" role="button">Enchère</a>
+                                            <div class="prix">1euros </div><br>
+                                            <small class="text-muted">Last updated 3 mins ago</small>
 
-
-
+                                            <a class="btn btn-primary float-right" href="#" role="button">Enchère</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!------------------------------------------------------------->
+
+
+                <!----------------------- 2eme slide --------------------------
+                <div class="carousel-item">
+                    <div class="carousel-item active">
+                        <div class="row d-flex flex-align bg-dark pt-5">
+
+                            <div class="col-4 col-12 col-md-6 col-lg-4 ">
+                                <div class="card-deck ">
+                                    <div class="card border-primary mb-3" style="max-width: 400px;">
+                                        <div class="card-header text-center">IPHONE</div>
+                                        <div class="card-body text-primary">
+                                            <h5 class="card-title">Description</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                        <div class="card">
+                                            <img class="card-img-top" src="media/iphone.jpg" alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Prix du clic: 50cts/clic</h5>
+                                                <p class="card-text"></p>
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Prix de l'enchère: +2cts/clics</h5>
+                                                <p class="card-text"></p>
+                                            </div>
+
+                                            <div class="card-footer">
+                                                <h5 class="card-title">Durée: 00:15:60</h5>
+
+                                                <div class="prix">1euros </div><br>
+                                                <small class="text-muted">Last updated 3 mins ago</small>
+
+                                                <a class="btn btn-primary float-right" href="#" role="button">Enchère</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-4 col-12 col-md-6 col-lg-4 ">
+                                <div class="card-deck ">
+                                    <div class="card border-primary mb-3" style="max-width: 400px;">
+                                        <div class="card-header text-center">IPHONE</div>
+                                        <div class="card-body text-primary">
+                                            <h5 class="card-title">Description</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                        <div class="card">
+                                            <img class="card-img-top" src="media/iphone.jpg" alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Prix du clic: 50cts/clic</h5>
+                                                <p class="card-text"></p>
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Prix de l'enchère: +2cts/clics</h5>
+                                                <p class="card-text"></p>
+                                            </div>
+
+                                            <div class="card-footer">
+                                                <h5 class="card-title">Durée: 00:15:60</h5>
+
+                                                <div class="prix">1euros </div><br>
+                                                <small class="text-muted">Last updated 3 mins ago</small>
+
+                                                <a class="btn btn-primary float-right" href="#" role="button">Enchère</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-4 col-12 col-md-6 col-lg-4 ">
+                                <div class="card-deck ">
+                                    <div class="card border-primary mb-3" style="max-width: 400px;">
+                                        <div class="card-header text-center">IPHONE</div>
+                                        <div class="card-body text-primary">
+                                            <h5 class="card-title">Description</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                        <div class="card">
+                                            <img class="card-img-top" src="media/iphone.jpg" alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Prix du clic: 50cts/clic</h5>
+                                                <p class="card-text"></p>
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Prix de l'enchère: +2cts/clics</h5>
+                                                <p class="card-text"></p>
+                                            </div>
+
+                                            <div class="card-footer">
+                                                <h5 class="card-title">Durée: 00:15:60</h5>
+
+                                                <div class="prix">1euros </div><br>
+                                                <small class="text-muted">Last updated 3 mins ago</small>
+
+                                                <a class="btn btn-primary float-right" href="#" role="button">Enchère</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-4 col-12 col-md-6 col-lg-4 ">
+                                <div class="card-deck ">
+                                    <div class="card border-primary mb-3" style="max-width: 400px;">
+                                        <div class="card-header text-center">IPHONE</div>
+                                        <div class="card-body text-primary">
+                                            <h5 class="card-title">Description</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                        <div class="card">
+                                            <img class="card-img-top" src="media/iphone.jpg" alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Prix du clic: 50cts/clic</h5>
+                                                <p class="card-text"></p>
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Prix de l'enchère: +2cts/clics</h5>
+                                                <p class="card-text"></p>
+                                            </div>
+
+                                            <div class="card-footer">
+                                                <h5 class="card-title">Durée: 00:15:60</h5>
+
+                                                <div class="prix">1euros </div><br>
+                                                <small class="text-muted">Last updated 3 mins ago</small>
+
+                                                <a class="btn btn-primary float-right" href="#" role="button">Enchère</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-4 col-12 col-md-6 col-lg-4 ">
+                                <div class="card-deck ">
+                                    <div class="card border-primary mb-3" style="max-width: 400px;">
+                                        <div class="card-header text-center">IPHONE</div>
+                                        <div class="card-body text-primary">
+                                            <h5 class="card-title">Description</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                        <div class="card">
+                                            <img class="card-img-top" src="media/iphone.jpg" alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Prix du clic: 50cts/clic</h5>
+                                                <p class="card-text"></p>
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Prix de l'enchère: +2cts/clics</h5>
+                                                <p class="card-text"></p>
+                                            </div>
+
+                                            <div class="card-footer">
+                                                <h5 class="card-title">Durée: 00:15:60</h5>
+
+                                                <div class="prix">1euros </div><br>
+                                                <small class="text-muted">Last updated 3 mins ago</small>
+
+                                                <a class="btn btn-primary float-right" href="#" role="button">Enchère</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-4 col-12 col-md-6 col-lg-4 ">
+                                <div class="card-deck ">
+                                    <div class="card border-primary mb-3" style="max-width: 400px;">
+                                        <div class="card-header text-center">IPHONE</div>
+                                        <div class="card-body text-primary">
+                                            <h5 class="card-title">Description</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                        <div class="card">
+                                            <img class="card-img-top" src="media/iphone.jpg" alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Prix du clic: 50cts/clic</h5>
+                                                <p class="card-text"></p>
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Prix de l'enchère: +2cts/clics</h5>
+                                                <p class="card-text"></p>
+                                            </div>
+
+                                            <div class="card-footer">
+                                                <h5 class="card-title">Durée: 00:15:60</h5>
+
+                                                <div class="prix">1euros </div><br>
+                                                <small class="text-muted">Last updated 3 mins ago</small>
+
+                                                <a class="btn btn-primary float-right" href="#" role="button">Enchère</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------------------------------------------------------->
+
+
+
+                <!----------------------- 3eme slide --------------------------
+                <div class="carousel-item">
+                    <div class="carousel-item active">
+                        <div class="row d-flex flex-align bg-dark pt-5">
+
+                            <div class="col-4 col-12 col-md-6 col-lg-4 ">
+                                <div class="card-deck ">
+                                    <div class="card border-primary mb-3" style="max-width: 400px;">
+                                        <div class="card-header text-center">IPHONE</div>
+                                        <div class="card-body text-primary">
+                                            <h5 class="card-title">Description</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                        <div class="card">
+                                            <img class="card-img-top" src="media/iphone.jpg" alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Prix du clic: 50cts/clic</h5>
+                                                <p class="card-text"></p>
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Prix de l'enchère: +2cts/clics</h5>
+                                                <p class="card-text"></p>
+                                            </div>
+
+                                            <div class="card-footer">
+                                                <h5 class="card-title">Durée: 00:15:60</h5>
+
+                                                <div class="prix">1euros </div><br>
+                                                <small class="text-muted">Last updated 3 mins ago</small>
+
+                                                <a class="btn btn-primary float-right" href="#" role="button">Enchère</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-4 col-12 col-md-6 col-lg-4 ">
+                                <div class="card-deck ">
+                                    <div class="card border-primary mb-3" style="max-width: 400px;">
+                                        <div class="card-header text-center">IPHONE</div>
+                                        <div class="card-body text-primary">
+                                            <h5 class="card-title">Description</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                        <div class="card">
+                                            <img class="card-img-top" src="media/iphone.jpg" alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Prix du clic: 50cts/clic</h5>
+                                                <p class="card-text"></p>
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Prix de l'enchère: +2cts/clics</h5>
+                                                <p class="card-text"></p>
+                                            </div>
+
+                                            <div class="card-footer">
+                                                <h5 class="card-title">Durée: 00:15:60</h5>
+
+                                                <div class="prix">1euros </div><br>
+                                                <small class="text-muted">Last updated 3 mins ago</small>
+
+                                                <a class="btn btn-primary float-right" href="#" role="button">Enchère</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-4 col-12 col-md-6 col-lg-4 ">
+                                <div class="card-deck ">
+                                    <div class="card border-primary mb-3" style="max-width: 400px;">
+                                        <div class="card-header text-center">IPHONE</div>
+                                        <div class="card-body text-primary">
+                                            <h5 class="card-title">Description</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                        <div class="card">
+                                            <img class="card-img-top" src="media/iphone.jpg" alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Prix du clic: 50cts/clic</h5>
+                                                <p class="card-text"></p>
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Prix de l'enchère: +2cts/clics</h5>
+                                                <p class="card-text"></p>
+                                            </div>
+
+                                            <div class="card-footer">
+                                                <h5 class="card-title">Durée: 00:15:60</h5>
+
+                                                <div class="prix">1euros </div><br>
+                                                <small class="text-muted">Last updated 3 mins ago</small>
+
+                                                <a class="btn btn-primary float-right" href="#" role="button">Enchère</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-4 col-12 col-md-6 col-lg-4 ">
+                                <div class="card-deck ">
+                                    <div class="card border-primary mb-3" style="max-width: 400px;">
+                                        <div class="card-header text-center">IPHONE</div>
+                                        <div class="card-body text-primary">
+                                            <h5 class="card-title">Description</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                        <div class="card">
+                                            <img class="card-img-top" src="media/iphone.jpg" alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Prix du clic: 50cts/clic</h5>
+                                                <p class="card-text"></p>
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Prix de l'enchère: +2cts/clics</h5>
+                                                <p class="card-text"></p>
+                                            </div>
+
+                                            <div class="card-footer">
+                                                <h5 class="card-title">Durée: 00:15:60</h5>
+
+                                                <div class="prix">1euros </div><br>
+                                                <small class="text-muted">Last updated 3 mins ago</small>
+
+                                                <a class="btn btn-primary float-right" href="#" role="button">Enchère</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-4 col-12 col-md-6 col-lg-4 ">
+                                <div class="card-deck ">
+                                    <div class="card border-primary mb-3" style="max-width: 400px;">
+                                        <div class="card-header text-center">IPHONE</div>
+                                        <div class="card-body text-primary">
+                                            <h5 class="card-title">Description</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                        <div class="card">
+                                            <img class="card-img-top" src="media/iphone.jpg" alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Prix du clic: 50cts/clic</h5>
+                                                <p class="card-text"></p>
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Prix de l'enchère: +2cts/clics</h5>
+                                                <p class="card-text"></p>
+                                            </div>
+
+                                            <div class="card-footer">
+                                                <h5 class="card-title">Durée: 00:15:60</h5>
+
+                                                <div class="prix">1euros </div><br>
+                                                <small class="text-muted">Last updated 3 mins ago</small>
+
+                                                <a class="btn btn-primary float-right" href="#" role="button">Enchère</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-4 col-12 col-md-6 col-lg-4 ">
+                                <div class="card-deck ">
+                                    <div class="card border-primary mb-3" style="max-width: 400px;">
+                                        <div class="card-header text-center">IPHONE</div>
+                                        <div class="card-body text-primary">
+                                            <h5 class="card-title">Description</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                        <div class="card">
+                                            <img class="card-img-top" src="media/iphone.jpg" alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Prix du clic: 50cts/clic</h5>
+                                                <p class="card-text"></p>
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Prix de l'enchère: +2cts/clics</h5>
+                                                <p class="card-text"></p>
+                                            </div>
+
+                                            <div class="card-footer">
+                                                <h5 class="card-title">Durée: 00:15:60</h5>
+
+                                                <div class="prix">1euros </div><br>
+                                                <small class="text-muted">Last updated 3 mins ago</small>
+
+                                                <a class="btn btn-primary float-right" href="#" role="button">Enchère</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------------------------------------------------------->
+
             </div>
-
-
-
-
-
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
+
 
 
 
