@@ -1,0 +1,9 @@
+header{
+    background-color: #FF9800;
+    height: 300px;
+}
+
+.card-img-top {
+    height: 300px!important;
+    width: 350px!important;
+}
