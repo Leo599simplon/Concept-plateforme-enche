@@ -49,6 +49,7 @@
                                 <div class="prix">1euros </div><br>
                                 <small class="text-muted">Last updated 3 mins ago</small>
 
+                                <button id="encherir" class="btn-lg btn-primary"></button>
                             </div>
                         </div>
                     </div>
