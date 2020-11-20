@@ -34,6 +34,7 @@ header{
     background-color: #81C784;
     color: white;
 }
+<<<<<<< HEAD
 
 .card-footer{
     height: 80px;
@@ -47,3 +48,34 @@ header{
 .f-size{
     font-size: 14px;
 }
+=======
+.card-body{
+    height: 60px;
+}
+.card-text{
+    font-size:13px ;
+    font-weight: bold;
+
+}
+.card-footer{
+    height: 100px;
+
+}
+button{
+    /* position: absolute; */
+  
+    width: 90px;
+}
+.descriptionDuProduit{
+    padding: 20 20 20 20;
+    font-size: 12px;
+    
+}
+.prix{
+    font-weight: bold;
+}
+.infoPrix{
+    font-weight: normal;
+    word-spacing: 10px;
+}
+>>>>>>> 5e29640e1cdc910aa1ab7a2146c1bdc9140a0da8
