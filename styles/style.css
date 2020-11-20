@@ -26,29 +26,11 @@ header{
     border-radius: 10px;
 }
 
-.card-img-top{
-    border: 1px black solid;
-}
 
 .card-title {
     background-color: #81C784;
     color: white;
 }
-<<<<<<< HEAD
-
-.card-footer{
-    height: 80px;
-}
-
-.prix{
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.f-size{
-    font-size: 14px;
-}
-=======
 .card-body{
     height: 60px;
 }
@@ -78,4 +60,3 @@ button{
     font-weight: normal;
     word-spacing: 10px;
 }
->>>>>>> 5e29640e1cdc910aa1ab7a2146c1bdc9140a0da8
