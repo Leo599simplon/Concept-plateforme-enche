@@ -48,28 +48,28 @@
             <div class="form-group row">
                 <label for="prix_initial" class="col-md-3 col-form-label font-weight-bold">Prix initial (en €):</label>
                 <div class="col-md-9">
-                    <input type="number" class="form-control" id="prix_initial" name="prix_initial" placeholder="Exemple : 2€" required pattern="^-?[0-9]{1,7}" min="1">
+                    <input type="number" class="form-control" id="prix_initial" name="prix_initial" placeholder="Exemple : 2€" required pattern="[0-9]+" min="1">
                 </div>
             </div>
 
             <div class="form-group row">
                 <label for="prix_clic" class="col-md-3 col-form-label font-weight-bold">Prix du clic (en cts)</label>
                 <div class="col-md-9">
-                    <input type="number" class="form-control" id="prix_clic" name="prix_clic" placeholder="Exemple : 30cts" required min="1">
+                    <input type="number" class="form-control" id="prix_clic" name="prix_clic" placeholder="Exemple : 30cts" required pattern="[0-9]+"  min="1">
                 </div>
             </div>
 
             <div class="form-group row">
                 <label for="augmentation_prix" class="col-md-3 col-form-label font-weight-bold">Augmentation prix enchère (en cts):</label>
                 <div class="col-md-9">
-                    <input type="number" class="form-control" id="augmentation_prix" name="augmentation_prix" placeholder="Exemple : 2cts" required min="1">
+                    <input type="number" class="form-control" id="augmentation_prix" name="augmentation_prix" placeholder="Exemple : 2cts" required pattern="[0-9]+" min="1">
                 </div>
             </div>
 
             <div class="form-group row">
                 <label for="augmentation_duree" class="col-md-3 col-form-label font-weight-bold">Augmentation durée enchère (en secondes):</label>
                 <div class="col-md-9">
-                    <input type="number" class="form-control" id="augmentation_duree" name="augmentation_duree" placeholder="Exemple : 30sec" required min="1">
+                    <input type="number" class="form-control" id="augmentation_duree" name="augmentation_duree" placeholder="Exemple : 30sec" required pattern="[0-9]+" pattern="[0-9]+"  min="1">
                 </div>
             </div>
 
