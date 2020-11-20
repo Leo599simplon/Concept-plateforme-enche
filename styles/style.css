@@ -17,9 +17,28 @@ header{
 
 .btn {
     background-color: #FF9800;
+    margin-top: -28px;
+    height: 25px;
+    width: 80px;
+    font-size: 13px;
+    padding-top: 3px;
+    border-radius: 10px;
 }
 
 .card-title {
     background-color: #81C784;
     color: white;
+}
+
+.card-footer{
+    height: 80px;
+}
+
+.prix{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.f-size{
+    font-size: 14px;
 }
