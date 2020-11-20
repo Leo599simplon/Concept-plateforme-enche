@@ -61,11 +61,23 @@ button{
 }
 
 
-@media (max-width:600px){
-    .carousel-control-prev {
-        display: none;
+@media (max-width:768px){
+    .carousel-control-prev-icon{
+        position: absolute;
+        bottom: 10px;
     }
-    .carousel-control-next {
-        display: none;
+    .carousel-control-next-icon{
+        position: absolute;
+        bottom: 10px;
+    }
+
+    h1{
+        font-size: 27px;
+    }
+}
+
+@media (max-width:650px){
+    h1{
+        font-size: 20px;
     }
 }
