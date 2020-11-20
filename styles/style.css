@@ -16,11 +16,7 @@ header{
     color: #81C784;
 }
 
-/*:valid {
-    box-shadow: 0 0 2px 1px green;
- }*/
-
-.btn, .btn-sm {
+.btn {
     background-color: #FF9800;
 }
 
