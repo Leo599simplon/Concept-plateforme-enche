@@ -16,13 +16,8 @@ header{
     color: #81C784;
 }
 
-.btn {
+.btn-sm {
     background-color: #FF9800;
-    margin-top: -28px;
-    height: 25px;
-    width: 80px;
-    font-size: 13px;
-    padding-top: 3px;
     border-radius: 10px;
 }
 
@@ -59,4 +54,14 @@ button{
 .infoPrix{
     font-weight: normal;
     word-spacing: 10px;
+}
+
+
+@media (max-width:600px){
+    .carousel-control-prev {
+        display: none;
+    }
+    .carousel-control-next {
+        display: none;
+    }
 }
