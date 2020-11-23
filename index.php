@@ -43,7 +43,7 @@ include('scripts/alimentation.php');
 </head>
 
 <body>
-  <!------------------------Header-------------------------------------------------------->
+  <!--HEADER-->
 
   <header class="container-fluid d-flex justify-content-center align-items-center">
     <h1 class="col-m-4 text-center font-weight-bold">NOM DE L'APPLICATION</h1>
@@ -51,7 +51,7 @@ include('scripts/alimentation.php');
 
   <section class="container-fluid pt-5">
 
-    <!------------------------Carousel----------------------------------------------------->
+    <!--CAROUSEL-->
     <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel" data-interval="100000000">
 
       <ol class="carousel-indicators m-n4">
@@ -65,7 +65,7 @@ include('scripts/alimentation.php');
         <div class="carousel-item active">
           <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
 
-            <!-----------------Card 1------------------------------------->
+            <!--CARD 1-->
             <div class="col h-100 d-flex justify-content-center my-5">
               <div class="card" style="width: 18rem;">
                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
@@ -95,7 +95,7 @@ include('scripts/alimentation.php');
                 </div>
               </div>
             </div>
-            <!-----------------Card 2------------------------------------->
+            <!--CARD 2-->
             <div class="col h-100 d-flex justify-content-center my-5">
               <div class="card" style="width: 18rem;">
                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
@@ -124,7 +124,7 @@ include('scripts/alimentation.php');
                 </div>
               </div>
             </div>
-            <!-----------------Card 3------------------------------------->
+            <!--CARD 3-->
             <div class="col h-100 d-flex justify-content-center my-5">
               <div class="card" style="width: 18rem;">
                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
@@ -153,7 +153,7 @@ include('scripts/alimentation.php');
                 </div>
               </div>
             </div>
-            <!-----------------Card 4------------------------------------->
+            <!--CARD 4-->
             <div class="col h-100 d-flex justify-content-center my-5">
               <div class="card" style="width: 18rem;">
                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
@@ -182,7 +182,7 @@ include('scripts/alimentation.php');
                 </div>
               </div>
             </div>
-            <!-----------------Card 5------------------------------------->
+            <!--CARD 5-->
             <div class="col h-100 d-flex justify-content-center my-5">
               <div class="card" style="width: 18rem;">
                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
@@ -211,7 +211,7 @@ include('scripts/alimentation.php');
                 </div>
               </div>
             </div>
-            <!-----------------Card 6s------------------------------------->
+            <!--CARD 6-->
             <div class="col h-100 d-flex justify-content-center my-5">
               <div class="card" style="width: 18rem;">
                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
@@ -245,11 +245,11 @@ include('scripts/alimentation.php');
 
 
 
-        <!------------------------ Slide 2 ----------------------------->
+        <!--SLIDE 2-->
         <div class="carousel-item">
           <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
 
-            <!-----------------Card 1------------------------------------->
+            <!--CARD 1-->
             <div class="col h-100 d-flex justify-content-center my-5">
               <div class="card" style="width: 18rem;">
                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
@@ -276,7 +276,7 @@ include('scripts/alimentation.php');
                 </div>
               </div>
             </div>
-            <!-----------------Card 2------------------------------------->
+            <!--CARD 2-->
             <div class="col h-100 d-flex justify-content-center my-5">
               <div class="card" style="width: 18rem;">
                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
@@ -303,7 +303,7 @@ include('scripts/alimentation.php');
                 </div>
               </div>
             </div>
-            <!-----------------Card 3------------------------------------->
+            <!--CARD 3-->
             <div class="col h-100 d-flex justify-content-center my-5">
               <div class="card" style="width: 18rem;">
                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
@@ -330,7 +330,7 @@ include('scripts/alimentation.php');
                 </div>
               </div>
             </div>
-            <!-----------------Card 4------------------------------------->
+            <!--CARD 4-->
             <div class="col h-100 d-flex justify-content-center my-5">
               <div class="card" style="width: 18rem;">
                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
@@ -357,7 +357,7 @@ include('scripts/alimentation.php');
                 </div>
               </div>
             </div>
-            <!-----------------Card 5------------------------------------->
+            <!--CARD 5-->
             <div class="col h-100 d-flex justify-content-center my-5">
               <div class="card" style="width: 18rem;">
                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
@@ -384,7 +384,7 @@ include('scripts/alimentation.php');
                 </div>
               </div>
             </div>
-            <!-----------------Card 6s------------------------------------->
+            <!--CARD 6-->
             <div class="col h-100 d-flex justify-content-center my-5">
               <div class="card" style="width: 18rem;">
                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
@@ -416,11 +416,11 @@ include('scripts/alimentation.php');
 
 
 
-        <!------------------------ Slide 3 ----------------------------->
+        <!--SLIDE 3--->
         <div class="carousel-item">
           <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
 
-            <!-----------------Card 1------------------------------------->
+            <!--CARD 1-->
             <div class="col h-100 d-flex justify-content-center my-5">
               <div class="card" style="width: 18rem;">
                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
@@ -447,7 +447,7 @@ include('scripts/alimentation.php');
                 </div>
               </div>
             </div>
-            <!-----------------Card 2------------------------------------->
+            <!--CARD 2-->
             <div class="col h-100 d-flex justify-content-center my-5">
               <div class="card" style="width: 18rem;">
                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
@@ -474,7 +474,7 @@ include('scripts/alimentation.php');
                 </div>
               </div>
             </div>
-            <!-----------------Card 3------------------------------------->
+            <!--CARD 3-->
             <div class="col h-100 d-flex justify-content-center my-5">
               <div class="card" style="width: 18rem;">
                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
@@ -501,7 +501,7 @@ include('scripts/alimentation.php');
                 </div>
               </div>
             </div>
-            <!-----------------Card 4------------------------------------->
+            <!--CARD 4-->
             <div class="col h-100 d-flex justify-content-center my-5">
               <div class="card" style="width: 18rem;">
                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
@@ -528,7 +528,7 @@ include('scripts/alimentation.php');
                 </div>
               </div>
             </div>
-            <!-----------------Card 5------------------------------------->
+            <!--CARD 5-->
             <div class="col h-100 d-flex justify-content-center my-5">
               <div class="card" style="width: 18rem;">
                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
@@ -555,7 +555,7 @@ include('scripts/alimentation.php');
                 </div>
               </div>
             </div>
-            <!-----------------Card 6s------------------------------------->
+            <!--CARD 6-->
             <div class="col h-100 d-flex justify-content-center my-5">
               <div class="card" style="width: 18rem;">
                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
