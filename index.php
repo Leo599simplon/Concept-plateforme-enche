@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-//Détermine en début de session si un prix existe déjà pour chaque article présent. Si ce n'est pas le cas, il fixe le prix à 50 euros. Les prix sont des variables de session et seront réinitialisées à chaque session.
 if (
   !(isset($_SESSION['produit_un']))
   or !(isset($_SESSION['produit_deux']))
@@ -17,8 +16,6 @@ if (
   $_SESSION['produit_cinq'] = 50;
   $_SESSION['produit_six'] = 50;
 }
-
-//Execution du script permettant l'alimentation des enchères
 include('scripts/alimentation.php');
 ?>
 
@@ -38,7 +35,8 @@ include('scripts/alimentation.php');
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
-  <title>Document</title>
+
+  <title>page enchère</title>
 
 </head>
 
@@ -80,9 +78,9 @@ include('scripts/alimentation.php');
                     Prix de l'enchère:<i class="infoPrix"> +2cts/clics</i>
                   </p>
                 </div>
-                <div class="card-footer d-flex flex-column justify-content-around">
+                <div class="card-footer d-flex flex-column justify-content-around bg-white">
                   <h6>Durée:
-                    <div class="float-right pr-5 font-weight-bold"> 00:15:60</div>
+                  <img class="w-50 timer ml-5" src="ressources/img/timer.gif" alt="" srcset="">
                   </h6>
 
                   <div class="d-flex align-items-center justify-content-between">
@@ -110,13 +108,13 @@ include('scripts/alimentation.php');
                     Prix de l'enchère:<i class="infoPrix"> +2cts/clics</i>
                   </p>
                 </div>
-                <div class="card-footer d-flex flex-column justify-content-around">
+                <div class="card-footer d-flex flex-column justify-content-around bg-white">
                   <h6>Durée:
-                    <div class="float-right pr-5 font-weight-bold"> 00:15:60</div>
-                  </h6>
+                    <img class="w-50 timer ml-5" src="ressources/img/timer.gif" alt="" srcset="">
+                    </h6>
 
                   <div class="d-flex align-items-center justify-content-between">
-                    <div class="prix"><?php /*affichage de la variable prix*/ echo $_SESSION['produit_deux'] . '€' ?></div>
+                    <div class="prix"><?php echo $_SESSION['produit_deux'] . '€' ?></div>
                     <form method="POST">
                       <input class="btn btn-sm btn-warning float-right" type="submit" name="produit_deux" id="produit_deux" value="Enchérir">
                     </form>
@@ -139,10 +137,10 @@ include('scripts/alimentation.php');
                     Prix de l'enchère:<i class="infoPrix"> +2cts/clics</i>
                   </p>
                 </div>
-                <div class="card-footer d-flex flex-column justify-content-around">
+                <div class="card-footer d-flex flex-column justify-content-around bg-white">
                   <h6>Durée:
-                    <div class="float-right pr-5 font-weight-bold"> 00:15:60</div>
-                  </h6>
+                    <img class="w-50 timer ml-5" src="ressources/img/timer.gif" alt="" srcset="">
+                    </h6>
 
                   <div class="d-flex align-items-center justify-content-between">
                     <div class="prix"><?php echo $_SESSION['produit_trois'] . '€' ?></div>
@@ -158,7 +156,7 @@ include('scripts/alimentation.php');
               <div class="card" style="width: 18rem;">
                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                 <div class="description border-bottom">
-                  <p class="descriptionDuProduit text-center">Ceci est une  petite description du produit</p>
+                  <p class="descriptionDuProduit text-center">Ceci est une petite description du produit</p>
 
                 </div>
                 <img src="ressources/img/iphone.jpg" class="card-img-top border-bottom" alt="...">
@@ -168,10 +166,10 @@ include('scripts/alimentation.php');
                     Prix de l'enchère:<i class="infoPrix"> +2cts/clics</i>
                   </p>
                 </div>
-                <div class="card-footer d-flex flex-column justify-content-around">
+                <div class="card-footer d-flex flex-column justify-content-around bg-white">
                   <h6>Durée:
-                    <div class="float-right pr-5 font-weight-bold"> 00:15:60</div>
-                  </h6>
+                    <img class="w-50 timer ml-5" src="ressources/img/timer.gif" alt="" srcset="">
+                    </h6>
 
                   <div class="d-flex align-items-center justify-content-between">
                     <div class="prix"><?php echo $_SESSION['produit_quatre'] . '€' ?></div>
@@ -197,10 +195,10 @@ include('scripts/alimentation.php');
                     Prix de l'enchère:<i class="infoPrix"> +2cts/clics</i>
                   </p>
                 </div>
-                <div class="card-footer d-flex flex-column justify-content-around">
+                <div class="card-footer d-flex flex-column justify-content-around bg-white">
                   <h6>Durée:
-                    <div class="float-right pr-5 font-weight-bold"> 00:15:60</div>
-                  </h6>
+                    <img class="w-50 timer ml-5" src="ressources/img/timer.gif" alt="" srcset="">
+                    </h6>
 
                   <div class="d-flex align-items-center justify-content-between">
                     <div class="prix"><?php echo $_SESSION['produit_cinq'] . '€' ?></div>
@@ -226,10 +224,10 @@ include('scripts/alimentation.php');
                     Prix de l'enchère:<i class="infoPrix"> +2cts/clics</i>
                   </p>
                 </div>
-                <div class="card-footer d-flex flex-column justify-content-around">
+                <div class="card-footer d-flex flex-column justify-content-around bg-white">
                   <h6>Durée:
-                    <div class="float-right pr-5 font-weight-bold"> 00:15:60</div>
-                  </h6>
+                    <img class="w-50 timer ml-5" src="ressources/img/timer.gif" alt="" srcset="">
+                    </h6>
 
                   <div class="d-flex align-items-center justify-content-between">
                     <div class="prix"><?php echo $_SESSION['produit_six'] . '€' ?></div>
@@ -264,10 +262,10 @@ include('scripts/alimentation.php');
                     Prix de l'enchère:<i class="infoPrix"> +2cts/clics</i>
                   </p>
                 </div>
-                <div class="card-footer d-flex flex-column justify-content-around">
+                <div class="card-footer d-flex flex-column justify-content-around bg-white">
                   <h6>Durée:
-                    <div class="float-right pr-5 font-weight-bold"> 00:15:60</div>
-                  </h6>
+                    <img class="w-50 timer ml-5" src="ressources/img/timer.gif" alt="" srcset="">
+                    </h6>
 
                   <div class="d-flex align-items-center justify-content-between">
                     <div class="prix">0.00€</div>
@@ -291,10 +289,10 @@ include('scripts/alimentation.php');
                     Prix de l'enchère:<i class="infoPrix"> +2cts/clics</i>
                   </p>
                 </div>
-                <div class="card-footer d-flex flex-column justify-content-around">
+                <div class="card-footer d-flex flex-column justify-content-around bg-white">
                   <h6>Durée:
-                    <div class="float-right pr-5 font-weight-bold"> 00:15:60</div>
-                  </h6>
+                    <img class="w-50 timer ml-5" src="ressources/img/timer.gif" alt="" srcset="">
+                    </h6>
 
                   <div class="d-flex align-items-center justify-content-between">
                     <div class="prix">0.00€</div>
@@ -318,10 +316,10 @@ include('scripts/alimentation.php');
                     Prix de l'enchère:<i class="infoPrix"> +2cts/clics</i>
                   </p>
                 </div>
-                <div class="card-footer d-flex flex-column justify-content-around">
+                <div class="card-footer d-flex flex-column justify-content-around bg-white">
                   <h6>Durée:
-                    <div class="float-right pr-5 font-weight-bold"> 00:15:60</div>
-                  </h6>
+                    <img class="w-50 timer ml-5" src="ressources/img/timer.gif" alt="" srcset="">
+                    </h6>
 
                   <div class="d-flex align-items-center justify-content-between">
                     <div class="prix">0.00€</div>
@@ -345,10 +343,10 @@ include('scripts/alimentation.php');
                     Prix de l'enchère:<i class="infoPrix"> +2cts/clics</i>
                   </p>
                 </div>
-                <div class="card-footer d-flex flex-column justify-content-around">
+                <div class="card-footer d-flex flex-column justify-content-around bg-white">
                   <h6>Durée:
-                    <div class="float-right pr-5 font-weight-bold"> 00:15:60</div>
-                  </h6>
+                    <img class="w-50 timer ml-5" src="ressources/img/timer.gif" alt="" srcset="">
+                    </h6>
 
                   <div class="d-flex align-items-center justify-content-between">
                     <div class="prix">0.00€</div>
@@ -372,10 +370,10 @@ include('scripts/alimentation.php');
                     Prix de l'enchère:<i class="infoPrix"> +2cts/clics</i>
                   </p>
                 </div>
-                <div class="card-footer d-flex flex-column justify-content-around">
+                <div class="card-footer d-flex flex-column justify-content-around bg-white">
                   <h6>Durée:
-                    <div class="float-right pr-5 font-weight-bold"> 00:15:60</div>
-                  </h6>
+                    <img class="w-50 timer ml-5" src="ressources/img/timer.gif" alt="" srcset="">
+                    </h6>
 
                   <div class="d-flex align-items-center justify-content-between">
                     <div class="prix">0.00€</div>
@@ -399,10 +397,10 @@ include('scripts/alimentation.php');
                     Prix de l'enchère:<i class="infoPrix"> +2cts/clics</i>
                   </p>
                 </div>
-                <div class="card-footer d-flex flex-column justify-content-around">
+                <div class="card-footer d-flex flex-column justify-content-around bg-white">
                   <h6>Durée:
-                    <div class="float-right pr-5 font-weight-bold"> 00:15:60</div>
-                  </h6>
+                    <img class="w-50 timer ml-5" src="ressources/img/timer.gif" alt="" srcset="">
+                    </h6>
 
                   <div class="d-flex align-items-center justify-content-between">
                     <div class="prix">0.00€</div>
@@ -435,10 +433,10 @@ include('scripts/alimentation.php');
                     Prix de l'enchère:<i class="infoPrix"> +2cts/clics</i>
                   </p>
                 </div>
-                <div class="card-footer d-flex flex-column justify-content-around">
+                <div class="card-footer d-flex flex-column justify-content-around bg-white">
                   <h6>Durée:
-                    <div class="float-right pr-5 font-weight-bold"> 00:15:60</div>
-                  </h6>
+                    <img class="w-50 timer ml-5" src="ressources/img/timer.gif" alt="" srcset="">
+                    </h6>
 
                   <div class="d-flex align-items-center justify-content-between">
                     <div class="prix">0.00€</div>
@@ -462,10 +460,10 @@ include('scripts/alimentation.php');
                     Prix de l'enchère:<i class="infoPrix"> +2cts/clics</i>
                   </p>
                 </div>
-                <div class="card-footer d-flex flex-column justify-content-around">
+                <div class="card-footer d-flex flex-column justify-content-around bg-white">
                   <h6>Durée:
-                    <div class="float-right pr-5 font-weight-bold"> 00:15:60</div>
-                  </h6>
+                    <img class="w-50 timer ml-5" src="ressources/img/timer.gif" alt="" srcset="">
+                    </h6>
 
                   <div class="d-flex align-items-center justify-content-between">
                     <div class="prix">0.00€</div>
@@ -489,9 +487,9 @@ include('scripts/alimentation.php');
                     Prix de l'enchère:<i class="infoPrix"> +2cts/clics</i>
                   </p>
                 </div>
-                <div class="card-footer d-flex flex-column justify-content-around">
-                  <h6>Durée:
-                    <div class="float-right pr-5 font-weight-bold"> 00:15:60</div>
+                <div class="card-footer d-flex flex-column justify-content-around bg-white">
+                  <<h6>Durée:
+                  <img class="w-50 timer ml-5" src="ressources/img/timer.gif" alt="" srcset="">
                   </h6>
 
                   <div class="d-flex align-items-center justify-content-between">
@@ -516,10 +514,10 @@ include('scripts/alimentation.php');
                     Prix de l'enchère:<i class="infoPrix"> +2cts/clics</i>
                   </p>
                 </div>
-                <div class="card-footer d-flex flex-column justify-content-around">
-                  <h6>Durée:
-                    <div class="float-right pr-5 font-weight-bold"> 00:15:60</div>
-                  </h6>
+                <div class="card-footer d-flex flex-column justify-content-around bg-white">
+                  <<h6>Durée:
+                    <img class="w-50 timer ml-5" src="ressources/img/timer.gif" alt="" srcset="">
+                    </h6>
 
                   <div class="d-flex align-items-center justify-content-between">
                     <div class="prix">0.00€</div>
@@ -543,10 +541,10 @@ include('scripts/alimentation.php');
                     Prix de l'enchère:<i class="infoPrix"> +2cts/clics</i>
                   </p>
                 </div>
-                <div class="card-footer d-flex flex-column justify-content-around">
+                <div class="card-footer d-flex flex-column justify-content-around bg-white">
                   <h6>Durée:
-                    <div class="float-right pr-5 font-weight-bold"> 00:15:60</div>
-                  </h6>
+                    <img class="w-50 timer ml-5" src="ressources/img/timer.gif" alt="" srcset="">
+                    </h6>
 
                   <div class="d-flex align-items-center justify-content-between">
                     <div class="prix">0.00€</div>
@@ -570,10 +568,10 @@ include('scripts/alimentation.php');
                     Prix de l'enchère:<i class="infoPrix"> +2cts/clics</i>
                   </p>
                 </div>
-                <div class="card-footer d-flex flex-column justify-content-around">
+                <div class="card-footer d-flex flex-column justify-content-around bg-white">
                   <h6>Durée:
-                    <div class="float-right pr-5 font-weight-bold"> 00:15:60</div>
-                  </h6>
+                    <img class="w-50 timer ml-5" src="ressources/img/timer.gif" alt="" srcset="">
+                    </h6>
 
                   <div class="d-flex align-items-center justify-content-between">
                     <div class="prix">0.00€</div>
