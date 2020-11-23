@@ -267,7 +267,7 @@ include('scripts/alimentation.php');
                 <div class="card-footer d-flex flex-column justify-content-around bg-white">
                   <h6>Durée:
                     <img class="w-50 timer ml-5" src="ressources/img/timer.gif" alt="" srcset="">
-                    </h6>
+                  </h6>
 
                   <div class="d-flex align-items-center justify-content-between">
                     <div class="prix">0.00€</div>
@@ -294,7 +294,7 @@ include('scripts/alimentation.php');
                 <div class="card-footer d-flex flex-column justify-content-around bg-white">
                   <h6>Durée:
                     <img class="w-50 timer ml-5" src="ressources/img/timer.gif" alt="" srcset="">
-                    </h6>
+                  </h6>
 
                   <div class="d-flex align-items-center justify-content-between">
                     <div class="prix">0.00€</div>
@@ -321,7 +321,7 @@ include('scripts/alimentation.php');
                 <div class="card-footer d-flex flex-column justify-content-around bg-white">
                   <h6>Durée:
                     <img class="w-50 timer ml-5" src="ressources/img/timer.gif" alt="" srcset="">
-                    </h6>
+                  </h6>
 
                   <div class="d-flex align-items-center justify-content-between">
                     <div class="prix">0.00€</div>
@@ -348,7 +348,7 @@ include('scripts/alimentation.php');
                 <div class="card-footer d-flex flex-column justify-content-around bg-white">
                   <h6>Durée:
                     <img class="w-50 timer ml-5" src="ressources/img/timer.gif" alt="" srcset="">
-                    </h6>
+                  </h6>
 
                   <div class="d-flex align-items-center justify-content-between">
                     <div class="prix">0.00€</div>
@@ -375,7 +375,7 @@ include('scripts/alimentation.php');
                 <div class="card-footer d-flex flex-column justify-content-around bg-white">
                   <h6>Durée:
                     <img class="w-50 timer ml-5" src="ressources/img/timer.gif" alt="" srcset="">
-                    </h6>
+                  </h6>
 
                   <div class="d-flex align-items-center justify-content-between">
                     <div class="prix">0.00€</div>
@@ -402,7 +402,7 @@ include('scripts/alimentation.php');
                 <div class="card-footer d-flex flex-column justify-content-around bg-white">
                   <h6>Durée:
                     <img class="w-50 timer ml-5" src="ressources/img/timer.gif" alt="" srcset="">
-                    </h6>
+                  </h6>
 
                   <div class="d-flex align-items-center justify-content-between">
                     <div class="prix">0.00€</div>
