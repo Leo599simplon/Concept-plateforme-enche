@@ -29,7 +29,7 @@ header{
     color: white;
 }
 .card-body{
-    height: 60px;
+    height: 40px;
     padding: 10px;
     text-align: center;
 }
@@ -60,15 +60,14 @@ button{
     word-spacing: 10px;
 }
 
-.carousel-control-prev{
+.carousel-control-prev, .carousel-control-next{
     height: 20px;
 }
-.carousel-control-next{
-    height: 20px;
-}
-
 
 @media (max-width:768px){
+    .carousel-control-prev, .carousel-control-next{
+        top: inherit!important;
+    }
     .carousel-control-prev-icon{
         position: absolute;
         bottom: 10px;
