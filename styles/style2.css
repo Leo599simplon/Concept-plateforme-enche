@@ -32,6 +32,10 @@ header{
     background-color: #81C784;
     color: white;
 }
+.card-img-top{
+    max-width: 286px;
+    max-height: 240px;
+}
 .card-body{
     height: 40px;
     padding: 10px;
