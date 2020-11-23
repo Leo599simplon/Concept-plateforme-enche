@@ -155,7 +155,7 @@ include('scripts/alimentation.php');
               <div class="card" style="width: 18rem;">
                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                 <div class="description border-bottom">
-                  <p class="descriptionDuProduit text-center">Ceci est une petite description du produit</p>
+                  <p class="descriptionDuProduit text-center">Ceci est une  petite description du produit</p>
 
                 </div>
                 <img src="ressources/img/iphone.jpg" class="card-img-top border-bottom" alt="...">
