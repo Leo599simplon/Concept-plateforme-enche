@@ -9,6 +9,13 @@ if (
   or !(isset($_SESSION['produit_quatre']))
   or !(isset($_SESSION['produit_cinq']))
   or !(isset($_SESSION['produit_six']))
+  or !(isset($_SESSION['produit_sept']))
+  or !(isset($_SESSION['produit_huit']))
+  or !(isset($_SESSION['produit_neuf']))
+  or !(isset($_SESSION['produit_dix']))
+  or !(isset($_SESSION['produit_onze']))
+  or !(isset($_SESSION['produit_douze']))
+  or !(isset($_SESSION['produit_trois']))
   or !(isset($_SESSION['tab_produit']))
 ) {
   $_SESSION['produit_un'] = 50;
@@ -17,6 +24,12 @@ if (
   $_SESSION['produit_quatre'] = 50;
   $_SESSION['produit_cinq'] = 50;
   $_SESSION['produit_six'] = 50;
+  $_SESSION['produit_sept'] = 50;
+  $_SESSION['produit_huit'] = 50;
+  $_SESSION['produit_neuf'] = 50;
+  $_SESSION['produit_dix'] = 50;
+  $_SESSION['produit_onze'] = 50;
+  $_SESSION['produit_douze'] = 50;
   $_SESSION['tab_produit'] = [];
 }
 //Execution du script permettant l'alimentation des enchères
@@ -273,8 +286,10 @@ include('scripts/produit.php');
                   </h6>
 
                   <div class="d-flex align-items-center justify-content-between">
-                    <div class="prix">0.00€</div>
-                    <button class="btn-sm btn-warning float-right">Enchère</button>
+                    <div class="prix"><?php echo $_SESSION['produit_sept'] . '€' ?></div>
+                    <form method="POST">
+                      <input class="btn btn-sm btn-warning float-right" type="submit" name="produit_sept" id="produit_sept" value="Enchérir">
+                    </form>
                   </div>
                 </div>
               </div>
@@ -300,8 +315,10 @@ include('scripts/produit.php');
                   </h6>
 
                   <div class="d-flex align-items-center justify-content-between">
-                    <div class="prix">0.00€</div>
-                    <button class="btn-sm btn-warning float-right">Enchère</button>
+                    <div class="prix"><?php echo $_SESSION['produit_huit'] . '€' ?></div>
+                    <form method="POST">
+                      <input class="btn btn-sm btn-warning float-right" type="submit" name="produit_huit" id="produit_huit" value="Enchérir">
+                    </form>
                   </div>
                 </div>
               </div>
@@ -327,8 +344,10 @@ include('scripts/produit.php');
                   </h6>
 
                   <div class="d-flex align-items-center justify-content-between">
-                    <div class="prix">0.00€</div>
-                    <button class="btn-sm btn-warning float-right">Enchère</button>
+                    <div class="prix"><?php echo $_SESSION['produit_neuf'] . '€' ?></div>
+                    <form method="POST">
+                      <input class="btn btn-sm btn-warning float-right" type="submit" name="produit_neuf" id="produit_neuf" value="Enchérir">
+                    </form>
                   </div>
                 </div>
               </div>
@@ -354,8 +373,10 @@ include('scripts/produit.php');
                   </h6>
 
                   <div class="d-flex align-items-center justify-content-between">
-                    <div class="prix">0.00€</div>
-                    <button class="btn-sm btn-warning float-right">Enchère</button>
+                    <div class="prix"><?php echo $_SESSION['produit_dix'] . '€' ?></div>
+                    <form method="POST">
+                      <input class="btn btn-sm btn-warning float-right" type="submit" name="produit_dix" id="produit_dix" value="Enchérir">
+                    </form>
                   </div>
                 </div>
               </div>
@@ -381,8 +402,10 @@ include('scripts/produit.php');
                   </h6>
 
                   <div class="d-flex align-items-center justify-content-between">
-                    <div class="prix">0.00€</div>
-                    <button class="btn-sm btn-warning float-right">Enchère</button>
+                    <div class="prix"><?php echo $_SESSION['produit_onze'] . '€' ?></div>
+                    <form method="POST">
+                      <input class="btn btn-sm btn-warning float-right" type="submit" name="produit_onze" id="produit_onze" value="Enchérir">
+                    </form>
                   </div>
                 </div>
               </div>
@@ -408,8 +431,10 @@ include('scripts/produit.php');
                   </h6>
 
                   <div class="d-flex align-items-center justify-content-between">
-                    <div class="prix">0.00€</div>
-                    <button class="btn-sm btn-warning float-right">Enchère</button>
+                    <div class="prix"><?php echo $_SESSION['produit_douze'] . '€' ?></div>
+                    <form method="POST">
+                      <input class="btn btn-sm btn-warning float-right" type="submit" name="produit_douze" id="produit_douze" value="Enchérir">
+                    </form>
                   </div>
                 </div>
               </div>
