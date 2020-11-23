@@ -86,7 +86,7 @@ include('scripts/alimentation.php');
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form method="POST">
-                                            <input class="btn btn-sm btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Acheter">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Acheter">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -116,7 +116,7 @@ include('scripts/alimentation.php');
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form method="POST">
-                                            <input class="btn btn-sm btn-warning float-right" type="submit" name="produit_deux" id="produit_deux" value="Acheter">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_deux" id="produit_deux" value="Acheter">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -146,7 +146,7 @@ include('scripts/alimentation.php');
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form method="POST">
-                                            <input class="btn btn-sm btn-warning float-right" type="submit" name="produit_trois" id="produit_trois" value="Acheter">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_trois" id="produit_trois" value="Acheter">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -176,7 +176,7 @@ include('scripts/alimentation.php');
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form method="POST">
-                                            <input class="btn btn-sm btn-warning float-right" type="submit" name="produit_quatre" id="produit_quatre" value="Acheter">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_quatre" id="produit_quatre" value="Acheter">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -206,7 +206,7 @@ include('scripts/alimentation.php');
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form method="POST">
-                                            <input class="btn btn-sm btn-warning float-right" type="submit" name="produit_cinq" id="produit_cinq" value="Acheter">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_cinq" id="produit_cinq" value="Acheter">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -236,7 +236,7 @@ include('scripts/alimentation.php');
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form method="POST">
-                                            <input class="btn btn-sm btn-warning float-right" type="submit" name="produit_six" id="produit_six" value="Acheter">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_six" id="produit_six" value="Acheter">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>

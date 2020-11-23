@@ -20,7 +20,11 @@ header{
     box-shadow: 0 0 2px 1px green;
  }*/
 
-.btn, .btn-sm {
+
+.card{
+    box-shadow: 3px 3px 3px #575957;
+}
+.btn, .btn-lg {
     background-color: #FF9800;
     border-radius: 10px;
 }
@@ -53,7 +57,7 @@ button{
 }
 .prix{
     font-weight: bold;
-    font-size: 30px;
+    font-size: 34px;
 }
 .infoPrix{
     font-weight: normal;
