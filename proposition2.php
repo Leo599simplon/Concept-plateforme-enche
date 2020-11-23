@@ -214,7 +214,7 @@ include('scripts/alimentation.php');
                             </div>
                         </div>
                         <!-----------------Card 6s------------------------------------->
-                        <div class="col h-100 d-flex justify-content-center my-5">
+                        <div id="slide1-prod6" class="col h-100 d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_six'] . '€' ?></div>
