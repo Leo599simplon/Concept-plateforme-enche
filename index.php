@@ -271,7 +271,7 @@ include('scripts/alimentation.php');
 
                   <div class="d-flex align-items-center justify-content-between">
                     <div class="prix">0.00€</div>
-                    <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button>
+                    <button class="btn-sm btn-warning float-right">Enchère</button>
                   </div>
                 </div>
               </div>
@@ -298,7 +298,7 @@ include('scripts/alimentation.php');
 
                   <div class="d-flex align-items-center justify-content-between">
                     <div class="prix">0.00€</div>
-                    <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button>
+                    <button class="btn-sm btn-warning float-right">Enchère</button>
                   </div>
                 </div>
               </div>
@@ -325,7 +325,7 @@ include('scripts/alimentation.php');
 
                   <div class="d-flex align-items-center justify-content-between">
                     <div class="prix">0.00€</div>
-                    <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button>
+                    <button class="btn-sm btn-warning float-right">Enchère</button>
                   </div>
                 </div>
               </div>
@@ -352,7 +352,7 @@ include('scripts/alimentation.php');
 
                   <div class="d-flex align-items-center justify-content-between">
                     <div class="prix">0.00€</div>
-                    <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button>
+                    <button class="btn-sm btn-warning float-right">Enchère</button>
                   </div>
                 </div>
               </div>
@@ -379,7 +379,7 @@ include('scripts/alimentation.php');
 
                   <div class="d-flex align-items-center justify-content-between">
                     <div class="prix">0.00€</div>
-                    <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button>
+                    <button class="btn-sm btn-warning float-right">Enchère</button>
                   </div>
                 </div>
               </div>
@@ -406,7 +406,7 @@ include('scripts/alimentation.php');
 
                   <div class="d-flex align-items-center justify-content-between">
                     <div class="prix">0.00€</div>
-                    <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button>
+                    <button class="btn-sm btn-warning float-right">Enchère</button>
                   </div>
                 </div>
               </div>
@@ -442,7 +442,7 @@ include('scripts/alimentation.php');
 
                   <div class="d-flex align-items-center justify-content-between">
                     <div class="prix">0.00€</div>
-                    <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button>
+                    <button class="btn-sm btn-warning float-right">Enchère</button>
                   </div>
                 </div>
               </div>
@@ -469,7 +469,7 @@ include('scripts/alimentation.php');
 
                   <div class="d-flex align-items-center justify-content-between">
                     <div class="prix">0.00€</div>
-                    <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button>
+                    <button class="btn-sm btn-warning float-right">Enchère</button>
                   </div>
                 </div>
               </div>
@@ -496,7 +496,7 @@ include('scripts/alimentation.php');
 
                   <div class="d-flex align-items-center justify-content-between">
                     <div class="prix">0.00€</div>
-                    <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button>
+                    <button class="btn-sm btn-warning float-right">Enchère</button>
                   </div>
                 </div>
               </div>
@@ -523,7 +523,7 @@ include('scripts/alimentation.php');
 
                   <div class="d-flex align-items-center justify-content-between">
                     <div class="prix">0.00€</div>
-                    <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button>
+                    <button class="btn-sm btn-warning float-right">Enchère</button>
                   </div>
                 </div>
               </div>
@@ -550,7 +550,7 @@ include('scripts/alimentation.php');
 
                   <div class="d-flex align-items-center justify-content-between">
                     <div class="prix">0.00€</div>
-                    <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button>
+                    <button class="btn-sm btn-warning float-right">Enchère</button>
                   </div>
                 </div>
               </div>
@@ -577,7 +577,7 @@ include('scripts/alimentation.php');
 
                   <div class="d-flex align-items-center justify-content-between">
                     <div class="prix">0.00€</div>
-                    <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button>
+                    <button class="btn-sm btn-warning float-right">Enchère</button>
                   </div>
                 </div>
               </div>
