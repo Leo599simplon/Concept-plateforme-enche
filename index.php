@@ -9,6 +9,7 @@ if (
   or !(isset($_SESSION['produit_quatre']))
   or !(isset($_SESSION['produit_cinq']))
   or !(isset($_SESSION['produit_six']))
+  or !(isset($_SESSION['tab_produit']))
 ) {
   $_SESSION['produit_un'] = 50;
   $_SESSION['produit_deux'] = 50;
@@ -16,9 +17,11 @@ if (
   $_SESSION['produit_quatre'] = 50;
   $_SESSION['produit_cinq'] = 50;
   $_SESSION['produit_six'] = 50;
+  $_SESSION['tab_produit'] = [];
 }
 //Execution du script permettant l'alimentation des enchères
 include('scripts/alimentation.php');
+include('scripts/produit.php');
 ?>
 
 <!DOCTYPE html>
@@ -585,7 +588,25 @@ include('scripts/alimentation.php');
           </div>
         </div>
 
+         <!------------------------ Slide Ajout ----------------------------->
+        <div class="carousel-item">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
 
+            <!-----------------Card 1------------------------------------->
+            <?php create_html(0);?>
+            <!-----------------ard 2------------------------------------->
+            <?php create_html(1);?>
+            <!-----------------Card 3------------------------------------->
+            <?php create_html(2);?>
+            <!-----------------Card 4------------------------------------->
+            <?php create_html(3);?>
+            <!-----------------Card 5------------------------------------->
+            <?php create_html(4);?>
+            <!-----------------Card 6------------------------------------->
+            <?php create_html(5);?>
+            
+          </div>
+        </div>
 
       </div>
 
