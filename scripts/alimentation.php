@@ -1,5 +1,5 @@
 <?php 
-
+//Si la méthode pour accéder à la page est "POST", lorsqu'il y a une requête "POST" pour l'un des produits (aka que quelqu'un à cliquer sur le bouton "acheter") le prix du produit augmente de 0.02.
 if ($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['produit_un']))
 {
    
