@@ -8,6 +8,7 @@ if (
     or !(isset($_SESSION['produit_quatre']))
     or !(isset($_SESSION['produit_cinq']))
     or !(isset($_SESSION['produit_six']))
+    or !(isset($_SESSION['tab_produit2']))
 ) {
     $_SESSION['produit_un'] = 50;
     $_SESSION['produit_deux'] = 50;
@@ -15,8 +16,10 @@ if (
     $_SESSION['produit_quatre'] = 50;
     $_SESSION['produit_cinq'] = 50;
     $_SESSION['produit_six'] = 50;
+    $_SESSION['tab_produit2'] = [];
 }
 include('scripts/alimentation.php');
+include('scripts/produit2.php');
 ?>
 
 <!DOCTYPE html>
@@ -94,7 +97,7 @@ include('scripts/alimentation.php');
                             </div>
                         </div>
                         <!-----------------Card 2------------------------------------->
-                        <div class="col h-100 d-flex justify-content-center my-5">
+                        <div id="slide1-prod2" class="col h-100 d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_deux'] . '€' ?></div>
@@ -115,7 +118,7 @@ include('scripts/alimentation.php');
 
                                     <div class="d-flex align-items-center justify-content-center">
 
-                                        <form method="POST">
+                                        <form action="#slide1-prod2" method="POST">
                                             <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_deux" id="produit_deux" value="Acheter">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
@@ -124,7 +127,7 @@ include('scripts/alimentation.php');
                             </div>
                         </div>
                         <!-----------------Card 3------------------------------------->
-                        <div class="col h-100 d-flex justify-content-center my-5">
+                        <div id="slide1-prod3" class="col h-100 d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_trois'] . '€' ?></div>
@@ -145,7 +148,7 @@ include('scripts/alimentation.php');
 
                                     <div class="d-flex align-items-center justify-content-center">
 
-                                        <form method="POST">
+                                        <form action="#slide1-prod3" method="POST">
                                             <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_trois" id="produit_trois" value="Acheter">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
@@ -154,7 +157,7 @@ include('scripts/alimentation.php');
                             </div>
                         </div>
                         <!-----------------Card 4------------------------------------->
-                        <div class="col h-100 d-flex justify-content-center my-5">
+                        <div id="slide1-prod4" class="col h-100 d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_quatre'] . '€' ?></div>
@@ -175,7 +178,7 @@ include('scripts/alimentation.php');
 
                                     <div class="d-flex align-items-center justify-content-center">
 
-                                        <form method="POST">
+                                        <form action="#slide1-prod4" method="POST">
                                             <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_quatre" id="produit_quatre" value="Acheter">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
@@ -184,7 +187,7 @@ include('scripts/alimentation.php');
                             </div>
                         </div>
                         <!-----------------Card 5------------------------------------->
-                        <div class="col h-100 d-flex justify-content-center my-5">
+                        <div id="slide1-prod5" class="col h-100 d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_cinq'] . '€' ?></div>
@@ -205,7 +208,7 @@ include('scripts/alimentation.php');
 
                                     <div class="d-flex align-items-center justify-content-center">
 
-                                        <form method="POST">
+                                        <form action="#slide1-prod5" method="POST">
                                             <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_cinq" id="produit_cinq" value="Acheter">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
@@ -214,7 +217,7 @@ include('scripts/alimentation.php');
                             </div>
                         </div>
                         <!-----------------Card 6s------------------------------------->
-                        <div class="col h-100 d-flex justify-content-center my-5">
+                        <div id="slide1-prod6" class="col h-100 d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_six'] . '€' ?></div>
@@ -235,7 +238,7 @@ include('scripts/alimentation.php');
 
                                     <div class="d-flex align-items-center justify-content-center">
 
-                                        <form method="POST">
+                                        <form action="#slide1-prod6" method="POST">
                                             <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_six" id="produit_six" value="Acheter">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
@@ -283,7 +286,7 @@ include('scripts/alimentation.php');
                             </div>
                         </div>
                         <!-----------------Card 2------------------------------------->
-                        <div class="col h-100 d-flex justify-content-center my-5">
+                        <div id="slide2-prod2" class="col h-100 d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_un'] . '€' ?></div>
@@ -304,7 +307,7 @@ include('scripts/alimentation.php');
 
                                     <div class="d-flex align-items-center justify-content-center">
 
-                                        <form method="POST">
+                                        <form action="#slide2-prod2" method="POST">
                                             <input class="btn btn-sm btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Acheter">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
@@ -313,7 +316,7 @@ include('scripts/alimentation.php');
                             </div>
                         </div>
                         <!-----------------Card 3------------------------------------->
-                        <div class="col h-100 d-flex justify-content-center my-5">
+                        <div id="slide2-prod3" class="col h-100 d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_un'] . '€' ?></div>
@@ -334,7 +337,7 @@ include('scripts/alimentation.php');
 
                                     <div class="d-flex align-items-center justify-content-center">
 
-                                        <form method="POST">
+                                        <form action="#slide2-prod3" method="POST">
                                             <input class="btn btn-sm btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Acheter">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
@@ -343,7 +346,7 @@ include('scripts/alimentation.php');
                             </div>
                         </div>
                         <!-----------------Card 4------------------------------------->
-                        <div class="col h-100 d-flex justify-content-center my-5">
+                        <div id="slide2-prod4" class="col h-100 d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_un'] . '€' ?></div>
@@ -364,7 +367,7 @@ include('scripts/alimentation.php');
 
                                     <div class="d-flex align-items-center justify-content-center">
 
-                                        <form method="POST">
+                                        <form action="#slide2-prod4" method="POST">
                                             <input class="btn btn-sm btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Acheter">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
@@ -373,7 +376,7 @@ include('scripts/alimentation.php');
                             </div>
                         </div>
                         <!-----------------Card 5------------------------------------->
-                        <div class="col h-100 d-flex justify-content-center my-5">
+                        <div id="slide2-prod5" class="col h-100 d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_un'] . '€' ?></div>
@@ -394,7 +397,7 @@ include('scripts/alimentation.php');
 
                                     <div class="d-flex align-items-center justify-content-center">
 
-                                        <form method="POST">
+                                        <form action="#slide2-prod5" method="POST">
                                             <input class="btn btn-sm btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Acheter">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
@@ -403,7 +406,7 @@ include('scripts/alimentation.php');
                             </div>
                         </div>
                         <!-----------------Card 6s------------------------------------->
-                        <div class="col h-100 d-flex justify-content-center my-5">
+                        <div id="slide2-prod6" class="col h-100 d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_un'] . '€' ?></div>
@@ -424,7 +427,7 @@ include('scripts/alimentation.php');
 
                                     <div class="d-flex align-items-center justify-content-center">
 
-                                        <form method="POST">
+                                        <form action="#slide2-prod6" method="POST">
                                             <input class="btn btn-sm btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Acheter">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
@@ -472,7 +475,7 @@ include('scripts/alimentation.php');
                             </div>
                         </div>
                         <!-----------------Card 2------------------------------------->
-                        <div class="col h-100 d-flex justify-content-center my-5">
+                        <div id="slide3-prod2" class="col h-100 d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_un'] . '€' ?></div>
@@ -493,7 +496,7 @@ include('scripts/alimentation.php');
 
                                     <div class="d-flex align-items-center justify-content-center">
 
-                                        <form method="POST">
+                                        <form action="#slide3-prod2" method="POST">
                                             <input class="btn btn-sm btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Acheter">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
@@ -502,7 +505,7 @@ include('scripts/alimentation.php');
                             </div>
                         </div>
                         <!-----------------Card 3------------------------------------->
-                        <div class="col h-100 d-flex justify-content-center my-5">
+                        <div id="slide3-prod3" class="col h-100 d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_un'] . '€' ?></div>
@@ -523,7 +526,7 @@ include('scripts/alimentation.php');
 
                                     <div class="d-flex align-items-center justify-content-center">
 
-                                        <form method="POST">
+                                        <form action="#slide3-prod3" method="POST">
                                             <input class="btn btn-sm btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Acheter">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
@@ -532,7 +535,7 @@ include('scripts/alimentation.php');
                             </div>
                         </div>
                         <!-----------------Card 4------------------------------------->
-                        <div class="col h-100 d-flex justify-content-center my-5">
+                        <div id="slide3-prod4" class="col h-100 d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_un'] . '€' ?></div>
@@ -553,7 +556,7 @@ include('scripts/alimentation.php');
 
                                     <div class="d-flex align-items-center justify-content-center">
 
-                                        <form method="POST">
+                                        <form action="#slide3-prod4" method="POST">
                                             <input class="btn btn-sm btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Acheter">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
@@ -562,7 +565,7 @@ include('scripts/alimentation.php');
                             </div>
                         </div>
                         <!-----------------Card 5------------------------------------->
-                        <div class="col h-100 d-flex justify-content-center my-5">
+                        <div id="slide3-prod5" class="col h-100 d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_un'] . '€' ?></div>
@@ -583,7 +586,7 @@ include('scripts/alimentation.php');
 
                                     <div class="d-flex align-items-center justify-content-center">
 
-                                        <form method="POST">
+                                        <form action="#slide3-prod5" method="POST">
                                             <input class="btn btn-sm btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Acheter">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
@@ -592,7 +595,7 @@ include('scripts/alimentation.php');
                             </div>
                         </div>
                         <!-----------------Card 6s------------------------------------->
-                        <div class="col h-100 d-flex justify-content-center my-5">
+                        <div id="slide3-prod6" class="col h-100 d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_un'] . '€' ?></div>
@@ -613,7 +616,7 @@ include('scripts/alimentation.php');
 
                                     <div class="d-flex align-items-center justify-content-center">
 
-                                        <form method="POST">
+                                        <form action="#slide3-prod6" method="POST">
                                             <input class="btn btn-sm btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Acheter">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
@@ -624,7 +627,25 @@ include('scripts/alimentation.php');
                     </div>
                 </div>
 
+                <!------------------------ Slide Ajout ----------------------------->
+                <div class="carousel-item">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
 
+                        <!-----------------Card 1------------------------------------->
+                        <?php create_html(0); ?>
+                        <!-----------------ard 2------------------------------------->
+                        <?php create_html(1); ?>
+                        <!-----------------Card 3------------------------------------->
+                        <?php create_html(2); ?>
+                        <!-----------------Card 4------------------------------------->
+                        <?php create_html(3); ?>
+                        <!-----------------Card 5------------------------------------->
+                        <?php create_html(4); ?>
+                        <!-----------------Card 6------------------------------------->
+                        <?php create_html(5); ?>
+
+                    </div>
+                </div>
 
             </div>
 
