@@ -1,5 +1,14 @@
+<?php 
+    $txt = fopen('../data/connexion.txt','rb');
+   if ( isset($_POST['user']) and $_POST['user'] === fgets($txt,6)  )
+    {
+        fgets($txt);
+        if (isset($_POST['mdp']) and $_POST['mdp'] === fgets($txt))
+        {
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -23,7 +32,7 @@
     </header>
 
     <section class="container mt-5">
-        <form action="../proposition2.php" method="POST">
+        <form action="../index.php" method="POST">
             <div class="form-group row">
                 <label for="nom_produit" class="col-md-3 col-form-label font-weight-bold">Nom du produit:</label>
                 <div class="col-md-9">
@@ -81,3 +90,17 @@
 </body>
 
 </html>
+
+<?php 
+
+    }
+    else {
+        
+        echo 'Permission refusée';
+    }
+    }
+    else {
+        
+        echo 'Permission refusée';
+    }
+?>
