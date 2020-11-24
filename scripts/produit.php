@@ -71,7 +71,7 @@ function create_html_deux()
         {
     ?>
 
-    <div class="col h-100 d-flex justify-content-center my-5">
+    <div class="col d-flex justify-content-center my-5">
     <div class="card" style="width: 18rem;">
         <h5 class="card-title text-center py-2 border-bottom"><?php echo $value['nom2']; ?></h5>
         <div class="prix text-center text-danger"><?php echo $value['prix_initial2']; ?> € </div>
@@ -93,7 +93,7 @@ function create_html_deux()
             <div class="d-flex align-items-center justify-content-center">
 
                 <form method="POST">
-                    <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Acheter">
+                    <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Enchérir">
                 </form>
                 <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
             </div>
