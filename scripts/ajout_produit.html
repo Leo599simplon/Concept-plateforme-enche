@@ -23,7 +23,7 @@
     </header>
 
     <section class="container mt-5">
-        <form action="create_card.php" method="POST">
+        <form action="../index.php" method="POST">
             <div class="form-group row">
                 <label for="nom_produit" class="col-md-3 col-form-label font-weight-bold">Nom du produit:</label>
                 <div class="col-md-9">
@@ -73,11 +73,118 @@
                 </div>
             </div>
 
+            <div class="form-group row">
+                <label for="augmentation_duree" class="col-md-3 col-form-label font-weight-bold">Date fin enchère :</label>
+                <div class="col-md-9">
+                    <input type="date" id="date" name="party" value="2017-06-01" required>
+                    <input id="appt-time" type="time" name="appt-time">
+                </div>
+            </div>
+            <!-- 
+            <div class="form-group row">
+                <label for="exampleFormControlSelect1" class="col-md-3 col-form-label font-weight-bold">Selection Date Fin: </label>
+                <div class="col-md-9">
+                    <select class="form-control" id="jour"> 
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                        <option>31</option>
+                      </select>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="exampleFormControlSelect1" class="col-md-3 col-form-label font-weight-bold">Selection Date Fin: Mois</label>
+                <div class="col-md-9">
+                    <select class="form-control" id="mois">
+                        <option>Jan</option>
+                        <option>fev</option>
+                        <option>Mar</option>
+                        <option>Avr</option>
+                        <option>Mai</option>
+                        <option>Jun</option>
+                        <option>Jui</option>
+                        <option>Aou</option>
+                        <option>Sep</option>
+                        <option>Oct</option>
+                        <option>Nov</option>
+                        <option>Dec</option>
+                      </select>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="exampleFormControlSelect1" class="col-md-3 col-form-label font-weight-bold">Selection Date Fin: Année</label>
+                <div class="col-md-9">
+                    <select class="form-control" id="annees">
+                        <option>2020</option>
+                        <option>2021</option>
+                        <option>2022</option>
+                        <option>2023</option>
+                        <option>2024</option>
+                        <option>2025</option>
+                        <option>2026</option>
+                        <option>2027</option>
+                        <option>2028</option>
+                        <option>2029</option>
+                        <option>2030</option>
+                      </select>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="prix_initial" class="col-md-3 col-form-label font-weight-bold">selection Date Fin: heures</label>
+                <div class="col-md-9">
+                    <input type="number" class="form-control" id="date_minutes" name="date_minutes" placeholder="Exemple : 2€" required min="1" max="60">
+                </div>
+            </div>
+            
+
+            <div class="form-group row">
+                <label for="prix_initial" class="col-md-3 col-form-label font-weight-bold">selection Date Fin: Minutes</label>
+                <div class="col-md-9">
+                    <input type="number" class="form-control" id="date_minutes" name="date_minutes" placeholder="Exemple : 2€" required min="1" max="60">
+                </div>
+            </div>
+            -->
+    
+
+             
+
             <div class="justify-content-end d-flex row">
                 <input class="btn btn-secondary mr-3 mb-5 mt-5 p-2 border-0" name="form" type="submit" value="Ajouter le produit">
             </div>
         </form>
     </section>
+
+    <script src="../scripts/date-enchere.js"></script>
 </body>
 
 </html>
