@@ -634,11 +634,35 @@ include('scripts/produit.php');
                 </div>
 
                 <!------------------------ Slide Ajout ----------------------------->
+                <!------------------------ Slide Ajout ----------------------------->
+                <div class="carousel-item">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
+
+                        <!-----------------Card 1------------------------------------->
+                        <?php create_html_un(); ?>
+                        
+
+                    </div>
+                </div>
+
+                <!------------------------ Slide Ajout ----------------------------->
                 <div class="carousel-item">
                     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
 
                         <!-----------------Card 1------------------------------------->
                         <?php create_html_deux(); ?>
+                        
+
+                    </div>
+                </div>
+
+                 <!------------------------ Slide Ajout ----------------------------->
+                 <div class="carousel-item">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
+
+                        <!-----------------Card 1------------------------------------->
+                        <?php create_html_trois(); ?>
+                        
 
                     </div>
                 </div>
