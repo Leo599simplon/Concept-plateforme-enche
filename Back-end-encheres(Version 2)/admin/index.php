@@ -70,11 +70,15 @@ include '../scripts/file.php';
 include '../scripts/enchere.php';
 
 // Si les paramètres ont été envoyés (ergo, si la création d'une enchère est demandée)
-if (isset($_POST['titre']) && $_POST['titre'] != ""
+if (isset($_POST['id']) && $_POST['id'] != ""
+ && isset($_POST['titre']) && $_POST['titre'] != ""
  && isset($_POST['desc'])  && $_POST['desc']  != ""
- && isset($_POST['prix'])  && $_POST['prix']  != ""
+ && isset($_POST['price'])  && $_POST['price']  != ""
  && isset($_POST['clic'])  && $_POST['clic']  != ""
- && isset($_POST['step'])  && $_POST['step']  != "") {
+ && isset($_POST['stepprice'])  && $_POST['stepprice']  != ""
+ && isset($_POST['deadline']) && $_POST['deadline'] != ""
+ && isset($_POST['steptime']) && $_POST['steptime'] != ""
+ ) {
 	
 	// Chargement des enchères
 	$cartonJson = load();
@@ -84,14 +88,16 @@ if (isset($_POST['titre']) && $_POST['titre'] != ""
 
 	// Création des objets php
 	for ($temp = 0; $temp < count($cartonJson); $temp++) {
-		if ($cartonJson[$temp]["m_time"] > time() ) {
+		if ($cartonJson[$temp]["m_deadline"] > time() ) {
 			$carton[$temp - $offset] = new Enchere(
+											$cartonJson[$temp]["m_id"]
 											$cartonJson[$temp]["m_titre"],
 											$cartonJson[$temp]["m_desc"],
 											$cartonJson[$temp]["m_clic"],
-											$cartonJson[$temp]["m_step"],
-											$cartonJson[$temp]["m_prix"],
-											$cartonJson[$temp]["m_time"]
+											$cartonJson[$temp]["m_stepprice"],
+											$cartonJson[$temp]["m_price"],
+											$cartonJson[$temp]["m_deadline"],
+											$cartonJson[$temp]["m_steptime"]
 			);
 		} else {
 			$offset++;
@@ -100,12 +106,14 @@ if (isset($_POST['titre']) && $_POST['titre'] != ""
 	
 	// Création et insertion de la nouvelle enchère
 	$carton[$temp - $offset] = new Enchere(
+										sizeof($json),
 										$_POST["titre"],
 										$_POST["desc"],
 										$_POST["clic"],
-										$_POST["step"],
-										$_POST["prix"],
-										time()+300
+										$_POST["stepprice"],
+										$_POST["price"],
+										$_POST["deadline"],
+										$_POST["steptime"]
 	);
 	
 	// enregistrement
