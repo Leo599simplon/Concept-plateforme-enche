@@ -31,8 +31,11 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['produit_six'])) {
         $_SESSION['produit_six'] += 0.02;
 }
 
+<<<<<<< HEAD:scripts/alimentation.php
 
 /* slide2 */
+=======
+>>>>>>> 344930143ac76db2752258a48d49b31d17dcde8d:scripts/encherir.php
 if ($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['produit_sept'])) {
 
         $_SESSION['produit_sept'] += 0.02;

@@ -1,5 +1,14 @@
+<?php 
+    $txt = fopen('../data/connexion.txt','rb');
+   if ( isset($_POST['user']) and $_POST['user'] === fgets($txt,6)  )
+    {
+        fgets($txt);
+        if (isset($_POST['mdp']) and $_POST['mdp'] === fgets($txt))
+        {
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -27,57 +36,71 @@
             <div class="form-group row">
                 <label for="nom_produit" class="col-md-3 col-form-label font-weight-bold">Nom du produit:</label>
                 <div class="col-md-9">
-                    <input type="text" class="form-control" id="nom_produit" name="nom_produit" placeholder="Exemple : iphone 6, etc." pattern="[a-zA-Z0-9 ]+" required>
+                    <input type="text" class="form-control" id="nom_produit2" name="nom_produit2" placeholder="Exemple : iphone 6, etc." pattern="[a-zA-Z0-9 ]+" required>
                 </div>
             </div>
 
             <div class="form-group row">
                 <label for="description" class="col-md-3 col-form-label font-weight-bold">Description:</label>
                 <div class="col-md-9">
-                    <input type="text" class="form-control" id="description" name="description" placeholder="Description du produit" pattern="[a-zA-Z0-9 é & è ç ! à ù , ; . £ * # ]+">
+                    <input type="text" class="form-control" id="description2" name="description2" placeholder="Description du produit" pattern="[a-zA-Z0-9 é & è ç ! à ù , ; . £ * # ]+">
                 </div>
             </div>
 
             <div class="form-group row">
                 <label for="image" class="col-md-3 col-form-label font-weight-bold">Image du produit</label>
                 <div class="col-md-9">
-                    <input type="file" class="form-control" name="image" id="image" required>
+                    <input type="file" class="form-control" name="image2" id="image2" required>
                 </div>
             </div>
 
             <div class="form-group row">
                 <label for="prix_initial" class="col-md-3 col-form-label font-weight-bold">Prix initial (en €):</label>
                 <div class="col-md-9">
-                    <input type="number" class="form-control" id="prix_initial" name="prix_initial" placeholder="Exemple : 2€" required min="1">
+                    <input type="number" class="form-control" id="prix_initial2" name="prix_initial2" placeholder="Exemple : 2€" required min="1">
                 </div>
             </div>
 
             <div class="form-group row">
                 <label for="prix_clic" class="col-md-3 col-form-label font-weight-bold">Prix du clic (en cts)</label>
                 <div class="col-md-9">
-                    <input type="number" class="form-control" id="prix_clic" name="prix_clic" placeholder="Exemple : 30cts" required min="1">
+                    <input type="number" class="form-control" id="prix_clic2" name="prix_clic2" placeholder="Exemple : 30cts" required min="1">
                 </div>
             </div>
 
             <div class="form-group row">
                 <label for="augmentation_prix" class="col-md-3 col-form-label font-weight-bold">Augmentation prix enchère (en cts):</label>
                 <div class="col-md-9">
-                    <input type="number" class="form-control" id="augmentation_prix" name="augmentation_prix" placeholder="Exemple : 2cts" required min="1">
+                    <input type="number" class="form-control" id="augmentation_prix2" name="augmentation_prix2" placeholder="Exemple : 2cts" required min="1">
                 </div>
             </div>
 
             <div class="form-group row">
                 <label for="augmentation_duree" class="col-md-3 col-form-label font-weight-bold">Augmentation durée enchère (en secondes):</label>
                 <div class="col-md-9">
-                    <input type="number" class="form-control" id="augmentation_duree" name="augmentation_duree" placeholder="Exemple : 30sec" required min="1">
+                    <input type="number" class="form-control" id="augmentation_duree2" name="augmentation_duree2" placeholder="Exemple : 30sec" required min="1">
                 </div>
             </div>
 
             <div class="justify-content-end d-flex row">
-                <input class="btn btn-secondary mr-3 mb-5 mt-5 p-2 border-0" name="form" type="submit" value="Ajouter le produit">
+                <input class="btn btn-secondary mr-3 mb-5 mt-5 p-2 border-0" name="form2" type="submit" value="Ajouter le produit">
             </div>
         </form>
     </section>
 </body>
 
 </html>
+
+<?php 
+
+    }
+    else {
+        
+        echo 'Permission refusée';
+    }
+    }
+    else {
+        
+        echo 'Permission refusée';
+    }
+?>
