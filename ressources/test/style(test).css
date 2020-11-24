@@ -20,26 +20,18 @@ header{
     box-shadow: 0 0 2px 1px green;
  }*/
 
-
-.card{
-    box-shadow: 3px 3px 3px #575957;
-}
-.btn, .btn-lg {
+.btn, .btn-sm {
     background-color: #FF9800;
     border-radius: 10px;
 }
+
+
 .card-title {
     background-color: #81C784;
     color: white;
 }
-.card-img-top{
-    max-width: 286px;
-    max-height: 240px;
-}
 .card-body{
-    height: 40px;
-    padding: 10px;
-    text-align: center;
+    height: 60px;
 }
 .card-text{
     font-size:13px ;
@@ -56,18 +48,15 @@ button{
     width: 90px;
 }
 .descriptionDuProduit{
-    padding: 10px;
-    margin-bottom: 0!important;
+    padding: 20 20 20 20;
 }
 .prix{
     font-weight: bold;
-    font-size: 34px;
 }
 .infoPrix{
     font-weight: normal;
     word-spacing: 10px;
 }
-
 .carousel-control-prev, .carousel-control-next{
     height: 20px;
 }
