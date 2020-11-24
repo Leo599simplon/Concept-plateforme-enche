@@ -45,7 +45,13 @@ include('scripts/produit.php');
 
 <body>
     <!------------------------Header-------------------------------------------------------->
-
+    <section id="connexion">
+        <form action="scripts/ajout_produit.php" method="POST">
+        <input type="text" name="user" id="user" placeholder="Nom d'utilisateur"> <br>
+        <input type="password" name="mdp" id="mdp" placeholder="Mot de passe"> <br>
+        <input type="submit" name="connexion" id="connexion" value="Connexion">
+        </form>
+    </section>
     <header class="container-fluid d-flex justify-content-center align-items-center">
         <h1 class="col-m-4 text-center font-weight-bold">NOM DE L'APPLICATION</h1>
     </header>
