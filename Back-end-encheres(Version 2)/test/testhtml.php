@@ -6,6 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    <?php include('divhtml.html');?>
+    <?php 
+    load()
+        for($i=0, $i<sizeof($json), ++$i){
+            include('cardhtml.php')
+        }
+        )
+    ?>
 </body>
 </html>
