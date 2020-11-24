@@ -1,12 +1,9 @@
 <?php 
 
-
-
-
 function create_tab()
 {
-    $tab_provi = array('nom' => $_POST['nom_produit'], 'description' =>$_POST['description'], 'image' => $_POST['image'],'prix_initial' => $_POST['prix_initial'],
-    'aug_prix'=>$_POST['augmentation_prix'], 'aug_duree' => $_POST['augmentation_duree'], 'prix_clic' => $_POST['prix_clic']
+    $tab_provi = array('nom2' => $_POST['nom_produit2'], 'description2' =>$_POST['description2'], 'image2' => $_POST['image2'],'prix_initial2' => $_POST['prix_initial2'],
+    'aug_prix2'=>$_POST['augmentation_prix2'], 'aug_duree2' => $_POST['augmentation_duree2'], 'prix_clic2' => $_POST['prix_clic2']
 );
 
 
@@ -16,10 +13,10 @@ function create_tab()
 return $tab_provi;
 }
 
-if ($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['form']))
+if ($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['form2']))
 {
    
-  array_push($_SESSION['tab_produit'],create_tab());
+  array_push($_SESSION['tab_produit2'],create_tab());
     
 }
 
@@ -28,38 +25,39 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['form']))
 
 function create_html($i)
 {
-    if (count($_SESSION['tab_produit']) > $i)
+    if (count($_SESSION['tab_produit2']) > $i)
     {
    
     
     echo '<div class="col h-100 d-flex justify-content-center my-5">
-              <div class="card" style="width: 18rem;">
-                <h5 class="card-title text-center py-2 border-bottom">'.$_SESSION['tab_produit'][$i]['nom'].'</h5>'.
-                '<div class="description border-bottom">
-                  <p class="descriptionDuProduit text-center">'.$_SESSION['tab_produit'][$i]['description'].'</p>
+    <div class="card" style="width: 18rem;">
+        <h5 class="card-title text-center py-2 border-bottom">'.$_SESSION['tab_produit2'][$i]['nom2'].'</h5>
+        <div class="prix text-center text-danger">'.$_SESSION['tab_produit2'][$i]['prix_initial2'] . '€ </div>
+        <img src="ressources/img/'.$_SESSION['tab_produit2'][$i]['image2'].'" class="card-img-top border-bottom" alt="...">
+        <div class="description border-bottom">
+            <p class="descriptionDuProduit text-center">'.$_SESSION['tab_produit2'][$i]['description2'].'</p>
 
-                </div>
-                <img src="ressources/img/'.$_SESSION['tab_produit'][$i]['image'].'" class="card-img-top border-bottom" alt="...">
-                <div class="card-body d-flex align-items-center">
-                  <p class="card-text">
-                    Prix du clic: <i class="infoPrix pl-5">50cts/clic</i><br>
-                    Prix de l\'enchère: <i class="infoPrix">  '.$_SESSION['tab_produit'][$i]['aug_prix'].'cts/clics</i>
-                  </p>
-                </div>
-                <div class="card-footer d-flex flex-column justify-content-around">
-                  <h6>Durée:
-                    <div class="float-right pr-5 font-weight-bold"> 00:15:60</div>
-                  </h6>
+        </div>
+        <div class="card-body d-flex align-items-center">
+            <p class="card-text">
+                Prix de l\'enchère:<i class="infoPrix"> +'.$_SESSION['tab_produit2'][$i]['aug_prix2'].'cts/clics</i>
+            </p>
+        </div>
+        <div class="card-footer d-flex flex-column justify-content-around">
+            <h6>Durée:
+                <div class="float-right font-weight-bold"> 00:15:60</div>
+            </h6>
 
-                  <div class="d-flex align-items-center justify-content-between">
-                    <div class="prix">'.$_SESSION['tab_produit'][$i]['prix_initial']. '€ </div>
-                    <form method="POST">
-                      <input class="btn btn-sm btn-warning float-right" type="submit" name="produit_quatre" id="produit_quatre" value="Enchérir">
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>';
+            <div class="d-flex align-items-center justify-content-center">
+
+                <form method="POST">
+                    <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Acheter">
+                </form>
+                <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
+            </div>
+        </div>
+    </div>
+</div>';
         
 }
 else {echo '';}
