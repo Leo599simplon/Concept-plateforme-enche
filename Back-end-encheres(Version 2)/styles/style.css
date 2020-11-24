@@ -1,0 +1,12 @@
+header{
+
+    height: 308px;
+    background-color: #C4C4C4;
+}
+.prix{
+    width: 100px;
+    height: 50px;
+    background-color: brown;
+    font-size: 15pt;
+    color: white;
+}
