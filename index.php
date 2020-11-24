@@ -634,15 +634,42 @@ include('scripts/produit.php');
                 </div>
 
                 <!------------------------ Slide Ajout ----------------------------->
+                <!------------------------ Slide Ajout ----------------------------->
+                <?php if (count($_SESSION['tab_produit2']) >= 1) { ?>
+                <div class="carousel-item">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
+
+                        <!-----------------Card 1------------------------------------->
+                        <?php create_html_un(); ?>
+                        
+
+                    </div>
+                </div>
+                <?php } ?>
+                <!------------------------ Slide Ajout ----------------------------->
+                <?php if (count($_SESSION['tab_produit2']) >= 6) { ?>
                 <div class="carousel-item">
                     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
 
                         <!-----------------Card 1------------------------------------->
                         <?php create_html_deux(); ?>
+                        
 
                     </div>
                 </div>
+                <?php } ?> 
+                 <!------------------------ Slide Ajout ----------------------------->
+                 <?php if (count($_SESSION['tab_produit2'])>= 12) { ?>
+                 <div class="carousel-item">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
 
+                        <!-----------------Card 1------------------------------------->
+                        <?php create_html_trois(); ?>
+                        
+
+                    </div>
+                </div>
+                 <?php } ?>
             </div>
 
             <a class="carousel-control-prev my-lg-auto" href="#carouselExampleIndicators" role="button" data-slide="prev">
