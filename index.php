@@ -73,11 +73,11 @@ include('scripts/produit.php');
                     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
 
                         <!-----------------Card 1------------------------------------->
-                        <div class="col h-100 d-flex justify-content-center my-5">
+                        <div class="col d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_un'] . '€' ?></div>
-                                <img src="ressources/img/iphone.jpg" class="card-img-top border-bottom" alt="...">
+                                <img src="ressources/img/936378.jpg" class="card-img-top border-bottom" alt="...">
                                 <div class="description border-bottom">
                                     <p class="descriptionDuProduit text-center">Ceci est une petite description du produit</p>
 
@@ -103,7 +103,7 @@ include('scripts/produit.php');
                             </div>
                         </div>
                         <!-----------------Card 2------------------------------------->
-                        <div id="slide1-prod2" class="col h-100 d-flex justify-content-center my-5">
+                        <div id="slide1-prod2" class="col d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_deux'] . '€' ?></div>
@@ -133,7 +133,7 @@ include('scripts/produit.php');
                             </div>
                         </div>
                         <!-----------------Card 3------------------------------------->
-                        <div id="slide1-prod3" class="col h-100 d-flex justify-content-center my-5">
+                        <div id="slide1-prod3" class="col d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_trois'] . '€' ?></div>
@@ -163,7 +163,7 @@ include('scripts/produit.php');
                             </div>
                         </div>
                         <!-----------------Card 4------------------------------------->
-                        <div id="slide1-prod4" class="col h-100 d-flex justify-content-center my-5">
+                        <div id="slide1-prod4" class="col d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_quatre'] . '€' ?></div>
@@ -193,7 +193,7 @@ include('scripts/produit.php');
                             </div>
                         </div>
                         <!-----------------Card 5------------------------------------->
-                        <div id="slide1-prod5" class="col h-100 d-flex justify-content-center my-5">
+                        <div id="slide1-prod5" class="col d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_cinq'] . '€' ?></div>
@@ -223,7 +223,7 @@ include('scripts/produit.php');
                             </div>
                         </div>
                         <!-----------------Card 6s------------------------------------->
-                        <div id="slide1-prod6" class="col h-100 d-flex justify-content-center my-5">
+                        <div id="slide1-prod6" class="col d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_six'] . '€' ?></div>
@@ -262,7 +262,7 @@ include('scripts/produit.php');
                     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
 
                         <!-----------------Card 1------------------------------------->
-                        <div class="col h-100 d-flex justify-content-center my-5">
+                        <div class="col d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_un'] . '€' ?></div>
@@ -292,7 +292,7 @@ include('scripts/produit.php');
                             </div>
                         </div>
                         <!-----------------Card 2------------------------------------->
-                        <div id="slide2-prod2" class="col h-100 d-flex justify-content-center my-5">
+                        <div id="slide2-prod2" class="col d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_un'] . '€' ?></div>
@@ -322,7 +322,7 @@ include('scripts/produit.php');
                             </div>
                         </div>
                         <!-----------------Card 3------------------------------------->
-                        <div id="slide2-prod3" class="col h-100 d-flex justify-content-center my-5">
+                        <div id="slide2-prod3" class="col d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_un'] . '€' ?></div>
@@ -352,7 +352,7 @@ include('scripts/produit.php');
                             </div>
                         </div>
                         <!-----------------Card 4------------------------------------->
-                        <div id="slide2-prod4" class="col h-100 d-flex justify-content-center my-5">
+                        <div id="slide2-prod4" class="col d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_un'] . '€' ?></div>
@@ -382,7 +382,7 @@ include('scripts/produit.php');
                             </div>
                         </div>
                         <!-----------------Card 5------------------------------------->
-                        <div id="slide2-prod5" class="col h-100 d-flex justify-content-center my-5">
+                        <div id="slide2-prod5" class="col d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_un'] . '€' ?></div>
@@ -412,7 +412,7 @@ include('scripts/produit.php');
                             </div>
                         </div>
                         <!-----------------Card 6s------------------------------------->
-                        <div id="slide2-prod6" class="col h-100 d-flex justify-content-center my-5">
+                        <div id="slide2-prod6" class="col d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_un'] . '€' ?></div>
@@ -451,7 +451,7 @@ include('scripts/produit.php');
                     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
 
                         <!-----------------Card 1------------------------------------->
-                        <div class="col h-100 d-flex justify-content-center my-5">
+                        <div class="col d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_un'] . '€' ?></div>
@@ -481,7 +481,7 @@ include('scripts/produit.php');
                             </div>
                         </div>
                         <!-----------------Card 2------------------------------------->
-                        <div id="slide3-prod2" class="col h-100 d-flex justify-content-center my-5">
+                        <div id="slide3-prod2" class="col d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_un'] . '€' ?></div>
@@ -511,7 +511,7 @@ include('scripts/produit.php');
                             </div>
                         </div>
                         <!-----------------Card 3------------------------------------->
-                        <div id="slide3-prod3" class="col h-100 d-flex justify-content-center my-5">
+                        <div id="slide3-prod3" class="col d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_un'] . '€' ?></div>
@@ -541,7 +541,7 @@ include('scripts/produit.php');
                             </div>
                         </div>
                         <!-----------------Card 4------------------------------------->
-                        <div id="slide3-prod4" class="col h-100 d-flex justify-content-center my-5">
+                        <div id="slide3-prod4" class="col d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_un'] . '€' ?></div>
@@ -571,7 +571,7 @@ include('scripts/produit.php');
                             </div>
                         </div>
                         <!-----------------Card 5------------------------------------->
-                        <div id="slide3-prod5" class="col h-100 d-flex justify-content-center my-5">
+                        <div id="slide3-prod5" class="col d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_un'] . '€' ?></div>
@@ -601,7 +601,7 @@ include('scripts/produit.php');
                             </div>
                         </div>
                         <!-----------------Card 6s------------------------------------->
-                        <div id="slide3-prod6" class="col h-100 d-flex justify-content-center my-5">
+                        <div id="slide3-prod6" class="col d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_un'] . '€' ?></div>

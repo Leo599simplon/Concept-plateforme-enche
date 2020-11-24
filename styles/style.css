@@ -72,6 +72,12 @@ button{
     height: 20px;
 }
 
+img
+{
+    height: 100%;
+    
+}
+
 @media (max-width:768px){
     .carousel-control-prev, .carousel-control-next{
         top: inherit!important;
