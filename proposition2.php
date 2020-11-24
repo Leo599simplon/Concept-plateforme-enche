@@ -679,7 +679,7 @@ include('scripts/produit2.php');
 
     <script>
         function jumpto(anchor) {
-            window.location = ("" + window.location).replace(/#[A-Za-z0-9_]*$/, '') + "#" + anchor;
+            window.location = ("" + window.location).replace(/#[A-Za-z0-9_]*$/, "") + "#" + anchor;
             console.log("ça marche");
         }
         console.log("ça marche aussi");
