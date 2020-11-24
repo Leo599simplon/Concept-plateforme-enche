@@ -39,14 +39,16 @@ $offset = 0;
 for ($temp = 0; $temp < count($cartonJson); $temp++) {
 	
 	// Si une la date d'une enchère est passée, on n'en crée pas d'objet
-	if ($cartonJson[$temp]["m_time"] > time() ) {
+	if ($cartonJson[$temp]["m_deadline"] > time() ) {
 		$carton[$temp - $offset] = new Enchere(
+										$cartonJson[$temp]["m_id"],
 	                                    $cartonJson[$temp]["m_titre"],
                                         $cartonJson[$temp]["m_desc"],
                                         $cartonJson[$temp]["m_clic"],
-                                        $cartonJson[$temp]["m_step"],
-                                        $cartonJson[$temp]["m_prix"],
-                                        $cartonJson[$temp]["m_time"]
+                                        $cartonJson[$temp]["m_stepprice"],
+                                        $cartonJson[$temp]["m_price"],
+										$cartonJson[$temp]["m_deadline"],
+										$cartonJson[$temp]["m_steptime"],
 		);
 	} else {
 		$offset++;
@@ -61,26 +63,26 @@ if ($offset > 0) {
 if (isset($_POST['enchere'])) {
 	
 	$seeker = 0;
-	$id = -1;
+	$i = -1;
 	
-	while ($id == -1 && $seeker < count($carton)) {
-		if ($carton[$seeker]->getTitre() == $_POST['enchere']) {
-			$id = $seeker;
+	while ($i == -1 && $seeker < count($carton)) {
+		if ($carton[$seeker]->getId() == $_POST['enchere']) {
+			$i = $seeker;
 		}
 		$seeker++;
 	}
 	
-	if ($id != -1) {
-		$carton[$id]->enchere();
+	if ($i != -1) {
+		$carton[$i]->enchere();
 		
 		save($carton);
 	}
 }
 
-for ($temp = 0; $temp < count($carton); $temp++) {
+/**for ($temp = 0; $temp < count($carton); $temp++) {
 	$carton[$temp]->display();
 }
-
+*/
 ?>
 
     </div>

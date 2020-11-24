@@ -8,7 +8,7 @@
 <body>
     <?php 
     load()
-        for($i=0, $i<sizeof($json), ++$i){
+        for($i=0, $i<sizeof($json)-1, ++$i){
             include('cardhtml.php')
         }
         )
