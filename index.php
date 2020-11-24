@@ -635,6 +635,7 @@ include('scripts/produit.php');
 
                 <!------------------------ Slide Ajout ----------------------------->
                 <!------------------------ Slide Ajout ----------------------------->
+                <?php if (count($_SESSION['tab_produit2']) >= 1) { ?>
                 <div class="carousel-item">
                     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
 
@@ -644,8 +645,9 @@ include('scripts/produit.php');
 
                     </div>
                 </div>
-
+                <?php } ?>
                 <!------------------------ Slide Ajout ----------------------------->
+                <?php if (count($_SESSION['tab_produit2']) >= 6) { ?>
                 <div class="carousel-item">
                     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
 
@@ -655,8 +657,9 @@ include('scripts/produit.php');
 
                     </div>
                 </div>
-
+                <?php } ?> 
                  <!------------------------ Slide Ajout ----------------------------->
+                 <?php if (count($_SESSION['tab_produit2'])>= 12) { ?>
                  <div class="carousel-item">
                     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
 
@@ -666,7 +669,7 @@ include('scripts/produit.php');
 
                     </div>
                 </div>
-
+                 <?php } ?>
             </div>
 
             <a class="carousel-control-prev my-lg-auto" href="#carouselExampleIndicators" role="button" data-slide="prev">
