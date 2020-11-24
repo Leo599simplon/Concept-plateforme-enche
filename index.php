@@ -39,13 +39,19 @@ include('scripts/produit.php');
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
 
-    <title>Document</title>
+    <title>page site enchere !</title>
 
 </head>
 
 <body>
     <!------------------------Header-------------------------------------------------------->
-
+    <section id="connexion">
+        <form action="scripts/ajout_produit.php" method="POST">
+        <input type="text" name="user" id="user" placeholder="Nom d'utilisateur"> <br>
+        <input type="password" name="mdp" id="mdp" placeholder="Mot de passe"> <br>
+        <input type="submit" name="connexion" id="connexion" value="Connexion">
+        </form>
+    </section>
     <header class="container-fluid d-flex justify-content-center align-items-center">
         <h1 class="col-m-4 text-center font-weight-bold">NOM DE L'APPLICATION</h1>
     </header>
@@ -67,11 +73,11 @@ include('scripts/produit.php');
                     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
 
                         <!-----------------Card 1------------------------------------->
-                        <div class="col h-100 d-flex justify-content-center my-5">
+                        <div class="col d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_un'] . '€' ?></div>
-                                <img src="ressources/img/iphone.jpg" class="card-img-top border-bottom" alt="...">
+                                <img src="ressources/img/936378.jpg" class="card-img-top border-bottom" alt="...">
                                 <div class="description border-bottom">
                                     <p class="descriptionDuProduit text-center">Ceci est une petite description du produit</p>
 
@@ -89,7 +95,7 @@ include('scripts/produit.php');
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form method="POST">
-                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Acheter">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Enchérir">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -97,7 +103,7 @@ include('scripts/produit.php');
                             </div>
                         </div>
                         <!-----------------Card 2------------------------------------->
-                        <div id="slide1-prod2" class="col h-100 d-flex justify-content-center my-5">
+                        <div id="slide1-prod2" class="col d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_deux'] . '€' ?></div>
@@ -119,7 +125,7 @@ include('scripts/produit.php');
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form action="#slide1-prod2" method="POST">
-                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_deux" id="produit_deux" value="Acheter">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_deux" id="produit_deux" value="Enchérir">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -127,7 +133,7 @@ include('scripts/produit.php');
                             </div>
                         </div>
                         <!-----------------Card 3------------------------------------->
-                        <div id="slide1-prod3" class="col h-100 d-flex justify-content-center my-5">
+                        <div id="slide1-prod3" class="col d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_trois'] . '€' ?></div>
@@ -149,7 +155,7 @@ include('scripts/produit.php');
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form action="#slide1-prod3" method="POST">
-                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_trois" id="produit_trois" value="Acheter">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_trois" id="produit_trois" value="Enchérir">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -157,7 +163,7 @@ include('scripts/produit.php');
                             </div>
                         </div>
                         <!-----------------Card 4------------------------------------->
-                        <div id="slide1-prod4" class="col h-100 d-flex justify-content-center my-5">
+                        <div id="slide1-prod4" class="col d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_quatre'] . '€' ?></div>
@@ -179,7 +185,7 @@ include('scripts/produit.php');
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form action="#slide1-prod4" method="POST">
-                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_quatre" id="produit_quatre" value="Acheter">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_quatre" id="produit_quatre" value="Enchérir">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -187,7 +193,7 @@ include('scripts/produit.php');
                             </div>
                         </div>
                         <!-----------------Card 5------------------------------------->
-                        <div id="slide1-prod5" class="col h-100 d-flex justify-content-center my-5">
+                        <div id="slide1-prod5" class="col d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_cinq'] . '€' ?></div>
@@ -209,7 +215,7 @@ include('scripts/produit.php');
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form action="#slide1-prod5" method="POST">
-                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_cinq" id="produit_cinq" value="Acheter">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_cinq" id="produit_cinq" value="Enchérir">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -217,7 +223,7 @@ include('scripts/produit.php');
                             </div>
                         </div>
                         <!-----------------Card 6s------------------------------------->
-                        <div id="slide1-prod6" class="col h-100 d-flex justify-content-center my-5">
+                        <div id="slide1-prod6" class="col d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_six'] . '€' ?></div>
@@ -239,7 +245,7 @@ include('scripts/produit.php');
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form action="#slide1-prod6" method="POST">
-                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_six" id="produit_six" value="Acheter">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_six" id="produit_six" value="Enchérir">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -256,7 +262,7 @@ include('scripts/produit.php');
                     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
 
                         <!-----------------Card 1------------------------------------->
-                        <div class="col h-100 d-flex justify-content-center my-5">
+                        <div class="col d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_un'] . '€' ?></div>
@@ -278,7 +284,7 @@ include('scripts/produit.php');
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form method="POST">
-                                            <input class="btn btn-sm btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Acheter">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Enchérir">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -286,7 +292,7 @@ include('scripts/produit.php');
                             </div>
                         </div>
                         <!-----------------Card 2------------------------------------->
-                        <div id="slide2-prod2" class="col h-100 d-flex justify-content-center my-5">
+                        <div id="slide2-prod2" class="col d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_un'] . '€' ?></div>
@@ -308,7 +314,7 @@ include('scripts/produit.php');
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form action="#slide2-prod2" method="POST">
-                                            <input class="btn btn-sm btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Acheter">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Enchérir">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -316,7 +322,7 @@ include('scripts/produit.php');
                             </div>
                         </div>
                         <!-----------------Card 3------------------------------------->
-                        <div id="slide2-prod3" class="col h-100 d-flex justify-content-center my-5">
+                        <div id="slide2-prod3" class="col d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_un'] . '€' ?></div>
@@ -338,7 +344,7 @@ include('scripts/produit.php');
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form action="#slide2-prod3" method="POST">
-                                            <input class="btn btn-sm btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Acheter">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Enchérir">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -346,7 +352,7 @@ include('scripts/produit.php');
                             </div>
                         </div>
                         <!-----------------Card 4------------------------------------->
-                        <div id="slide2-prod4" class="col h-100 d-flex justify-content-center my-5">
+                        <div id="slide2-prod4" class="col d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_un'] . '€' ?></div>
@@ -368,7 +374,7 @@ include('scripts/produit.php');
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form action="#slide2-prod4" method="POST">
-                                            <input class="btn btn-sm btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Acheter">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Enchérir">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -376,7 +382,7 @@ include('scripts/produit.php');
                             </div>
                         </div>
                         <!-----------------Card 5------------------------------------->
-                        <div id="slide2-prod5" class="col h-100 d-flex justify-content-center my-5">
+                        <div id="slide2-prod5" class="col d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_un'] . '€' ?></div>
@@ -398,7 +404,7 @@ include('scripts/produit.php');
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form action="#slide2-prod5" method="POST">
-                                            <input class="btn btn-sm btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Acheter">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Enchérir">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -406,7 +412,7 @@ include('scripts/produit.php');
                             </div>
                         </div>
                         <!-----------------Card 6s------------------------------------->
-                        <div id="slide2-prod6" class="col h-100 d-flex justify-content-center my-5">
+                        <div id="slide2-prod6" class="col d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_un'] . '€' ?></div>
@@ -428,7 +434,7 @@ include('scripts/produit.php');
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form action="#slide2-prod6" method="POST">
-                                            <input class="btn btn-sm btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Acheter">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Enchérir">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -445,7 +451,7 @@ include('scripts/produit.php');
                     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
 
                         <!-----------------Card 1------------------------------------->
-                        <div class="col h-100 d-flex justify-content-center my-5">
+                        <div class="col d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_un'] . '€' ?></div>
@@ -467,7 +473,7 @@ include('scripts/produit.php');
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form method="POST">
-                                            <input class="btn btn-sm btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Acheter">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Enchérir">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -475,7 +481,7 @@ include('scripts/produit.php');
                             </div>
                         </div>
                         <!-----------------Card 2------------------------------------->
-                        <div id="slide3-prod2" class="col h-100 d-flex justify-content-center my-5">
+                        <div id="slide3-prod2" class="col d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_un'] . '€' ?></div>
@@ -497,7 +503,7 @@ include('scripts/produit.php');
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form action="#slide3-prod2" method="POST">
-                                            <input class="btn btn-sm btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Acheter">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Enchérir">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -505,7 +511,7 @@ include('scripts/produit.php');
                             </div>
                         </div>
                         <!-----------------Card 3------------------------------------->
-                        <div id="slide3-prod3" class="col h-100 d-flex justify-content-center my-5">
+                        <div id="slide3-prod3" class="col d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_un'] . '€' ?></div>
@@ -527,7 +533,7 @@ include('scripts/produit.php');
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form action="#slide3-prod3" method="POST">
-                                            <input class="btn btn-sm btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Acheter">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Enchérir">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -535,7 +541,7 @@ include('scripts/produit.php');
                             </div>
                         </div>
                         <!-----------------Card 4------------------------------------->
-                        <div id="slide3-prod4" class="col h-100 d-flex justify-content-center my-5">
+                        <div id="slide3-prod4" class="col d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_un'] . '€' ?></div>
@@ -557,7 +563,7 @@ include('scripts/produit.php');
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form action="#slide3-prod4" method="POST">
-                                            <input class="btn btn-sm btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Acheter">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Enchérir">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -565,7 +571,7 @@ include('scripts/produit.php');
                             </div>
                         </div>
                         <!-----------------Card 5------------------------------------->
-                        <div id="slide3-prod5" class="col h-100 d-flex justify-content-center my-5">
+                        <div id="slide3-prod5" class="col d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_un'] . '€' ?></div>
@@ -587,7 +593,7 @@ include('scripts/produit.php');
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form action="#slide3-prod5" method="POST">
-                                            <input class="btn btn-sm btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Acheter">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Enchérir">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -595,7 +601,7 @@ include('scripts/produit.php');
                             </div>
                         </div>
                         <!-----------------Card 6s------------------------------------->
-                        <div id="slide3-prod6" class="col h-100 d-flex justify-content-center my-5">
+                        <div id="slide3-prod6" class="col d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_un'] . '€' ?></div>
@@ -617,7 +623,7 @@ include('scripts/produit.php');
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form action="#slide3-prod6" method="POST">
-                                            <input class="btn btn-sm btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Acheter">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Enchérir">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -628,25 +634,42 @@ include('scripts/produit.php');
                 </div>
 
                 <!------------------------ Slide Ajout ----------------------------->
+                <!------------------------ Slide Ajout ----------------------------->
+                <?php if (count($_SESSION['tab_produit2']) >= 1) { ?>
                 <div class="carousel-item">
                     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
 
                         <!-----------------Card 1------------------------------------->
-                        <?php create_html(0); ?>
-                        <!-----------------ard 2------------------------------------->
-                        <?php create_html(1); ?>
-                        <!-----------------Card 3------------------------------------->
-                        <?php create_html(2); ?>
-                        <!-----------------Card 4------------------------------------->
-                        <?php create_html(3); ?>
-                        <!-----------------Card 5------------------------------------->
-                        <?php create_html(4); ?>
-                        <!-----------------Card 6------------------------------------->
-                        <?php create_html(5); ?>
+                        <?php create_html_un(); ?>
+                        
 
                     </div>
                 </div>
+                <?php } ?>
+                <!------------------------ Slide Ajout ----------------------------->
+                <?php if (count($_SESSION['tab_produit2']) >= 6) { ?>
+                <div class="carousel-item">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
 
+                        <!-----------------Card 1------------------------------------->
+                        <?php create_html_deux(); ?>
+                        
+
+                    </div>
+                </div>
+                <?php } ?> 
+                 <!------------------------ Slide Ajout ----------------------------->
+                 <?php if (count($_SESSION['tab_produit2'])>= 12) { ?>
+                 <div class="carousel-item">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
+
+                        <!-----------------Card 1------------------------------------->
+                        <?php create_html_trois(); ?>
+                        
+
+                    </div>
+                </div>
+                 <?php } ?>
             </div>
 
             <a class="carousel-control-prev my-lg-auto" href="#carouselExampleIndicators" role="button" data-slide="prev">
