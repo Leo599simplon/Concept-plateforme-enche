@@ -30,3 +30,36 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['produit_six'])) {
 
         $_SESSION['produit_six'] += 0.02;
 }
+
+
+/* slide2 */
+if ($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['produit_sept'])) {
+
+        $_SESSION['produit_sept'] += 0.02;
+}
+
+
+if ($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['produit_huit'])) {
+
+        $_SESSION['produit_huit'] += 0.02;
+}
+
+if ($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['produit_neuf'])) {
+
+        $_SESSION['produit_neuf'] += 0.02;
+}
+
+
+if ($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['produit_dix'])) {
+        $_SESSION['produit_dix'] += 0.02;
+}
+
+if ($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['produit_onze'])) {
+
+        $_SESSION['produit_onze'] += 0.02;
+}
+
+if ($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['produit_douze'])) {
+
+        $_SESSION['produit_douze'] += 0.02;
+}
