@@ -29,6 +29,7 @@
 
     <header class="container-fluid d-flex justify-content-center align-items-center">
         <h1 class="col-m-4 text-center font-weight-bold">Page ajout produit</h1>
+        <a href="modification.php">Modifier une enchère</a>
     </header>
 
     <section class="container mt-5">
