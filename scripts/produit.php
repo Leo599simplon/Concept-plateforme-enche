@@ -50,7 +50,14 @@ function create_html_un()
         </div>
         <div class="card-footer d-flex flex-column justify-content-around">
             <h6>Durée:
-                <div class="float-right font-weight-bold"> 00:15:60</div>
+                <div class="float-right font-weight-bold duree"><?php 
+                  $minute = 30 - date('i'); 
+                  $seconde = 60 - date('s');
+                  if ($seconde < 10){
+                    echo $minute . ':'. '0'.$seconde;
+                  }
+                  else {echo $minute . ':'. $seconde;}
+                ?></div>
             </h6>
 
             <div class="d-flex align-items-center justify-content-center">
@@ -99,7 +106,14 @@ function create_html_deux()
         </div>
         <div class="card-footer d-flex flex-column justify-content-around">
             <h6>Durée:
-                <div class="float-right font-weight-bold"> 00:15:60</div>
+                <div class="float-right font-weight-bold duree"><?php 
+                  $minute = 30 - date('i'); 
+                  $seconde = 60-date('s');
+                  if ($seconde < 10){
+                    echo $minute . ':'. '0'.$seconde;
+                  }
+                  else {echo $minute . ':'. $seconde;}
+                ?></div>
             </h6>
 
             <div class="d-flex align-items-center justify-content-center">
@@ -148,7 +162,14 @@ function create_html_trois()
         </div>
         <div class="card-footer d-flex flex-column justify-content-around">
             <h6>Durée:
-                <div class="float-right font-weight-bold"> 00:15:60</div>
+                <div class="float-right font-weight-bold duree"><?php 
+                  $minute = 30 - date('i'); 
+                  $seconde = 60 - date('s');
+                  if ($seconde < 10){
+                    echo $minute . ':'. '0'.$seconde;
+                  }
+                  else {echo $minute . ':'. $seconde;}
+                ?></div>
             </h6>
 
             <div class="d-flex align-items-center justify-content-center">
