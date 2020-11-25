@@ -1,10 +1,10 @@
 <?php 
-    $txt = fopen('../data/connexion.txt','rb');
-   if ( isset($_POST['user']) and $_POST['user'] === fgets($txt,6)  )
-    {
-        fgets($txt);
-        if (isset($_POST['mdp']) and $_POST['mdp'] === fgets($txt))
+    
+   if ( isset($_POST['user']) and $_POST['user'] === "admin"  
+   and isset($_POST['mdp']) and $_POST['mdp'] === "test")
         {
+
+
 ?>
 
 <!DOCTYPE html>
@@ -29,6 +29,7 @@
 
     <header class="container-fluid d-flex justify-content-center align-items-center">
         <h1 class="col-m-4 text-center font-weight-bold">Page ajout produit</h1>
+        <a href="modification.php">Modifier une enchère</a>
     </header>
 
     <section class="container mt-5">
@@ -86,6 +87,7 @@
                 <input class="btn btn-secondary mr-3 mb-5 mt-5 p-2 border-0" name="form2" type="submit" value="Ajouter le produit">
             </div>
         </form>
+        
     </section>
 </body>
 
@@ -98,9 +100,6 @@
         
         echo 'Permission refusée';
     }
-    }
-    else {
-        
-        echo 'Permission refusée';
-    }
+    
+   
 ?>
