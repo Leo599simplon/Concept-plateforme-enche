@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['btn_modif'])) {
             <div class="form-group row">
                 <label for="image_modif" class="col-md-3 col-form-label font-weight-bold">Image du produit</label>
                 <div class="col-md-9">
-                    <input type="file" class="form-control" name="image_modif" id="image_modif">
+                    <input type="file" class="form-control" name="image_modif" id="image_modif" required>
                 </div>
             </div>
 
