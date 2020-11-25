@@ -1,9 +1,14 @@
 <?php 
-    
-   if ( isset($_POST['user']) and $_POST['user'] === "admin"  
-   and isset($_POST['mdp']) and $_POST['mdp'] === "test")
+    //condition pour vérifier la session login
+   if ( isset($_POST['user']) and $_POST['user'] === "admin" 
+        and isset($_POST['mdp']) and $_POST['mdp'] === "test")
         {
-
+            
+    }
+    //sinon permission refusé !
+    else {
+        echo 'Permission refusée';
+    }
 
 ?>
 
@@ -98,14 +103,3 @@
 </body>
 
 </html>
-
-<?php 
-
-    }
-    else {
-        
-        echo 'Permission refusée';
-    }
-    
-   
-?>
