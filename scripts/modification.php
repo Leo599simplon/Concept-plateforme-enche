@@ -70,7 +70,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['btn_modif'])) {
 
             <div class="justify-content-end d-flex row">
                 <input class="btn btn-secondary mr-3 mb-5 mt-5 p-2 border-0" name="form_modif" type="submit" value="Modifier le produit">
-                <input class="btn btn-alert mr-3 mb-5 mt-5 pt-2 border-0" name="delete" type="submit" value="Supprimer l'enchère">
+                <input class="btn btn-primary mr-3 mb-5 mt-5 pt-2 border-0" name="delete" type="submit" value="Supprimer l'enchère">
             </div>
         </form>
     </section>
@@ -117,6 +117,9 @@ function liste_deroulante()
             </select>
             <br>
             <input type="submit" class="btn btn-primary mt-3" name="btn_modif" id="btn_modif" value="Modifier">
+        </form>
+        <form action="disabled_card.php">
+        <input type="submit" class="btn btn-secondary" name="histo" id="histo" value="Voir les cartes désactivées">
         </form>
     </section>
 </body>

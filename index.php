@@ -9,6 +9,7 @@ if (
     or !(isset($_SESSION['produit_cinq']))
     or !(isset($_SESSION['produit_six']))
     or !(isset($_SESSION['tab_produit2']))
+    or !(isset($_SESSION['tab_histo']))
 ) {
     $_SESSION['produit_un'] = 50;
     $_SESSION['produit_deux'] = 50;
@@ -17,6 +18,7 @@ if (
     $_SESSION['produit_cinq'] = 50;
     $_SESSION['produit_six'] = 50;
     $_SESSION['tab_produit2'] = [];
+    $_SESSION['tab_histo'] = [];
 }
 include('scripts/encherir.php');
 include('scripts/produit.php');

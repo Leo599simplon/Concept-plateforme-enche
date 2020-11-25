@@ -27,7 +27,6 @@ function create_html_un()
         $tab_div = array_chunk($_SESSION['tab_produit2'],6,true);
         foreach ($tab_div[0] as $key => $value)
         {
-            if ($value['disabled'] == 'no') {
     ?>
 
     <div class="col h-100 d-flex justify-content-center my-5">
@@ -63,10 +62,7 @@ function create_html_un()
 
 
 <?php 
-            }
-            else{
-                echo '';
-            }
+            
         }
     }
 
@@ -179,6 +175,7 @@ function update(){
 
     if (isset($_POST['delete']) and $_SERVER['REQUEST_METHOD']=== "POST"){
         $j = $_POST['id_produit'];
+        array_push($_SESSION['tab_histo'],$_SESSION['tab_produit2'][$j]);
         unset($_SESSION['tab_produit2'][$j]);
         $_SESSION['tab_produit2'] = array_values($_SESSION['tab_produit2']);
     }
