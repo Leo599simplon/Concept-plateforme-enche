@@ -1,3 +1,11 @@
+<?php 
+
+    if (isset($_POST['user']) && $_POST['user']==="admin"
+    && isset($_POST['psw']) && $_POST['psw']==="password") {
+    
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -145,6 +153,10 @@ if (isset($_POST['titre']) && $_POST['titre'] != ""
 	// enregistrement
 	save($carton);
 }
+
+    }
+
+    else echo 'Permission Denied';
 
 ?>
 
