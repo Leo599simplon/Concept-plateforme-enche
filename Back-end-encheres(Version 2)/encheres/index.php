@@ -21,7 +21,7 @@
 	<section id="connexion">
         <form action="../admin/index.php" method="POST">
         <input type="text" name="user" id="user" placeholder="Nom d'utilisateur"> <br>
-        <input type="password" name="mdp" id="mdp" placeholder="Mot de passe"> <br>
+        <input type="password" name="psw" id="psw" placeholder="Mot de passe"> <br>
         <input type="submit" name="connexion" id="connexion" value="Connexion">
         </form>
     </section>
@@ -31,20 +31,10 @@
     </header>
 
 	<section class="container-fluid pt-5">
+		<div class="row">
+			<div class="col">
+				<div class="card-deck ">
 
-		<!------------------------Carousel----------------------------------------------------->
-		<div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel" data-interval="100000000">
-
-			<ol class="carousel-indicators m-n4">
-				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active bg-dark"></li>
-				<li data-target="#carouselExampleIndicators" data-slide-to="1" class="bg-dark"></li>
-				<li data-target="#carouselExampleIndicators" data-slide-to="2" class="bg-dark"></li>
-			</ol>
-
-			<div class="carousel-inner">
-
-				<div class="carousel-item active">
-					<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
 <?php
 
 include '../scripts/file.php';
@@ -106,22 +96,10 @@ for ($temp = 0; $temp < count($carton); $temp++) {
 }
 
 ?>
-
-</div>
-
-<a class="carousel-control-prev my-lg-auto" href="#carouselExampleIndicators" role="button" data-slide="prev">
-	<span class="carousel-control-prev-icon text-dark font-weight-bold fas fa-angle-left" aria-hidden="true">
-	</span>
-	<span class="sr-only">Previous</span>
-</a>
-<a class="carousel-control-next my-lg-auto" href="#carouselExampleIndicators" role="button" data-slide="next">
-	<span class="carousel-control-next-icon text-dark font-weight-bold fas fa-angle-right" aria-hidden="true">
-	</span>
-	<span class="sr-only">Next</span>
-</a>
-</div>
-
-</section>
+				</div>
+			</div>
+		</div>
+	</section>
 
 </body>
 

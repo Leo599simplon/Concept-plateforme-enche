@@ -61,3 +61,10 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['produit_douze'])) {
 
         $_SESSION['produit_douze'] += 0.02;
 }
+
+
+for ($x = 0; $x < count($_SESSION['tab_produit2']); $x++) {
+        if ($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST[$x])) {
+                $_SESSION['tab_produit2'][$x]['prix_initial2'] += $_SESSION['tab_produit2'][$x]['aug_prix2']*0.01;
+        }
+}

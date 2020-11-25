@@ -22,11 +22,16 @@
 
     <link rel="stylesheet" href="../styles/style.css">
 
-    <title>Document</title>
+    <title>Page pour ajouter un produit</title>
 </head>
 
 <body>
-
+            
+            <div class="justify-content-center d-flex row">
+                <a href="suprimer_produit.php">
+                <input class="btn btn-secondary mr-3 mb-5 mt-5 p-2 border-0" name="" type="button" OnClick="#" value="Suprimer un produit">
+                </a>
+            </div>
     <header class="container-fluid d-flex justify-content-center align-items-center">
         <h1 class="col-m-4 text-center font-weight-bold">Page ajout produit</h1>
         <a href="modification.php">Modifier une enchère</a>
