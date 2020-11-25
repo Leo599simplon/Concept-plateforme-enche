@@ -38,45 +38,63 @@ class Enchere implements JsonSerializable {
 		Écrit le code HTML pour afficher l'enchère
 	*/
 	public function display() {
-		echo "<div class=\"col-1 col-12 col-md-8 col-lg-4 \">";
+		echo " <div class='card text-center border-primary mb-3'> ";
+		echo "	 <div class='card-header'>";
+		echo "		<h4 class='card-title prix'>" . $this->m_price . " €</h4>";
+		echo "		<h5 class='card-title'>" . $this->m_titre . "</h5>";
+		echo "	 </div>";
+        echo "	 <img class='card-img-top' src='\" . $this->m_image . \"' alt=''>";
+		echo "	 <div class='card-body text-primary'>";
+		echo "		<h6 class='card-title'> Durée: " . date("H:i:s", - $this->m_deadline - time() -3600) . "</h6>";
+		echo "		<p class='card-text'> " . $this->m_desc . "</p>";
+		echo "		<p class='card-text'> Temps : + " . $this->m_stepprice . " cts/clic</p>";
+		echo "		<p class='card-text'> Prix : + " . $this->m_steptime . " s/clics</p>";
+		echo "	 </div>";
+		echo "   <div class=\"card-footer\">";
+        echo "       <form class='d-flex justify-content-center' metod=\"post\">";
+        echo "           <button class=\"btn btn-primary float-right\" formmethod=\"post\">Enchère";
+		// L'attribut : formmethod="post" : permet que le paramètre "enchere" n'apparaît pas dans l'URL.
+		//  Actualiser la page fera apparaître un message d'avertissement pour éviter de renvoyer une enchère par erreur
+        echo "                <input type=\"hidden\" name=\"enchere\" value=\"" . $this->m_id . "\" formmethod=\"post\">";
+        echo "            </button>";
+        echo "        </form>";
+        echo "    </div>";
+		echo " </div>";
+		/*echo "<div class=\"col-1 col-12 col-md-8 col-lg-4 \">";
 		echo "    <div class=\"card-deck \">";
-        echo "        <div class=\"card border-primary mb-3\" >";
-        echo "            <h4 class=\"card-header text-center\">" . $this->m_titre . "</h4>";
-        echo "            <div class=\"card-body text-primary\">";
-        echo "                <h5 class=\"card-title\">Description</h5>";
+		echo "        <div class=\"card border-primary mb-3\" >";
+		echo "            <h4 class=\"prix text-center\">" . $this->m_price . " € </h4>";
+		echo "            <h5 class=\"card-title\"> Durée: " . date("H:i:s", - $this->m_deadline - time() -3600) . "</h5>";
+		echo "            <div class=\"card-body text-primary\">";
+		echo "				  <div class='card-header'"
+		echo "            	  	<h4 class=\"card-header text-center\">" . $this->m_titre . "</h4>";
+        echo "                	<h5 class=\"card-title\">Description</h5>";
         echo "                <p class=\"card-text\">" . $this->m_desc . "</p>";
         echo "            </div>";
-        echo "            <div class=\"card\">";
         echo "                <img class=\"card-img-top\" src=\"" . $this->m_image . "\" alt=\"Card image cap\">";
-        echo "                <div class=\"card-body\">";
-        echo "                    <h5 class=\"card-title\">Prix du clic: " . $this->m_clic . "cts/clic</h5>";
-        echo "                    <p class=\"card-text\"></p>";
+		echo "                <div class=\"card-body\">";
+        echo "                    <h5 class=\"card-title\"> Temps : + " . $this->m_stepprice . " cts/clic</h5>";
         echo "                </div>";
         echo "                <div class=\"card-body\">";
-        echo "                    <h5 class=\"card-title\">Prix de l'enchère: +" . $this->m_stepprice . "cts/clics</h5>";
+        echo "                    <h5 class=\"card-title\"> Prix : + " . $this->m_steptime . " s/clics</h5>";
         echo "                    <p class=\"card-text\"></p>";
         echo "                </div>";
 
         echo "                <div class=\"card-footer\">";
-        echo "                    <h5 class=\"card-title\">Durée: " . date("H:i:s", - $this->m_deadline - time() -3600) . "</h5>";
 
-        echo "                    <div class=\"prix text-center\">" . $this->m_price . " € </div><br>";
         //echo "                    <small class=\"text-muted\">Last updated 3 mins ago</small>";
 
         echo "                    <form metod=\"post\">";
         echo "                    	<button class=\"btn btn-primary float-right\" formmethod=\"post\">Enchère";
-		/* formmethod="post" : le paramètre "enchere" n'apparaît pas dans l'URL.
-		   Actualiser la page fera apparaître un message d'avertissement pour éviter de renvoyer une enchère par erreur
-		   ----->         ----->         ----->         ----->         ----->         ----->         ----->      vvvvvvvvvvvvvvvvvvv */
+		// L'attribut : formmethod="post" : permet que le paramètre "enchere" n'apparaît pas dans l'URL.
+		//  Actualiser la page fera apparaître un message d'avertissement pour éviter de renvoyer une enchère par erreur
         echo "                    		<input type=\"hidden\" name=\"enchere\" value=\"" . $this->m_id . "\" formmethod=\"post\">";
         echo "                    	</button>";
         echo "                    </form>";
-
         echo "                </div>";
-        echo "            </div>";
         echo "        </div>";
         echo "    </div>";
-        echo "</div>";
+        echo "</div>";*/
 	}
 	
 	/** 
@@ -91,7 +109,7 @@ class Enchere implements JsonSerializable {
 	*/
 	public function enchere() {
 		$this->m_price += $this->m_stepprice / 100;
-		$this->m_time += $steptime;
+		$this->m_deadline += $this->m_steptime;
 	}
 	
 	/**
