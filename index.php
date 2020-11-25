@@ -103,7 +103,7 @@ update();
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form method="POST">
-                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Enchérir">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="ACHETER">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -133,7 +133,7 @@ update();
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form action="#slide1-prod2" method="POST">
-                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_deux" id="produit_deux" value="Enchérir">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_deux" id="produit_deux" value="ACHETER">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -163,7 +163,7 @@ update();
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form action="#slide1-prod3" method="POST">
-                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_trois" id="produit_trois" value="Enchérir">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_trois" id="produit_trois" value="ACHETER">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -193,7 +193,7 @@ update();
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form action="#slide1-prod4" method="POST">
-                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_quatre" id="produit_quatre" value="Enchérir">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_quatre" id="produit_quatre" value="ACHETER">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -223,7 +223,7 @@ update();
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form action="#slide1-prod5" method="POST">
-                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_cinq" id="produit_cinq" value="Enchérir">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_cinq" id="produit_cinq" value="ACHETER">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -253,7 +253,7 @@ update();
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form action="#slide1-prod6" method="POST">
-                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_six" id="produit_six" value="Enchérir">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_six" id="produit_six" value="ACHETER">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -292,7 +292,7 @@ update();
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form method="POST">
-                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Enchérir">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="ACHETER">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -322,7 +322,7 @@ update();
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form action="#slide2-prod2" method="POST">
-                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Enchérir">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="ACHETER">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -352,7 +352,7 @@ update();
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form action="#slide2-prod3" method="POST">
-                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Enchérir">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="ACHETER">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -382,7 +382,7 @@ update();
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form action="#slide2-prod4" method="POST">
-                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Enchérir">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="ACHETER">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -412,7 +412,7 @@ update();
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form action="#slide2-prod5" method="POST">
-                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Enchérir">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="ACHETER">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -442,7 +442,7 @@ update();
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form action="#slide2-prod6" method="POST">
-                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Enchérir">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="ACHETER">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -481,7 +481,7 @@ update();
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form method="POST">
-                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Enchérir">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="ACHETER">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -511,7 +511,7 @@ update();
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form action="#slide3-prod2" method="POST">
-                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Enchérir">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="ACHETER">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -541,7 +541,7 @@ update();
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form action="#slide3-prod3" method="POST">
-                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Enchérir">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="ACHETER">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -571,7 +571,7 @@ update();
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form action="#slide3-prod4" method="POST">
-                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Enchérir">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="ACHETER">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -601,7 +601,7 @@ update();
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form action="#slide3-prod5" method="POST">
-                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Enchérir">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="ACHETER">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -631,7 +631,7 @@ update();
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form action="#slide3-prod6" method="POST">
-                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Enchérir">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="ACHETER">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>

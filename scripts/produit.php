@@ -40,7 +40,7 @@ function create_html_un()
         </div>
         <div class="card-body d-flex align-items-center">
             <p class="card-text">
-                Prix de l\'enchère:<i class="infoPrix"> +<?php echo $value['aug_prix2'] ;?>cts/clics</i>
+                Prix de l'enchère:<i class="infoPrix"> +<?php echo $value['aug_prix2'] ;?>cts/clics</i>
             </p>
         </div>
         <div class="card-footer d-flex flex-column justify-content-around">
@@ -89,7 +89,7 @@ function create_html_deux()
         </div>
         <div class="card-body d-flex align-items-center">
             <p class="card-text">
-                Prix de l\'enchère:<i class="infoPrix"> +<?php echo $value['aug_prix2'] ;?>cts/clics</i>
+                Prix de l'enchère:<i class="infoPrix"> +<?php echo $value['aug_prix2'] ;?>cts/clics</i>
             </p>
         </div>
         <div class="card-footer d-flex flex-column justify-content-around">
@@ -139,7 +139,7 @@ function create_html_trois()
         </div>
         <div class="card-body d-flex align-items-center">
             <p class="card-text">
-                Prix de l\'enchère:<i class="infoPrix"> +<?php echo $value['aug_prix2'] ;?>cts/clics</i>
+                Prix de l'enchère:<i class="infoPrix"> +<?php echo $value['aug_prix2'] ;?>cts/clics</i>
             </p>
         </div>
         <div class="card-footer d-flex flex-column justify-content-around">
