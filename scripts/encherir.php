@@ -63,6 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['produit_douze'])) {
 }
 
 
+<<<<<<< HEAD
 /*
 _Créer les conditions de manières automatiques 
 _Trouver un moyen de récupérer le numéro du produit (produit_i)
@@ -75,3 +76,10 @@ _Puis qui applique l'augmentation sur le prix actuel du produit
 */
 
 $_POST['augmentation_prix2']; // récupération du prix du produit
+=======
+for ($x = 0; $x < count($_SESSION['tab_produit2']); $x++) {
+        if ($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST[$x])) {
+                $_SESSION['tab_produit2'][$x]['prix_initial2'] += $_SESSION['tab_produit2'][$x]['aug_prix2']*0.01;
+        }
+}
+>>>>>>> 6c3d41fa9e871053c31529bd124ca0b0eda82c58

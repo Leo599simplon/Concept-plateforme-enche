@@ -4,25 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS -->
+	<!-- CSS -->
+	<link rel="stylesheet" href="../styles/style.css">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
     <!-- jQuery and JS bundle w/ Popper.js -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles/style.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+	
     <title>Document</title>
 </head>
 
 <body>
 
-    <header class="container-fluid d-flex justify-content-center align-items-center ">
-        <h1 class="col-m-4 text-center">En'Cher</h1>
+	<section id="connexion">
+        <form action="../admin/index.php" method="POST">
+        <input type="text" name="user" id="user" placeholder="Nom d'utilisateur"> <br>
+        <input type="password" name="psw" id="psw" placeholder="Mot de passe"> <br>
+        <input type="submit" name="connexion" id="connexion" value="Connexion">
+        </form>
+    </section>
+
+	<header class="container-fluid d-flex justify-content-center align-items-center">
+        <h1 class="col-m-4 text-center font-weight-bold">NOM DE L'APPLICATION</h1>
     </header>
 
-<section class="container">
-		
-    <div class="row d-flex justify-content-center bg-dark pt-5">
+	<section class="container-fluid pt-5">
+		<div class="row">
+			<div class="col">
+				<div class="card-deck ">
 
 <?php
 
@@ -49,6 +60,7 @@ for ($temp = 0; $temp < count($cartonJson); $temp++) {
                                         $cartonJson[$temp]["m_price"],
 										$cartonJson[$temp]["m_deadline"],
 										$cartonJson[$temp]["m_steptime"],
+										$cartonJson[$temp]["m_image"]
 		);
 	} else {
 		$offset++;
@@ -79,14 +91,15 @@ if (isset($_POST['enchere'])) {
 	}
 }
 
-/**for ($temp = 0; $temp < count($carton); $temp++) {
+for ($temp = 0; $temp < count($carton); $temp++) {
 	$carton[$temp]->display();
 }
-*/
-?>
 
-    </div>
-</section>
+?>
+				</div>
+			</div>
+		</div>
+	</section>
 
 </body>
 

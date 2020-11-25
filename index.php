@@ -1,25 +1,30 @@
 <?php
-session_start();
+session_start();                             //Démarrage de la session avec la fonction session_start (qui permet de stocker des données)
+
 
 if (
-    !(isset($_SESSION['produit_un']))
+    !(isset($_SESSION['produit_un']))        //La fonction "isset" permet d'afficher "le produit" si la variable $_SESSION est définie.
     or !(isset($_SESSION['produit_deux']))
     or !(isset($_SESSION['produit_trois']))
     or !(isset($_SESSION['produit_quatre']))
     or !(isset($_SESSION['produit_cinq']))
     or !(isset($_SESSION['produit_six']))
     or !(isset($_SESSION['tab_produit2']))
+    or !(isset($_SESSION['tab_histo']))
 ) {
-    $_SESSION['produit_un'] = 50;
+    $_SESSION['produit_un'] = 50;            //Comme les premières card sont présente lors du démarrage,Celle ci sont là à titre d'exemple. 
     $_SESSION['produit_deux'] = 50;
     $_SESSION['produit_trois'] = 50;
     $_SESSION['produit_quatre'] = 50;
     $_SESSION['produit_cinq'] = 50;
     $_SESSION['produit_six'] = 50;
     $_SESSION['tab_produit2'] = [];
+    $_SESSION['tab_histo'] = [];
 }
-include('scripts/encherir.php');
+include('scripts/encherir.php');             //Include est utilisé pour appeler les fonction "enchérir et produit"
 include('scripts/produit.php');
+
+update();                                   //???????
 ?>
 
 <!DOCTYPE html>
@@ -45,15 +50,22 @@ include('scripts/produit.php');
 
 <body>
     <!------------------------Header-------------------------------------------------------->
-    <section id="connexion">
-        <form action="scripts/ajout_produit.php" method="POST">
-            <input type="text" name="user" id="user" placeholder="Nom d'utilisateur"> <br>
-            <input type="password" name="mdp" id="mdp" placeholder="Mot de passe"> <br>
-            <input type="submit" name="connexion" id="connexion" value="Connexion">
-        </form>
-    </section>
-    <header class="container-fluid d-flex justify-content-center align-items-center">
-        <h1 class="col-m-4 text-center font-weight-bold">NOM DE L'APPLICATION</h1>
+
+    <header class="container-fluid col">
+        <!-- 
+        <section id="connexion">
+                <form action="scripts/ajout_produit.php" method="POST" class="row pt-2 pl-2">
+                    <input type="text" name="user" id="user" placeholder="Nom d'utilisateur"> <br>
+                    <input type="password" name="mdp" id="mdp" placeholder="Mot de passe"> <br>
+                    <input type="submit" name="connexion" id="connexion" value="Connexion" class="">
+                </form>
+        </section>
+        -->
+
+        <h1 class="font-weight-bold text-center pt-5">NOM DE L'APPLICATION</h1>
+
+        <button type="button" class="btn btn-info border-0 btn-login"><a href="scripts/page-login.html" class="text-white">login</a></button>
+
     </header>
 
     <section class="container-fluid pt-5">
@@ -76,7 +88,11 @@ include('scripts/produit.php');
                         <div id="slide1-prod1" class="col d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
+
+                                <!--Ici nous sélectionons l'élement "produit_un" dans le tableau $_SESSION puis 
+                                    nous l'affichons dans la div ci-dessous--->
                                 <div class="prix text-center text-danger"><?php echo $_SESSION['produit_un'] . '€' ?></div>
+
                                 <img src="ressources/img/936378.jpg" class="card-img-top border-bottom" alt="...">
                                 <div class="description border-bottom">
                                     <p class="descriptionDuProduit text-center">Ceci est une petite description du produit</p>
@@ -94,8 +110,8 @@ include('scripts/produit.php');
 
                                     <div class="d-flex align-items-center justify-content-center">
 
-                                        <form action="#slide1-prod1" method="POST">
-                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Enchérir">
+                                        <form method="POST">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="ACHETER">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -125,7 +141,7 @@ include('scripts/produit.php');
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form action="#slide1-prod2" method="POST">
-                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_deux" id="produit_deux" value="Enchérir">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_deux" id="produit_deux" value="ACHETER">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -155,7 +171,7 @@ include('scripts/produit.php');
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form action="#slide1-prod3" method="POST">
-                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_trois" id="produit_trois" value="Enchérir">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_trois" id="produit_trois" value="ACHETER">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -185,7 +201,7 @@ include('scripts/produit.php');
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form action="#slide1-prod4" method="POST">
-                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_quatre" id="produit_quatre" value="Enchérir">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_quatre" id="produit_quatre" value="ACHETER">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -215,7 +231,7 @@ include('scripts/produit.php');
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form action="#slide1-prod5" method="POST">
-                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_cinq" id="produit_cinq" value="Enchérir">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_cinq" id="produit_cinq" value="ACHETER">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -245,7 +261,7 @@ include('scripts/produit.php');
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form action="#slide1-prod6" method="POST">
-                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_six" id="produit_six" value="Enchérir">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_six" id="produit_six" value="ACHETER">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -258,7 +274,8 @@ include('scripts/produit.php');
 
 
                 <!------------------------ Slide 2 ----------------------------->
-                <div id="slide2" class="carousel-item">
+                <div class="carousel-item">
+                    <!---Second Carousel qui englobe les 6 prochaines Cards----->
                     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
 
                         <!-----------------Card 1------------------------------------->
@@ -283,15 +300,15 @@ include('scripts/produit.php');
 
                                     <div class="d-flex align-items-center justify-content-center">
 
-                                        <form action="#slide2-prod1" method="POST">
-                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_sept" id="produit_setp" value="Enchérir">
+                                        <form method="POST">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="ACHETER">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-----------------Card 2------------------------------------->
+                        <!-----------------Card 2---------------------->
                         <div id="slide2-prod2" class="col d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
@@ -314,14 +331,14 @@ include('scripts/produit.php');
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form action="#slide2-prod2" method="POST">
-                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_huit" id="produit_huit" value="Enchérir">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="ACHETER">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-----------------Card 3------------------------------------->
+                        <!-----------------Card 3----------------------------->
                         <div id="slide2-prod3" class="col d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
                                 <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
@@ -344,7 +361,7 @@ include('scripts/produit.php');
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form action="#slide2-prod3" method="POST">
-                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_neuf" id="produit_neuf" value="Enchérir">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="ACHETER">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -374,7 +391,7 @@ include('scripts/produit.php');
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form action="#slide2-prod4" method="POST">
-                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_dix" id="produit_dix" value="Enchérir">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="ACHETER">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -404,7 +421,7 @@ include('scripts/produit.php');
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form action="#slide2-prod5" method="POST">
-                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_onze" id="produit_onze" value="Enchérir">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="ACHETER">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -434,7 +451,7 @@ include('scripts/produit.php');
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form action="#slide2-prod6" method="POST">
-                                            <input data-target="slide2" class="btn btn-lg btn-warning float-right" type="submit" name="produit_douze" id="produit_douze" value="Enchérir">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="ACHETER">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -473,7 +490,7 @@ include('scripts/produit.php');
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form method="POST">
-                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_treize" id="produit_treize" value="Enchérir">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="ACHETER">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -503,7 +520,7 @@ include('scripts/produit.php');
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form action="#slide3-prod2" method="POST">
-                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_quatorze" id="produit_quatorze" value="Enchérir">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="ACHETER">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -533,7 +550,7 @@ include('scripts/produit.php');
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form action="#slide3-prod3" method="POST">
-                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_quinze" id="produit_quinze" value="Enchérir">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="ACHETER">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -563,7 +580,7 @@ include('scripts/produit.php');
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form action="#slide3-prod4" method="POST">
-                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_seize" id="produit_seize" value="Enchérir">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="ACHETER">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -593,7 +610,7 @@ include('scripts/produit.php');
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form action="#slide3-prod5" method="POST">
-                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_dix_sept" id="produit_dix_sept" value="Enchérir">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="ACHETER">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -623,7 +640,7 @@ include('scripts/produit.php');
                                     <div class="d-flex align-items-center justify-content-center">
 
                                         <form action="#slide3-prod6" method="POST">
-                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Enchérir">
+                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="ACHETER">
                                         </form>
                                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
                                     </div>
@@ -636,11 +653,10 @@ include('scripts/produit.php');
                 <!------------------------ Slide Ajout ----------------------------->
                 <!------------------------ Slide Ajout ----------------------------->
                 <?php if (count($_SESSION['tab_produit2']) >= 1) { ?>
+                    <!-----Count compte tout les éléments du tableau, si le nombre de produit est supérieur ou égale à 1-
+                                                                                     php créer un slide + un card -->
                     <div class="carousel-item">
                         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
-
-                            <!-----------------Card 1------------------------------------->
-                            <?php create_html_un(); ?>
 
 
                         </div>
@@ -648,6 +664,8 @@ include('scripts/produit.php');
                 <?php } ?>
                 <!------------------------ Slide Ajout ----------------------------->
                 <?php if (count($_SESSION['tab_produit2']) >= 6) { ?>
+                    <!-----Count compte tout les éléments du tableau, si le nombre de produit est supérieur ou égale  à 6 
+                                                                                     php créer un nouveau slide + card ----->
                     <div class="carousel-item">
                         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
 
@@ -657,31 +675,31 @@ include('scripts/produit.php');
 
                         </div>
                     </div>
-                <?php } ?>
-                <!------------------------ Slide Ajout ----------------------------->
-                <?php if (count($_SESSION['tab_produit2']) >= 12) { ?>
-                    <div class="carousel-item">
-                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
-
-                            <!-----------------Card 1------------------------------------->
-                            <?php create_html_trois(); ?>
-
-
-                        </div>
-                    </div>
-                <?php } ?>
             </div>
+        <?php } ?>
+        <!------------------------ Slide Ajout ----------------------------->
+        <?php if (count($_SESSION['tab_produit2']) >= 12) { ?>
+            <!-----Count compte tout les éléments du tableau, si le nombre de produit est supérieur ou égale  à 12
+                                                                                     php créer un nouveau slide + card ----->
+            <div class="carousel-item">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
 
-            <a class="carousel-control-prev my-lg-auto" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon text-dark font-weight-bold fas fa-angle-left" aria-hidden="true">
-                </span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next my-lg-auto" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon text-dark font-weight-bold fas fa-angle-right" aria-hidden="true">
-                </span>
-                <span class="sr-only">Next</span>
-            </a>
+
+                </div>
+            </div>
+        <?php } ?>
+        </div>
+
+        <a class="carousel-control-prev my-lg-auto" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon text-dark font-weight-bold fas fa-angle-left" aria-hidden="true">
+            </span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next my-lg-auto" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon text-dark font-weight-bold fas fa-angle-right" aria-hidden="true">
+            </span>
+            <span class="sr-only">Next</span>
+        </a>
         </div>
 
     </section>
