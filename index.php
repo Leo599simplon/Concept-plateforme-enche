@@ -20,6 +20,8 @@ if (
 }
 include('scripts/encherir.php');
 include('scripts/produit.php');
+
+update();
 ?>
 
 <!DOCTYPE html>

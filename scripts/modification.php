@@ -12,6 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['btn_modif'])) {
     <section class="container mt-5">
         <form action="../index.php" method="POST">
             <div class="form-group row">
+                <input type="hidden" name="id_produit" id="id_produit" value="<?php echo $i ?>">
                 <label for="nom_modif" class="col-md-3 col-form-label font-weight-bold">Nom du produit:</label>
                 <div class="col-md-9">
                     <input type="text" name="nom_modif" id="nom_modif" class="form-control" value="<?= $_SESSION['tab_produit2'][$i]['nom2'] ?>" pattern="[a-zA-Z0-9 ]+" required>
