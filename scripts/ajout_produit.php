@@ -27,6 +27,8 @@
 
 <body>
             
+
+            
             <div class="justify-content-center d-flex row">
                 <a href="suprimer_produit.php">
                 <input class="btn btn-secondary mr-3 mb-5 mt-5 p-2 border-0" name="" type="button" OnClick="#" value="Suprimer un produit">
