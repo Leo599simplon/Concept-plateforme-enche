@@ -185,8 +185,7 @@ function update(){
         $_SESSION['tab_produit2'][$j]['nom2'] = $_POST['nom_modif'];
         $_SESSION['tab_produit2'][$j]['description2'] = $_POST['description_modif'];
         $_SESSION['tab_produit2'][$j]['aug_prix2'] = $_POST['augmentation_prix_modif'];
-        if (isset($_POST['image_modif']))
-        {$_SESSION['tab_produit2'][$j]['image2'] = $_POST['image_modif'];}
+        $_SESSION['tab_produit2'][$j]['image2'] = $_POST['image_modif'];
         $_SESSION['tab_produit2'][$j]['prix_initial2'] = $_POST['prix_initial_modif'];
         $_SESSION['tab_produit2'][$j]['prix_clic2'] = $_POST['prix_clic_modif'];
         $_SESSION['tab_produit2'][$j]['aug_duree2'] = $_POST['augmentation_duree_modif'];

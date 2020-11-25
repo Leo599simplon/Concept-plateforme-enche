@@ -5,7 +5,7 @@
 session_start();
 
 
-foreach ($_SESSION['histo'] as $key => $value)
+foreach ($_SESSION['tab_histo'] as $key => $value)
 {
 ?>
 
@@ -13,7 +13,7 @@ foreach ($_SESSION['histo'] as $key => $value)
 <div class="card" style="width: 18rem;">
 <h5 class="card-title text-center py-2 border-bottom"><?php echo $value['nom2']; ?></h5>
 <div class="prix text-center text-danger"><?php echo $value['prix_initial2']; ?> € </div>
-<img src="ressources/img/<?php echo $value['image2'] ?>" class="card-img-top border-bottom" alt="...">
+<img src="../ressources/img/<?php echo $value['image2'] ?>" class="card-img-top border-bottom" alt="...">
 <div class="description border-bottom">
     <p class="descriptionDuProduit text-center"><?php  echo $value['description2']; ?></p>
 

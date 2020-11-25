@@ -112,7 +112,7 @@ function liste_deroulante()
         <form action="modification.php" method="POST">
             <label for="produit_choisi">Choisir l'enchère à modifier :</label>
             <br>
-            <select name="produit_choisi" id="produit_choisi">
+            <select name="produit_choisi" id="produit_choisi" required>
                 <?php liste_deroulante() ?>
             </select>
             <br>
