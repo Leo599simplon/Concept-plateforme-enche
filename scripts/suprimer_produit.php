@@ -1,13 +1,5 @@
-<?php 
-    $txt = fopen('../data/connexion.txt','rb');
-   if ( isset($_POST['user']) and $_POST['user'] === fgets($txt,6)  )
-    {
-        fgets($txt);
-        if (isset($_POST['mdp']) and $_POST['mdp'] === fgets($txt))
-        {
 
-            
-?>
+
 
 
 <!DOCTYPE html>
@@ -26,8 +18,6 @@
     <title>Document</title>
 </head>
 <body>
-    <div>
-            
-    </div>
+
 </body>
 </html>
