@@ -483,7 +483,7 @@ update();                                   //???????
                     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
 
                         <!-----------------Card 1------------------------------------->
-                        <?php create_html_un(); ?>
+                        <?php create_html(1,0); ?>
                         
 
                     </div>
@@ -496,7 +496,7 @@ update();                                   //???????
                     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
 
                         <!-----------------Card 1------------------------------------->
-                        <?php create_html_deux(); ?>
+                        <?php create_html(6,1); ?>
                         
 
                     </div>
@@ -509,7 +509,7 @@ update();                                   //???????
                     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
 
                         <!-----------------Card 1------------------------------------->
-                        <?php create_html_trois(); ?>
+                        <?php create_html(12,2); ?>
                         
 
                     </div>

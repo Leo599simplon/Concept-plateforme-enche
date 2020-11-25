@@ -24,69 +24,14 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['form2']))
 }
 
 ?>
-<?php 
-//création de la nouvelle page dès l'ajout d'une nouvelle carte
-function create_html_un()
+<?php
+
+function create_html($nb_produit,$ind_div)
 {   
-    //division des tableaux par 6 (nombre maximum de cartes par pages), le booléen est ajouté ici dans la variable pour eviter le retour à 0 de l'index des tableaux internes suivants (au lieu de repasser de [0] à [5])
-        $tab_div = array_chunk($_SESSION['tab_produit2'],6,true); 
-        foreach ($tab_div[0] as $key => $value) //boucle qui permet de parcourir les tableaux et créer les cartes stockées dans $_SESSION
-        {
-    ?>
-<!-- nouvelle carte avec les clés du premier tableau ($tab_provi)-->
-    <div class="col h-100 d-flex justify-content-center my-5">
-    <div class="card" style="width: 18rem;">
-        <h5 class="card-title text-center py-2 border-bottom"><?php echo $value['nom2']; ?></h5>
-        <div class="prix text-center text-danger"><?php echo $value['prix_initial2']; ?> € </div>
-        <img src="ressources/img/<?php echo $value['image2'] ?>" class="card-img-top border-bottom" alt="...">
-        <div class="description border-bottom">
-            <p class="descriptionDuProduit text-center"><?php  echo $value['description2']; ?></p>
-
-        </div>
-        <div class="card-body d-flex align-items-center">
-            <p class="card-text">
-                Prix de l'enchère:<i class="infoPrix"> +<?php echo $value['aug_prix2'] ;?>cts/clics</i>
-            </p>
-        </div>
-        <div class="card-footer d-flex flex-column justify-content-around">
-            <h6>Durée:
-                <div class="float-right font-weight-bold duree"><?php 
-                  $minute = 30 - date('i'); 
-                  $seconde = 60 - date('s');
-                  if ($seconde < 10){
-                    echo $minute . ':'. '0'.$seconde;
-                  }
-                  else {echo $minute . ':'. $seconde;}
-                ?></div>
-            </h6>
-
-            <div class="d-flex align-items-center justify-content-center">
-
-                <form method="POST">
-                <!-- id du bouton lié à la clé de $tab_div -->
-                    <input class="btn btn-lg btn-warning float-right" type="submit" name="<?php echo $key ?>" id="<?php echo $key ?>" value="Acheter">
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-        
-
-
-<?php 
-            
-        }
-    }
-
-?>
-
-<?php 
-function create_html_deux()
-{   
-    if (count($_SESSION['tab_produit2']) >= 6)
+    if (count($_SESSION['tab_produit2']) >= $nb_produit)
     {
         $tab_div = array_chunk($_SESSION['tab_produit2'],6,true);
-        foreach ($tab_div[1] as $key => $value)
+        foreach ($tab_div[$ind_div] as $key => $value)
         {
     ?>
 
@@ -119,7 +64,7 @@ function create_html_deux()
             <div class="d-flex align-items-center justify-content-center">
 
                 <form method="POST">
-                    <input class="btn btn-lg btn-warning float-right" type="submit" name="<?php echo $key ?>" id="<?php echo $key ?>" value="Enchérir">
+                    <input class="btn btn-lg btn-warning float-right" type="submit" name="<?php echo $key ?>" id="<?php echo $key ?>" value="ACHETER">
                 </form>
             </div>
         </div>
@@ -130,62 +75,6 @@ function create_html_deux()
 
 <?php 
 
-        }
-    }
-}
-?>
-
-<?php 
-function create_html_trois()
-{   
-    if (count($_SESSION['tab_produit2']) >= 12)
-    {
-        $tab_div = array_chunk($_SESSION['tab_produit2'],6,true);
-        foreach ($tab_div[2] as $key => $value)
-        {
-           
-    ?>
-
-    <div class="col h-100 d-flex justify-content-center my-5">
-    <div class="card" style="width: 18rem;">
-        <h5 class="card-title text-center py-2 border-bottom"><?php echo $value['nom2']; ?></h5>
-        <div class="prix text-center text-danger"><?php echo $value['prix_initial2']; ?> € </div>
-        <img src="ressources/img/<?php echo $value['image2'] ?>" class="card-img-top border-bottom" alt="...">
-        <div class="description border-bottom">
-            <p class="descriptionDuProduit text-center"><?php  echo $value['description2']; ?></p>
-
-        </div>
-        <div class="card-body d-flex align-items-center">
-            <p class="card-text">
-                Prix de l'enchère:<i class="infoPrix"> +<?php echo $value['aug_prix2'] ;?>cts/clics</i>
-            </p>
-        </div>
-        <div class="card-footer d-flex flex-column justify-content-around">
-            <h6>Durée:
-                <div class="float-right font-weight-bold duree"><?php 
-                  $minute = 30 - date('i'); 
-                  $seconde = 60 - date('s');
-                  if ($seconde < 10){
-                    echo $minute . ':'. '0'.$seconde;
-                  }
-                  else {echo $minute . ':'. $seconde;}
-                ?></div>
-            </h6>
-
-            <div class="d-flex align-items-center justify-content-center">
-
-                <form method="POST">
-                    <input class="btn btn-lg btn-warning float-right" type="submit" name="<?php echo $key ?>" id="<?php echo $key ?>" value="Acheter">
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-        
-
-
-<?php 
-            
         }
     }
 }
