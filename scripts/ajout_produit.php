@@ -22,7 +22,7 @@
 
     <link rel="stylesheet" href="../styles/style.css">
 
-    <title>Page pour ajouter un produit</title>
+    <title>Page administration</title>
 </head>
 
 <body>
@@ -33,8 +33,8 @@
                 </a>
             </div>
     <header class="container-fluid d-flex justify-content-center align-items-center">
-        <h1 class="col-m-4 text-center font-weight-bold">Page ajout produit</h1>
-        <a href="modification.php">Modifier une enchère</a>
+        <h1 class="col-m-4 text-center font-weight-bold">Page d'administration</h1>
+        
     </header>
 
     <section class="container mt-5">
@@ -89,6 +89,7 @@
             </div>
 
             <div class="justify-content-end d-flex row">
+                <a class="btn btn-secondary mr-auto mb-5 mt-5 p-2 border-0" href="modification.php">Modifier une enchère</a>
                 <input class="btn btn-secondary mr-3 mb-5 mt-5 p-2 border-0" name="form2" type="submit" value="Ajouter le produit">
             </div>
         </form>
