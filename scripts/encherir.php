@@ -31,11 +31,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['produit_six'])) {
         $_SESSION['produit_six'] += 0.02;
 }
 
-<<<<<<< HEAD:scripts/alimentation.php
-
-/* slide2 */
-=======
->>>>>>> 344930143ac76db2752258a48d49b31d17dcde8d:scripts/encherir.php
 if ($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['produit_sept'])) {
 
         $_SESSION['produit_sept'] += 0.02;
@@ -66,3 +61,17 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['produit_douze'])) {
 
         $_SESSION['produit_douze'] += 0.02;
 }
+
+
+/*
+_Créer les conditions de manières automatiques 
+_Trouver un moyen de récupérer le numéro du produit (produit_i)
+
+                        OU
+
+_Faire une fonction générale qui récupère à la fois le numéro du produit et le chiffre de l'augmentation sur la carte elle même
+_Puis qui applique l'augmentation sur le prix actuel du produit
+
+*/
+
+$_POST['augmentation_prix2']; // récupération du prix du produit
