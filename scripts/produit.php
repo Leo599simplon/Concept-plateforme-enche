@@ -51,9 +51,8 @@ function create_html_un()
             <div class="d-flex align-items-center justify-content-center">
 
                 <form method="POST">
-                    <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Acheter">
+                    <input class="btn btn-lg btn-warning float-right" type="submit" name="<?php echo $key ?>" id="<?php echo $key ?>" value="Acheter">
                 </form>
-                <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
             </div>
         </div>
     </div>
@@ -100,9 +99,8 @@ function create_html_deux()
             <div class="d-flex align-items-center justify-content-center">
 
                 <form method="POST">
-                    <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Enchérir">
+                    <input class="btn btn-lg btn-warning float-right" type="submit" name="<?php echo $key ?>" id="<?php echo $key ?>" value="Enchérir">
                 </form>
-                <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
             </div>
         </div>
     </div>
@@ -150,9 +148,8 @@ function create_html_trois()
             <div class="d-flex align-items-center justify-content-center">
 
                 <form method="POST">
-                    <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="Acheter">
+                    <input class="btn btn-lg btn-warning float-right" type="submit" name="<?php echo $key ?>" id="<?php echo $key ?>" value="Acheter">
                 </form>
-                <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
             </div>
         </div>
     </div>

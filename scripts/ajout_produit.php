@@ -22,7 +22,7 @@
 
     <link rel="stylesheet" href="../styles/style.css">
 
-    <title>Document</title>
+    <title>Page pour ajouter un produit</title>
 </head>
 
 <body>
