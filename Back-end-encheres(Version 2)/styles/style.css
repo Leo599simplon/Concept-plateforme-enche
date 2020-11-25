@@ -10,8 +10,6 @@ body {
 }
 
 header{
-
-    height: 90px;
     background-color: #ECF0F1;
     color: #81C784;
 }
@@ -23,6 +21,7 @@ header{
 
 .card{
     box-shadow: 3px 3px 3px #575957;
+    max-height: 80vh;
 }
 .btn, .btn-lg {
     background-color: #FF9800;
@@ -31,14 +30,15 @@ header{
 .card-title {
     background-color: #81C784;
     color: white;
+    text-align: center;
 }
+
 .card-img-top{
-    max-width: 286px;
-    max-height: 240px;
+    /*max-width: 246px;
+    max-height: 240px;*/
+    border: 1px solid red;
 }
 .card-body{
-    height: 40px;
-    padding: 10px;
     text-align: center;
 }
 .card-text{
@@ -47,13 +47,13 @@ header{
 
 }
 .card-footer{
-    height: 100px;
+    /*height: 100px;*/
 
 }
 button{
     /* position: absolute; */
   
-    width: 90px;
+    width: 70%;
 }
 .descriptionDuProduit{
     padding: 10px;
@@ -68,22 +68,8 @@ button{
     word-spacing: 10px;
 }
 
-.carousel-control-prev, .carousel-control-next{
-    height: 20px;
-}
 
 @media (max-width:768px){
-    .carousel-control-prev, .carousel-control-next{
-        top: inherit!important;
-    }
-    .carousel-control-prev-icon{
-        position: absolute;
-        bottom: 10px;
-    }
-    .carousel-control-next-icon{
-        position: absolute;
-        bottom: 10px;
-    }
 
     h1{
         font-size: 27px;
