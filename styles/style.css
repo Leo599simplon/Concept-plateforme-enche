@@ -94,11 +94,18 @@ img
     h1{
         font-size: 27px;
     }
+
+    .btn-login {
+        margin-top: -5px
+    }
 }
 
 @media (max-width:650px){
     h1{
         font-size: 20px;
     }
-}
 
+    .btn-login {
+        margin-top: 20px;
+    }
+}
