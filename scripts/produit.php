@@ -3,7 +3,7 @@
 function create_tab()
 {
     $tab_provi = array('nom2' => $_POST['nom_produit2'], 'description2' =>$_POST['description2'], 'image2' => $_POST['image2'],'prix_initial2' => $_POST['prix_initial2'],
-    'aug_prix2'=>$_POST['augmentation_prix2'], 'aug_duree2' => $_POST['augmentation_duree2'], 'prix_clic2' => $_POST['prix_clic2']
+    'aug_prix2'=>$_POST['augmentation_prix2'], 'aug_duree2' => $_POST['augmentation_duree2'], 'prix_clic2' => $_POST['prix_clic2'], 'disabled' => 'no'
 );
 
 
@@ -27,6 +27,7 @@ function create_html_un()
         $tab_div = array_chunk($_SESSION['tab_produit2'],6,true);
         foreach ($tab_div[0] as $key => $value)
         {
+            if ($value['disabled'] == 'no') {
     ?>
 
     <div class="col h-100 d-flex justify-content-center my-5">
@@ -62,7 +63,10 @@ function create_html_un()
 
 
 <?php 
-
+            }
+            else{
+                echo '';
+            }
         }
     }
 
@@ -125,6 +129,7 @@ function create_html_trois()
         $tab_div = array_chunk($_SESSION['tab_produit2'],6,true);
         foreach ($tab_div[2] as $key => $value)
         {
+           
     ?>
 
     <div class="col h-100 d-flex justify-content-center my-5">
@@ -160,7 +165,7 @@ function create_html_trois()
 
 
 <?php 
-
+            
         }
     }
 }
@@ -171,15 +176,24 @@ function create_html_trois()
 
 //Fonction pour modifier une carte d'enchère déjà créée 
 function update(){
+
+    if (isset($_POST['delete']) and $_SERVER['REQUEST_METHOD']=== "POST"){
+        $j = $_POST['id_produit'];
+        unset($_SESSION['tab_produit2'][$j]);
+        $_SESSION['tab_produit2'] = array_values($_SESSION['tab_produit2']);
+    }
+
     if (isset($_POST['form_modif']) and $_SERVER['REQUEST_METHOD']=== "POST"){
         $j = $_POST['id_produit'];
         $_SESSION['tab_produit2'][$j]['nom2'] = $_POST['nom_modif'];
         $_SESSION['tab_produit2'][$j]['description2'] = $_POST['description_modif'];
         $_SESSION['tab_produit2'][$j]['aug_prix2'] = $_POST['augmentation_prix_modif'];
-        $_SESSION['tab_produit2'][$j]['image2'] = $_POST['image_modif'];
+        if (isset($_POST['image_modif']))
+        {$_SESSION['tab_produit2'][$j]['image2'] = $_POST['image_modif'];}
         $_SESSION['tab_produit2'][$j]['prix_initial2'] = $_POST['prix_initial_modif'];
         $_SESSION['tab_produit2'][$j]['prix_clic2'] = $_POST['prix_clic_modif'];
         $_SESSION['tab_produit2'][$j]['aug_duree2'] = $_POST['augmentation_duree_modif'];
+        $_SESSION['disabled'] = $_POST['disabled'];
     }
 }
 

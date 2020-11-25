@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['btn_modif'])) {
             <div class="form-group row">
                 <label for="image_modif" class="col-md-3 col-form-label font-weight-bold">Image du produit</label>
                 <div class="col-md-9">
-                    <input type="file" class="form-control" name="image_modif" id="image_modif" required>
+                    <input type="file" class="form-control" name="image_modif" id="image_modif">
                 </div>
             </div>
 
@@ -64,12 +64,13 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['btn_modif'])) {
             <div class="form-group row">
                 <label for="disabled" class="col-md-3 col-form-label font-weight-bold">Cochez pour désactiver l'enchère: </label>
                 <div class="col-md-9">
-                    <input type="checkbox" name="disabled" id="disabled" class="form-control">
+                    <input type="checkbox" name="disabled" id="disabled" class="form-control" value="yes">
                 </div>
             </div>
 
             <div class="justify-content-end d-flex row">
                 <input class="btn btn-secondary mr-3 mb-5 mt-5 p-2 border-0" name="form_modif" type="submit" value="Modifier le produit">
+                <input class="btn btn-alert mr-3 mb-5 mt-5 pt-2 border-0" name="delete" type="submit" value="Supprimer l'enchère">
             </div>
         </form>
     </section>
