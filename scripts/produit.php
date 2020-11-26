@@ -56,7 +56,9 @@ function create_html($nb_produit, $ind_div)
                                                                                                         if ($sec < 10) {
                                                                                                             $txt_sec = '0' . $sec;
                                                                                                         } else $txt_sec = $sec;
-                                                                                                        echo ('00:' . $value['min_ini'] + 30) - date('i') . ':' . $txt_sec;
+                                                                                                        if (($value['min_ini'] + 30) - date('i') != 0) {
+                                                                                                            echo ($value['min_ini'] + 30) - date('i') . ':' . $txt_sec;
+                                                                                                        }
                                                                                                         ?>
                             </div>
                         </h6>
@@ -68,46 +70,44 @@ function create_html($nb_produit, $ind_div)
                             </form>
                         </div>
                     </div>
-                </div>
-            </div>
 
-<?php
+        <?php
 
         }
     }
 }
-?>
+        ?>
 
-<?php
-//Fonction pour modifier une carte d'enchère déjà créée 
-function update()
-{
+        <?php
+        //Fonction pour modifier une carte d'enchère déjà créée 
+        function update()
+        {
 
-    if (isset($_POST['delete']) and $_SERVER['REQUEST_METHOD'] === "POST") {
-        $j = $_POST['id_produit'];
-        array_push($_SESSION['tab_histo'], $_SESSION['tab_produit2'][$j]);
-        unset($_SESSION['tab_produit2'][$j]);
-        $_SESSION['tab_produit2'] = array_values($_SESSION['tab_produit2']);
-    }
+            if (isset($_POST['delete']) and $_SERVER['REQUEST_METHOD'] === "POST") {
+                $j = $_POST['id_produit'];
+                array_push($_SESSION['tab_histo'], $_SESSION['tab_produit2'][$j]);
+                unset($_SESSION['tab_produit2'][$j]);
+                $_SESSION['tab_produit2'] = array_values($_SESSION['tab_produit2']);
+            }
 
-    //Pour activer une carte et la mettre dans le tableau des cartes activées
-    if (isset($_POST['activate']) and $_SERVER['REQUEST_METHOD'] === "POST") {
-        $d = $_POST['disabled_id'];
-        array_push($_SESSION['tab_produit2'], $_SESSION['tab_histo'][$d]);
-        unset($_SESSION['tab_histo'][$d]);
-        $_SESSION['tab_histo'] = array_values($_SESSION['tab_histo']);
-    }
+            //Pour activer une carte et la mettre dans le tableau des cartes activées
+            if (isset($_POST['activate']) and $_SERVER['REQUEST_METHOD'] === "POST") {
+                $d = $_POST['disabled_id'];
+                array_push($_SESSION['tab_produit2'], $_SESSION['tab_histo'][$d]);
+                unset($_SESSION['tab_histo'][$d]);
+                $_SESSION['tab_histo'] = array_values($_SESSION['tab_histo']);
+            }
 
-    if (isset($_POST['form_modif']) and $_SERVER['REQUEST_METHOD'] === "POST") {
-        $j = $_POST['id_produit'];
-        $_SESSION['tab_produit2'][$j]['nom2'] = $_POST['nom_modif'];
-        $_SESSION['tab_produit2'][$j]['description2'] = $_POST['description_modif'];
-        $_SESSION['tab_produit2'][$j]['aug_prix2'] = $_POST['augmentation_prix_modif'];
-        $_SESSION['tab_produit2'][$j]['image2'] = $_POST['image_modif'];
-        $_SESSION['tab_produit2'][$j]['prix_initial2'] = $_POST['prix_initial_modif'];
-        $_SESSION['tab_produit2'][$j]['prix_clic2'] = $_POST['prix_clic_modif'];
-        $_SESSION['tab_produit2'][$j]['aug_duree2'] = $_POST['augmentation_duree_modif'];
-    }
-}
+            if (isset($_POST['form_modif']) and $_SERVER['REQUEST_METHOD'] === "POST") {
+                $j = $_POST['id_produit'];
+                $_SESSION['tab_produit2'][$j]['nom2'] = $_POST['nom_modif'];
+                $_SESSION['tab_produit2'][$j]['description2'] = $_POST['description_modif'];
+                $_SESSION['tab_produit2'][$j]['aug_prix2'] = $_POST['augmentation_prix_modif'];
+                $_SESSION['tab_produit2'][$j]['image2'] = $_POST['image_modif'];
+                $_SESSION['tab_produit2'][$j]['prix_initial2'] = $_POST['prix_initial_modif'];
+                $_SESSION['tab_produit2'][$j]['prix_clic2'] = $_POST['prix_clic_modif'];
+                $_SESSION['tab_produit2'][$j]['aug_duree2'] = $_POST['augmentation_duree_modif'];
+            }
+        }
 
-?>
+        ?>

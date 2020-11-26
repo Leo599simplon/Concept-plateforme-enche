@@ -535,7 +535,14 @@ for ($x = 0; $x < count($_SESSION['tab_produit2']); $x++) {
 
             function myFunction() {
                 var myVar = setInterval(function() {
-                    $('<?php echo '#duree_' . $x ?>').load('index.php <?php echo '#duree_' . $x ?>');
+                    
+                    if (<?php echo ($_SESSION['tab_produit2'][$x]['min_ini']+30) - date('i') ?> <= 0){
+                        clearInterval(myVar);
+                        document.getElementById('<?php echo 'duree_' . $x ?>').innerHTML = '<p style="color:red">EXPIRED</p>';
+                    }
+                    else {
+                        $('<?php echo '#duree_' . $x ?>').load('index.php <?php echo '#duree_' . $x ?>');
+                    }
                 }, 1000);
             };
 
