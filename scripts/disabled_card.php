@@ -16,7 +16,8 @@
 
 
     <title>Historique des enchères désactivées</title>
-    <body>
+
+<body>
 
     <h1 class="text-center" style="color:red;">Historique des enchères désactivées</h1>
     <?php
@@ -61,4 +62,4 @@
     <?php } ?>
 
 
-    </body>
+</body>
