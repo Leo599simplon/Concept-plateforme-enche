@@ -70,7 +70,8 @@ function create_html($nb_produit, $ind_div)
                             </form>
                         </div>
                     </div>
-
+                    </div>
+                    </div>
         <?php
 
         }
