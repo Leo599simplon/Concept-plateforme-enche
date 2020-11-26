@@ -4,8 +4,15 @@
 function create_tab()
 //Création d'un tableau (clé/valeur) contenant les différentes valeurs des inputs de la section ajout_produit, dont la clé sera ensuite reportée dans la fonction create_html
 {
-    $tab_provi = array('nom2' => $_POST['nom_produit2'], 'description2' =>$_POST['description2'], 'image2' => $_POST['image2'],'prix_initial2' => $_POST['prix_initial2'],
-    'aug_prix2'=>$_POST['augmentation_prix2'], 'aug_duree2' => $_POST['augmentation_duree2'], 'prix_clic2' => $_POST['prix_clic2'], 'disabled' => 'no'
+    $tab_provi = array(
+        'nom2' => $_POST['nom_produit2'], 
+        'description2' =>$_POST['description2'], 
+        'image2' => $_POST['image2'],
+        'prix_initial2' => $_POST['prix_initial2'],
+        'aug_prix2'=>$_POST['augmentation_prix2'], 
+        'aug_duree2' => $_POST['augmentation_duree2'], 
+        'prix_clic2' => $_POST['prix_clic2'], 
+        'disabled' => 'no'
 );
 
 
@@ -24,6 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['form2']))
 }
 
 ?>
+
 <?php
 
 function create_html($nb_produit,$ind_div)
@@ -33,7 +41,7 @@ function create_html($nb_produit,$ind_div)
         $tab_div = array_chunk($_SESSION['tab_produit2'],6,true);
         foreach ($tab_div[$ind_div] as $key => $value)
         {
-    ?>
+?>
 
     <div class="col d-flex justify-content-center my-5">
     <div class="card" style="width: 18rem;">
@@ -79,8 +87,6 @@ function create_html($nb_produit,$ind_div)
 ?>
 
 <?php 
-
-
 //Fonction pour modifier une carte d'enchère déjà créée 
 function update(){
 
