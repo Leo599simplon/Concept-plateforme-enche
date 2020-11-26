@@ -119,7 +119,7 @@ function liste_deroulante()
             <input type="submit" class="btn btn-primary mt-3" name="btn_modif" id="btn_modif" value="Modifier">
         </form>
         <form action="disabled_card.php">
-        <input type="submit" class="btn btn-secondary" name="histo" id="histo" value="Voir les cartes désactivées">
+            <input type="submit" class="btn btn-secondary" name="histo" id="histo" value="Voir les cartes désactivées">
         </form>
     </section>
 </body>

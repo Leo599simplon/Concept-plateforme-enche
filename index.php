@@ -3,18 +3,18 @@ session_start();                             //Démarrage de la session avec la 
 
 
 if (
-    !(isset($_SESSION['produit_un']))        //La fonction "isset" permet d'afficher "le produit" si la variable $_SESSION est définie.
-    or !(isset($_SESSION['produit_deux']))
-    or !(isset($_SESSION['produit_trois']))
+    !(isset($_SESSION['produit_1']))        //La fonction "isset" permet d'afficher "le produit" si la variable $_SESSION est définie.
+    or !(isset($_SESSION['produit_2']))
+    or !(isset($_SESSION['produit_3']))
     or !(isset($_SESSION['produit_quatre']))
     or !(isset($_SESSION['produit_cinq']))
     or !(isset($_SESSION['produit_six']))
     or !(isset($_SESSION['tab_produit2']))
     or !(isset($_SESSION['tab_histo']))
 ) {
-    $_SESSION['produit_un'] = 50;            //Comme les premières card sont présente lors du démarrage,Celle ci sont là à titre d'exemple. 
-    $_SESSION['produit_deux'] = 50;
-    $_SESSION['produit_trois'] = 50;
+    $_SESSION['produit_1'] = 50;            //Comme les premières card sont présente lors du démarrage,Celle ci sont là à titre d'exemple. 
+    $_SESSION['produit_2'] = 50;
+    $_SESSION['produit_3'] = 50;
     $_SESSION['produit_quatre'] = 50;
     $_SESSION['produit_cinq'] = 50;
     $_SESSION['produit_six'] = 50;
@@ -84,190 +84,12 @@ update();                                   //???????
                 <div class="carousel-item active">
                     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
 
-                        <!-----------------Card 1------------------------------------->
-                        <div id="slide1-prod1" class="col d-flex justify-content-center my-5">
-                            <div class="card" style="width: 18rem;">
-                                <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
+                        <?php
+                        for ($i = 1; $i <= 6; $i++) {
+                            include './ressources/templates/card-home.php';
+                        }
+                        ?>
 
-                                <!--Ici nous sélectionons l'élement "produit_un" dans le tableau $_SESSION puis 
-                                    nous l'affichons dans la div ci-dessous--->
-                                <div class="prix text-center text-danger"><?php echo $_SESSION['produit_un'] . '€' ?></div>
-
-                                <img src="ressources/img/936378.jpg" class="card-img-top border-bottom" alt="...">
-                                <div class="description border-bottom">
-                                    <p class="descriptionDuProduit text-center">Ceci est une petite description du produit</p>
-
-                                </div>
-                                <div class="card-body d-flex align-items-center">
-                                    <p class="card-text">
-                                        Prix de l'enchère:<i class="infoPrix"> +2cts/clics</i>
-                                    </p>
-                                </div>
-                                <div class="card-footer d-flex flex-column justify-content-around">
-                                    <h6>Durée:
-                                        <div class="float-right font-weight-bold"> 00:15:60</div>
-                                    </h6>
-
-                                    <div class="d-flex align-items-center justify-content-center">
-
-                                        <form method="POST">
-                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_un" id="produit_un" value="ACHETER">
-                                        </form>
-                                        <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-----------------Card 2------------------------------------->
-                        <div id="slide1-prod2" class="col d-flex justify-content-center my-5">
-                            <div class="card" style="width: 18rem;">
-                                <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
-                                <div class="prix text-center text-danger"><?php echo $_SESSION['produit_deux'] . '€' ?></div>
-                                <img src="ressources/img/iphone.jpg" class="card-img-top border-bottom" alt="...">
-                                <div class="description border-bottom">
-                                    <p class="descriptionDuProduit text-center">Ceci est une petite description du produit</p>
-
-                                </div>
-                                <div class="card-body d-flex align-items-center">
-                                    <p class="card-text">
-                                        Prix de l'enchère:<i class="infoPrix"> +2cts/clics</i>
-                                    </p>
-                                </div>
-                                <div class="card-footer d-flex flex-column justify-content-around">
-                                    <h6>Durée:
-                                        <div class="float-right pr-5 font-weight-bold"> 00:15:60</div>
-                                    </h6>
-
-                                    <div class="d-flex align-items-center justify-content-center">
-
-                                        <form action="#slide1-prod2" method="POST">
-                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_deux" id="produit_deux" value="ACHETER">
-                                        </form>
-                                        <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-----------------Card 3------------------------------------->
-                        <div id="slide1-prod3" class="col d-flex justify-content-center my-5">
-                            <div class="card" style="width: 18rem;">
-                                <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
-                                <div class="prix text-center text-danger"><?php echo $_SESSION['produit_trois'] . '€' ?></div>
-                                <img src="ressources/img/iphone.jpg" class="card-img-top border-bottom" alt="...">
-                                <div class="description border-bottom">
-                                    <p class="descriptionDuProduit text-center">Ceci est une petite description du produit</p>
-
-                                </div>
-                                <div class="card-body d-flex align-items-center">
-                                    <p class="card-text">
-                                        Prix de l'enchère:<i class="infoPrix"> +2cts/clics</i>
-                                    </p>
-                                </div>
-                                <div class="card-footer d-flex flex-column justify-content-around">
-                                    <h6>Durée:
-                                        <div class="float-right pr-5 font-weight-bold"> 00:15:60</div>
-                                    </h6>
-
-                                    <div class="d-flex align-items-center justify-content-center">
-
-                                        <form action="#slide1-prod3" method="POST">
-                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_trois" id="produit_trois" value="ACHETER">
-                                        </form>
-                                        <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-----------------Card 4------------------------------------->
-                        <div id="slide1-prod4" class="col d-flex justify-content-center my-5">
-                            <div class="card" style="width: 18rem;">
-                                <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
-                                <div class="prix text-center text-danger"><?php echo $_SESSION['produit_quatre'] . '€' ?></div>
-                                <img src="ressources/img/iphone.jpg" class="card-img-top border-bottom" alt="...">
-                                <div class="description border-bottom">
-                                    <p class="descriptionDuProduit text-center">Ceci est une petite description du produit</p>
-
-                                </div>
-                                <div class="card-body d-flex align-items-center">
-                                    <p class="card-text">
-                                        Prix de l'enchère:<i class="infoPrix"> +2cts/clics</i>
-                                    </p>
-                                </div>
-                                <div class="card-footer d-flex flex-column justify-content-around">
-                                    <h6>Durée:
-                                        <div class="float-right pr-5 font-weight-bold"> 00:15:60</div>
-                                    </h6>
-
-                                    <div class="d-flex align-items-center justify-content-center">
-
-                                        <form action="#slide1-prod4" method="POST">
-                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_quatre" id="produit_quatre" value="ACHETER">
-                                        </form>
-                                        <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-----------------Card 5------------------------------------->
-                        <div id="slide1-prod5" class="col d-flex justify-content-center my-5">
-                            <div class="card" style="width: 18rem;">
-                                <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
-                                <div class="prix text-center text-danger"><?php echo $_SESSION['produit_cinq'] . '€' ?></div>
-                                <img src="ressources/img/iphone.jpg" class="card-img-top border-bottom" alt="...">
-                                <div class="description border-bottom">
-                                    <p class="descriptionDuProduit text-center">Ceci est une petite description du produit</p>
-
-                                </div>
-                                <div class="card-body d-flex align-items-center">
-                                    <p class="card-text">
-                                        Prix de l'enchère:<i class="infoPrix"> +2cts/clics</i>
-                                    </p>
-                                </div>
-                                <div class="card-footer d-flex flex-column justify-content-around">
-                                    <h6>Durée:
-                                        <div class="float-right pr-5 font-weight-bold"> 00:15:60</div>
-                                    </h6>
-
-                                    <div class="d-flex align-items-center justify-content-center">
-
-                                        <form action="#slide1-prod5" method="POST">
-                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_cinq" id="produit_cinq" value="ACHETER">
-                                        </form>
-                                        <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-----------------Card 6s------------------------------------->
-                        <div id="slide1-prod6" class="col d-flex justify-content-center my-5">
-                            <div class="card" style="width: 18rem;">
-                                <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
-                                <div class="prix text-center text-danger"><?php echo $_SESSION['produit_six'] . '€' ?></div>
-                                <img src="ressources/img/iphone.jpg" class="card-img-top border-bottom" alt="...">
-                                <div class="description border-bottom">
-                                    <p class="descriptionDuProduit text-center">Ceci est une petite description du produit</p>
-
-                                </div>
-                                <div class="card-body d-flex align-items-center">
-                                    <p class="card-text">
-                                        Prix de l'enchère:<i class="infoPrix"> +2cts/clics</i>
-                                    </p>
-                                </div>
-                                <div class="card-footer d-flex flex-column justify-content-around">
-                                    <h6>Durée:
-                                        <div class="float-right pr-5 font-weight-bold"> 00:15:60</div>
-                                    </h6>
-
-                                    <div class="d-flex align-items-center justify-content-center">
-
-                                        <form action="#slide1-prod6" method="POST">
-                                            <input class="btn btn-lg btn-warning float-right" type="submit" name="produit_six" id="produit_six" value="ACHETER">
-                                        </form>
-                                        <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
