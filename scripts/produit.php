@@ -58,7 +58,8 @@ function create_html($nb_produit,$ind_div)
                             $txt_sec = '0'.$sec;
                         }
                         else $txt_sec = $sec;
-                    echo ($value['min_ini']+30) - date('i'). ':' . $txt_sec ;
+                        if (($value['min_ini']+30) - date('i') != 0){
+                    echo ($value['min_ini']+30) - date('i'). ':' . $txt_sec ;}
                  ?>
                 </div>
                 </h6>
