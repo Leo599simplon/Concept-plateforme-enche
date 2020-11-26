@@ -25,6 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['form2']))
 }
 
 ?>
+
 <?php
 
 function create_html($nb_produit,$ind_div)
@@ -34,7 +35,7 @@ function create_html($nb_produit,$ind_div)
         $tab_div = array_chunk($_SESSION['tab_produit2'],6,true);
         foreach ($tab_div[$ind_div] as $key => $value)
         {
-    ?>
+?>
 
     <div class="col d-flex justify-content-center my-5">
     <div class="card" style="width: 18rem;">
@@ -82,8 +83,6 @@ function create_html($nb_produit,$ind_div)
 ?>
 
 <?php 
-
-
 //Fonction pour modifier une carte d'enchère déjà créée 
 function update(){
 
