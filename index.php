@@ -471,11 +471,6 @@ update();                                   //???????
                     </div>
                 </div>
 
-
-
-              
-
-                <!------------------------ Slide Ajout ----------------------------->
                 <!------------------------ Slide Ajout ----------------------------->  
                 <?php if (count($_SESSION['tab_produit2']) >= 1) { ?>         <!-----Count compte tout les éléments du tableau, si le nombre de produit est supérieur ou égale à 1-
                                                                                      php créer un slide + un card -->
@@ -537,7 +532,6 @@ update();                                   //???????
         $(document).ready(function(){
         
         function myFunction() {
-            var compt = 30;
             var myVar = setInterval(function(){
                 $('.duree').load('index.php .duree');
                 },1000);

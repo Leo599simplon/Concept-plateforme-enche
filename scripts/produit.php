@@ -54,10 +54,8 @@ function create_html($nb_produit,$ind_div)
                 <div class="float-right font-weight-bold duree"><?php 
                   $minute = 30 - date('i'); 
                   $seconde = 60-date('s');
-                  if ($seconde < 10){
-                    echo $minute . ':'. '0'.$seconde;
-                  }
-                  else {echo $minute . ':'. $seconde;}
+                  echo $minute . ':'. $seconde;
+                    
                 ?></div>
             </h6>
 
