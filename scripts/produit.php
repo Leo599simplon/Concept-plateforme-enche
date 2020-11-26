@@ -36,21 +36,22 @@ function create_html($nb_produit,$ind_div)
 ?>
 
     <div class="col d-flex justify-content-center my-5">
-    <div class="card" style="width: 18rem;">
-        <h5 class="card-title text-center py-2 border-bottom"><?php echo $value['nom2'];?></h5>
-        <div class="prix text-center text-danger"><?php echo $value['prix_initial2']; ?> € </div>
-        <img src="ressources/img/<?php echo $value['image2'] ?>" class="card-img-top border-bottom" alt="...">
-        <div class="description border-bottom">
-            <p class="descriptionDuProduit text-center"><?php  echo $value['description2']; ?></p>
+        <div class="card" style="width: 18rem;">
+            <h5 class="card-title text-center py-2 border-bottom"><?php echo $value['nom2'];?></h5>
+            <div class="prix text-center text-danger"><?php echo $value['prix_initial2']; ?> € 
+            </div>
+            <img src="ressources/img/<?php echo $value['image2'] ?>" class="card-img-top border-bottom" alt="...">
+            <div class="description border-bottom">
+                <p class="descriptionDuProduit text-center"><?php  echo $value['description2']; ?></p>
 
-        </div>
-        <div class="card-body d-flex align-items-center">
-            <p class="card-text">
+            </div>
+             <div class="card-body d-flex align-items-center">
+                <p class="card-text">
                 Prix de l'enchère:<i class="infoPrix"> +<?php echo $value['aug_prix2'] ;?>cts/clics</i>
-            </p>
-        </div>
-        <div class="card-footer d-flex flex-column justify-content-around">
-            <h6>Durée:
+                </p>
+            </div>
+            <div class="card-footer d-flex flex-column justify-content-around">
+                <h6>Durée:
                 <div class="float-right font-weight-bold" id="<?php echo 'duree_'.$key ?>"><?php
                         $sec = (60-date('s'));
                         if ($sec < 10) {
@@ -58,16 +59,19 @@ function create_html($nb_produit,$ind_div)
                         }
                         else $txt_sec = $sec;
                     echo ($value['min_ini']+30) - date('i'). ':' . $txt_sec ;
-                ?></div>
-            </h6>
+                 ?>
+                </div>
+                </h6>
             
-            <div class="d-flex align-items-center justify-content-center">
+                <div class="d-flex align-items-center justify-content-center">
 
-                <form method="POST">
-                    <input class="btn btn-lg btn-warning float-right" type="submit" name="<?php echo $key ?>" id="<?php echo $key ?>" value="ACHETER">
-                </form>
+                    <form method="POST">
+                        <input class="btn btn-lg btn-warning float-right" type="submit" name="<?php echo $key ?>" id="<?php echo $key ?>" value="ACHETER">
+                    </form>
+                </div>
             </div>
         </div>
+    </div>    
 
 
 <?php
