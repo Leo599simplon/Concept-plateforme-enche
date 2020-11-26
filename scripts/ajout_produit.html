@@ -43,7 +43,7 @@
                 <label for="description" class="col-md-3 col-form-label font-weight-bold">Description:</label>
                 <div class="col-md-9">
                     <input type="text" class="form-control" id="description2" name="description2"
-                        placeholder="Description du produit" pattern="[a-zA-Z0-9 é & è ç ! à ù , ; . £ * # ]+">
+                        placeholder="Description du produit" pattern="[a-zA-Z0-9 é & è ç ! à ù , ; . £ * # ' ]+">
                 </div>
             </div>
 
@@ -58,7 +58,7 @@
                 <label for="prix_initial" class="col-md-3 col-form-label font-weight-bold">Prix initial (en €):</label>
                 <div class="col-md-9">
                     <input type="number" class="form-control" id="prix_initial2" name="prix_initial2"
-                        placeholder="Exemple : 2€" required min="1">
+                        placeholder="Exemple : 2€" required min="1" step="0.01">
                 </div>
             </div>
 

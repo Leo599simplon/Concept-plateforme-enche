@@ -50,6 +50,7 @@
                     <div class="d-flex align-items-center justify-content-center">
 
                         <form action="../index.php" method="POST">
+                            <input type="hidden" name="disabled_id" id="disabled_id" value="<?php echo $key ?>">
                             <input class="btn btn-lg btn-warning float-right" type="submit" name="activate" id="activate" value="Activer">
                         </form>
                         <!-- <button class="btn-sm btn-warning float-right " href="#" role="button">Enchère</button> -->

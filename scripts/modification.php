@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['btn_modif'])) {
             <div class="form-group row">
                 <label for="description_modif" class="col-md-3 col-form-label font-weight-bold">Description:</label>
                 <div class="col-md-9">
-                    <input type="text" class="form-control" name="description_modif" id="description_modif" value="<?= $_SESSION['tab_produit2'][$i]['description2'] ?>" pattern="[a-zA-Z0-9 é & è ç ! à ù , ; . £ * # ]+">
+                    <input type="text" class="form-control" name="description_modif" id="description_modif" value="<?= $_SESSION['tab_produit2'][$i]['description2'] ?>" pattern="[a-zA-Z0-9 é & è ç ! à ù , ; . £ * # ' ]+">
                 </div>
             </div>
 
@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['btn_modif'])) {
             <div class="form-group row">
                 <label for="prix_initial_modif" class="col-md-3 col-form-label font-weight-bold">Prix initial (en €):</label>
                 <div class="col-md-9">
-                    <input type="number" class="form-control" name="prix_initial_modif" id="prix_initial_modif" value="<?= $_SESSION['tab_produit2'][$i]['prix_initial2'] ?>" required min="1">
+                    <input type="number" class="form-control" name="prix_initial_modif" id="prix_initial_modif" value="<?= $_SESSION['tab_produit2'][$i]['prix_initial2'] ?>" required min="1" step="0.01">
                 </div>
             </div>
 
