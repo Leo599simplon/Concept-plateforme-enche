@@ -1,6 +1,6 @@
 <?php
 session_start();                             //Démarrage de la session avec la fonction session_start (qui permet de stocker des données)
-                                            
+
 
 if (
     !(isset($_SESSION['produit_un']))        //La fonction "isset" permet d'afficher "le produit" si la variable $_SESSION est définie.
@@ -9,7 +9,7 @@ if (
     or !(isset($_SESSION['produit_quatre']))
     or !(isset($_SESSION['produit_cinq']))
     or !(isset($_SESSION['produit_six']))
-    or !(isset($_SESSION['produit_sept']))        
+    or !(isset($_SESSION['produit_sept']))
     or !(isset($_SESSION['produit_huit']))
     or !(isset($_SESSION['produit_neuf']))
     or !(isset($_SESSION['produit_dix']))
@@ -21,17 +21,17 @@ if (
     $_SESSION['produit_un'] = 50;            //Comme les premières card sont présente lors du démarrage,Celle ci sont là à titre d'exemple. 
     $_SESSION['produit_deux'] = 50;
     $_SESSION['produit_trois'] = 50;
-    $_SESSION['produit_quatre'] = 50;      
+    $_SESSION['produit_quatre'] = 50;
     $_SESSION['produit_cinq'] = 50;
     $_SESSION['produit_six'] = 50;
-    $_SESSION['produit_sept'] = 50;            
+    $_SESSION['produit_sept'] = 50;
     $_SESSION['produit_huit'] = 50;
     $_SESSION['produit_neuf'] = 50;
-    $_SESSION['produit_dix'] = 50;      
+    $_SESSION['produit_dix'] = 50;
     $_SESSION['produit_onze'] = 50;
     $_SESSION['produit_douze'] = 50;
     $_SESSION['tab_produit2'] = [];
-    $_SESSION['tab_histo'] = []; 
+    $_SESSION['tab_histo'] = [];
 }
 include('scripts/encherir.php');             //Include est utilisé pour appeler les fonction "enchérir et produit"
 include('scripts/produit.php');
@@ -62,7 +62,7 @@ update();                                   //???????
 
 <body>
     <!------------------------Header-------------------------------------------------------->
-    
+
     <header class="container-fluid col">
         <!-- 
         <section id="connexion">
@@ -73,7 +73,7 @@ update();                                   //???????
                 </form>
         </section>
         -->
-        
+
         <h1 class="font-weight-bold text-center pt-5">NOM DE L'APPLICATION</h1>
 
         <button type="button" class="btn btn-info border-0 btn-login"><a href="scripts/page-login.html" class="text-white">login</a></button>
@@ -98,11 +98,11 @@ update();                                   //???????
                         <!-----------------Card 1------------------------------------->
                         <div class="col d-flex justify-content-center my-5">
                             <div class="card" style="width: 18rem;">
-                                <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5> 
+                                <h5 class="card-title text-center py-2 border-bottom">Iphone 8</h5>
 
                                 <!--Ici nous sélectionons l'élement "produit_un" dans le tableau $_SESSION puis 
                                     nous l'affichons dans la div ci-dessous--->
-                                <div class="prix text-center text-danger"><?php echo $_SESSION['produit_un'] . '€' ?></div>  
+                                <div class="prix text-center text-danger"><?php echo $_SESSION['produit_un'] . '€' ?></div>
 
                                 <img src="ressources/img/936378.jpg" class="card-img-top border-bottom" alt="...">
                                 <div class="description border-bottom">
@@ -285,7 +285,8 @@ update();                                   //???????
 
 
                 <!------------------------ Slide 2 ----------------------------->
-                <div class="carousel-item">                                       <!---Second Carousel qui englobe les 6 prochaines Cards----->
+                <div class="carousel-item">
+                    <!---Second Carousel qui englobe les 6 prochaines Cards----->
                     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
 
                         <!-----------------Card 1------------------------------------->
@@ -471,45 +472,48 @@ update();                                   //???????
                     </div>
                 </div>
 
-                <!------------------------ Slide Ajout ----------------------------->  
-                <?php if (count($_SESSION['tab_produit2']) >= 1) { ?>         <!-----Count compte tout les éléments du tableau, si le nombre de produit est supérieur ou égale à 1-
+                <!------------------------ Slide Ajout ----------------------------->
+                <?php if (count($_SESSION['tab_produit2']) >= 1) { ?>
+                    <!-----Count compte tout les éléments du tableau, si le nombre de produit est supérieur ou égale à 1-
                                                                                      php créer un slide + un card -->
-                <div class="carousel-item">
-                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
+                    <div class="carousel-item">
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
 
-                        <!-----------------Card 1------------------------------------->
-                        <?php create_html(1,0); ?>
-                        
+                            <!-----------------Card 1------------------------------------->
+                            <?php create_html(1, 0); ?>
 
+
+                        </div>
                     </div>
-                </div>
                 <?php } ?>
-                <!------------------------ Slide Ajout ----------------------------->  
-                <?php if (count($_SESSION['tab_produit2']) >= 6) { ?>         <!-----Count compte tout les éléments du tableau, si le nombre de produit est supérieur ou égale  à 6 
+                <!------------------------ Slide Ajout ----------------------------->
+                <?php if (count($_SESSION['tab_produit2']) >= 6) { ?>
+                    <!-----Count compte tout les éléments du tableau, si le nombre de produit est supérieur ou égale  à 6 
                                                                                      php créer un nouveau slide + card ----->
-                <div class="carousel-item">
-                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
+                    <div class="carousel-item">
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
 
-                        <!-----------------Card 1------------------------------------->
-                        <?php create_html(6,1); ?>
-                        
+                            <!-----------------Card 1------------------------------------->
+                            <?php create_html(6, 1); ?>
 
+
+                        </div>
                     </div>
-                </div>
-                <?php } ?> 
-                 <!------------------------ Slide Ajout ----------------------------->
-                 <?php if (count($_SESSION['tab_produit2'])>= 12) { ?>        <!-----Count compte tout les éléments du tableau, si le nombre de produit est supérieur ou égale  à 12
+                <?php } ?>
+                <!------------------------ Slide Ajout ----------------------------->
+                <?php if (count($_SESSION['tab_produit2']) >= 12) { ?>
+                    <!-----Count compte tout les éléments du tableau, si le nombre de produit est supérieur ou égale  à 12
                                                                                      php créer un nouveau slide + card ----->
-                 <div class="carousel-item">
-                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
+                    <div class="carousel-item">
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
 
-                        <!-----------------Card 1------------------------------------->
-                        <?php create_html(12,2); ?>
-                        
+                            <!-----------------Card 1------------------------------------->
+                            <?php create_html(12, 2); ?>
 
+
+                        </div>
                     </div>
-                </div>
-                 <?php } ?>
+                <?php } ?>
             </div>
 
             <a class="carousel-control-prev my-lg-auto" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -528,17 +532,27 @@ update();                                   //???????
 
 </body>
 
-<script>
-        $(document).ready(function(){
-        
-        function myFunction() {
-            var myVar = setInterval(function(){
-                $('.duree').load('index.php .duree');
-                },1000);
-        };
-        
-        myFunction();
+<?php
+for ($x = 0; $x < count($_SESSION['tab_produit2']); $x++) {
+
+
+
+?>
+
+
+    <script>
+        $(document).ready(function() {
+
+            function myFunction() {
+                var myVar = setInterval(function() {
+                    $('<?php echo '#duree_'.$x ?>').load('index.php <?php echo '#duree_'. $x ?>');
+                }, 1000);
+            };
+
+            myFunction();
         })
     </script>
+
+<?php } ?>
 
 </html>

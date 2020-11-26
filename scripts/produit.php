@@ -5,7 +5,8 @@ function create_tab()
 //Création d'un tableau (clé/valeur) contenant les différentes valeurs des inputs de la section ajout_produit, dont la clé sera ensuite reportée dans la fonction create_html
 {
     $tab_provi = array('nom2' => $_POST['nom_produit2'], 'description2' =>$_POST['description2'], 'image2' => $_POST['image2'],'prix_initial2' => $_POST['prix_initial2'],
-    'aug_prix2'=>$_POST['augmentation_prix2'], 'aug_duree2' => $_POST['augmentation_duree2'], 'prix_clic2' => $_POST['prix_clic2'], 'disabled' => 'no'
+    'aug_prix2'=>$_POST['augmentation_prix2'], 'aug_duree2' => $_POST['augmentation_duree2'], 'prix_clic2' => $_POST['prix_clic2'], 'heure_ini' => date('h'),'min_ini' => date('i'),
+    'sec_ini' => date('s')
 );
 
 
@@ -37,7 +38,7 @@ function create_html($nb_produit,$ind_div)
 
     <div class="col d-flex justify-content-center my-5">
     <div class="card" style="width: 18rem;">
-        <h5 class="card-title text-center py-2 border-bottom"><?php echo $value['nom2']; ?></h5>
+        <h5 class="card-title text-center py-2 border-bottom"><?php echo $value['nom2'];?></h5>
         <div class="prix text-center text-danger"><?php echo $value['prix_initial2']; ?> € </div>
         <img src="ressources/img/<?php echo $value['image2'] ?>" class="card-img-top border-bottom" alt="...">
         <div class="description border-bottom">
@@ -51,14 +52,16 @@ function create_html($nb_produit,$ind_div)
         </div>
         <div class="card-footer d-flex flex-column justify-content-around">
             <h6>Durée:
-                <div class="float-right font-weight-bold duree"><?php 
-                  $minute = 30 - date('i'); 
-                  $seconde = 60-date('s');
-                  echo $minute . ':'. $seconde;
-                    
+                <div class="float-right font-weight-bold" id="<?php echo 'duree_'.$key ?>"><?php
+                        $sec = (60-date('s'));
+                        if ($sec < 10) {
+                            $txt_sec = '0'.$sec;
+                        }
+                        else $txt_sec = $sec;
+                    echo ($value['min_ini']+30) - date('i'). ':' . $txt_sec ;
                 ?></div>
             </h6>
-
+            
             <div class="d-flex align-items-center justify-content-center">
 
                 <form method="POST">
@@ -100,7 +103,6 @@ function update(){
         $_SESSION['tab_produit2'][$j]['prix_initial2'] = $_POST['prix_initial_modif'];
         $_SESSION['tab_produit2'][$j]['prix_clic2'] = $_POST['prix_clic_modif'];
         $_SESSION['tab_produit2'][$j]['aug_duree2'] = $_POST['augmentation_duree_modif'];
-        $_SESSION['disabled'] = $_POST['disabled'];
     }
 }
 
