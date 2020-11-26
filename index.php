@@ -64,16 +64,6 @@ update();                                   //???????
     <!------------------------Header-------------------------------------------------------->
 
     <header class="container-fluid col">
-        <!-- 
-        <section id="connexion">
-                <form action="scripts/ajout_produit.php" method="POST" class="row pt-2 pl-2">
-                    <input type="text" name="user" id="user" placeholder="Nom d'utilisateur"> <br>
-                    <input type="password" name="mdp" id="mdp" placeholder="Mot de passe"> <br>
-                    <input type="submit" name="connexion" id="connexion" value="Connexion" class="">
-                </form>
-        </section>
-        -->
-
         <h1 class="font-weight-bold text-center pt-5">NOM DE L'APPLICATION</h1>
 
         <button type="button" class="btn btn-info border-0 btn-login"><a href="scripts/page-login.html" class="text-white">login</a></button>
@@ -545,7 +535,7 @@ for ($x = 0; $x < count($_SESSION['tab_produit2']); $x++) {
 
             function myFunction() {
                 var myVar = setInterval(function() {
-                    $('<?php echo '#duree_'.$x ?>').load('index.php <?php echo '#duree_'. $x ?>');
+                    $('<?php echo '#duree_' . $x ?>').load('index.php <?php echo '#duree_' . $x ?>');
                 }, 1000);
             };
 
