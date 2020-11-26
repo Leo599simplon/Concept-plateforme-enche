@@ -89,7 +89,15 @@ function update()
         $_SESSION['tab_produit2'] = array_values($_SESSION['tab_produit2']);
     }
 
-    if (isset($_POST['form_modif']) and $_SERVER['REQUEST_METHOD'] === "POST") {
+    //Pour activer une carte et la mettre dans le tableau des cartes activées
+    if (isset($_POST['activate']) and $_SERVER['REQUEST_METHOD']=== "POST"){
+        $d = $_POST['disabled_id'];
+        array_push($_SESSION['tab_produit2'],$_SESSION['tab_histo'][$d]);
+        unset($_SESSION['tab_histo'][$d]);
+        $_SESSION['tab_histo'] = array_values($_SESSION['tab_histo']);
+    }
+
+    if (isset($_POST['form_modif']) and $_SERVER['REQUEST_METHOD']=== "POST"){
         $j = $_POST['id_produit'];
         $_SESSION['tab_produit2'][$j]['nom2'] = $_POST['nom_modif'];
         $_SESSION['tab_produit2'][$j]['description2'] = $_POST['description_modif'];
