@@ -532,6 +532,7 @@ update();                                   //???????
 
 </body>
 
+<<<<<<< HEAD
 <script>
     $(document).ready(function() {
 
@@ -544,5 +545,29 @@ update();                                   //???????
         myFunction();
     })
 </script>
+=======
+<?php
+for ($x = 0; $x < count($_SESSION['tab_produit2']); $x++) {
+
+
+
+?>
+
+
+    <script>
+        $(document).ready(function() {
+
+            function myFunction() {
+                var myVar = setInterval(function() {
+                    $('<?php echo '#duree_'.$x ?>').load('index.php <?php echo '#duree_'. $x ?>');
+                }, 1000);
+            };
+
+            myFunction();
+        })
+    </script>
+>>>>>>> ae58306d0d8366b93ea00f948d9f3e0a19379ff4
+
+<?php } ?>
 
 </html>

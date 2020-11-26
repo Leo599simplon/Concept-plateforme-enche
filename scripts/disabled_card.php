@@ -21,10 +21,10 @@
 
     <h1 class="text-center" style="color:red;">Historique des enchères désactivées</h1>
     <?php
-
+    //on démarre manuellemnent la session : voir si possible en auto(session.auto_star ?)
     session_start();
 
-
+    //une boucle foreach qui recherche dans la variable session(le tableau histo), pour chaque valeur (qu'on redefini a key) dans la variable $session: affiche carte desactivé !
     foreach ($_SESSION['tab_histo'] as $key => $value) {
     ?>
 
