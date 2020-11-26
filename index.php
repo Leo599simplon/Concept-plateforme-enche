@@ -33,7 +33,7 @@ if (
     $_SESSION['tab_produit2'] = [];
     $_SESSION['tab_histo'] = [];
 }
-include('scripts/encherir.php');             //Include est utilisé pour appeler les fonction "enchérir et produit"
+include('scripts/encherir.php'); //Include est utilisé pour appeler les fonction "enchérir et produit"
 include('scripts/produit.php');
 
 update();                                   //???????
