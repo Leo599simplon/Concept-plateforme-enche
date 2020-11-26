@@ -4,17 +4,10 @@
 function create_tab()
 //Création d'un tableau (clé/valeur) contenant les différentes valeurs des inputs de la section ajout_produit, dont la clé sera ensuite reportée dans la fonction create_html
 {
-<<<<<<< HEAD
-    $tab_provi = array(
-        'nom2' => $_POST['nom_produit2'], 'description2' => $_POST['description2'], 'image2' => $_POST['image2'], 'prix_initial2' => $_POST['prix_initial2'],
-        'aug_prix2' => $_POST['augmentation_prix2'], 'aug_duree2' => $_POST['augmentation_duree2'], 'prix_clic2' => $_POST['prix_clic2'], 'disabled' => 'no'
-    );
-=======
     $tab_provi = array('nom2' => $_POST['nom_produit2'], 'description2' =>$_POST['description2'], 'image2' => $_POST['image2'],'prix_initial2' => $_POST['prix_initial2'],
     'aug_prix2'=>$_POST['augmentation_prix2'], 'aug_duree2' => $_POST['augmentation_duree2'], 'prix_clic2' => $_POST['prix_clic2'], 'heure_ini' => date('h'),'min_ini' => date('i'),
     'sec_ini' => date('s')
 );
->>>>>>> ae58306d0d8366b93ea00f948d9f3e0a19379ff4
 
 
     //Je retourne le tableau pour pouvoir le stocker dans la session "tab_produits2"
@@ -33,47 +26,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['form2'])) {
 
 <?php
 
-<<<<<<< HEAD
-function create_html($nb_produit, $ind_div)
-{
-    if (count($_SESSION['tab_produit2']) >= $nb_produit) {
-        $tab_div = array_chunk($_SESSION['tab_produit2'], 6, true);
-        foreach ($tab_div[$ind_div] as $key => $value) {
-?>
-
-            <div class="col d-flex justify-content-center my-5">
-                <div class="card" style="width: 18rem;">
-                    <h5 class="card-title text-center py-2 border-bottom"><?php echo $value['nom2']; ?></h5>
-                    <div class="prix text-center text-danger"><?php echo $value['prix_initial2']; ?> € </div>
-                    <img src="ressources/img/<?php echo $value['image2'] ?>" class="card-img-top border-bottom" alt="...">
-                    <div class="description border-bottom">
-                        <p class="descriptionDuProduit text-center"><?php echo $value['description2']; ?></p>
-
-                    </div>
-                    <div class="card-body d-flex align-items-center">
-                        <p class="card-text">
-                            Prix de l'enchère:<i class="infoPrix"> +<?php echo $value['aug_prix2']; ?>cts/clics</i>
-                        </p>
-                    </div>
-                    <div class="card-footer d-flex flex-column justify-content-around">
-                        <h6>Durée:
-                            <div class="float-right font-weight-bold duree"><?php
-                                                                            $minute = 30 - date('i');
-                                                                            $seconde = 60 - date('s');
-                                                                            echo $minute . ':' . $seconde;
-
-                                                                            ?></div>
-                        </h6>
-
-                        <div class="d-flex align-items-center justify-content-center">
-
-                            <form method="POST">
-                                <input class="btn btn-lg btn-warning float-right" type="submit" name="<?php echo $key ?>" id="<?php echo $key ?>" value="ACHETER">
-                            </form>
-                        </div>
-                    </div>
-                </div>
-=======
 function create_html($nb_produit,$ind_div)
 {   
     if (count($_SESSION['tab_produit2']) >= $nb_produit)
@@ -114,7 +66,6 @@ function create_html($nb_produit,$ind_div)
                 <form method="POST">
                     <input class="btn btn-lg btn-warning float-right" type="submit" name="<?php echo $key ?>" id="<?php echo $key ?>" value="ACHETER">
                 </form>
->>>>>>> ae58306d0d8366b93ea00f948d9f3e0a19379ff4
             </div>
 
 
@@ -126,13 +77,7 @@ function create_html($nb_produit,$ind_div)
 }
 ?>
 
-<<<<<<< HEAD
-<?php
-
-
-=======
 <?php 
->>>>>>> ae58306d0d8366b93ea00f948d9f3e0a19379ff4
 //Fonction pour modifier une carte d'enchère déjà créée 
 function update()
 {
