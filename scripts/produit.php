@@ -67,7 +67,7 @@ function create_html($nb_produit,$ind_div)
                     <input class="btn btn-lg btn-warning float-right" type="submit" name="<?php echo $key ?>" id="<?php echo $key ?>" value="ACHETER">
                 </form>
             </div>
-
+        </div>
 
 
 <?php
