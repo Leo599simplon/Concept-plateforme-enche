@@ -1,4 +1,4 @@
-<?php 
+<?php
 //création de la fonction permettant la création d'une nouvelle carte
 
 function create_tab()
@@ -10,18 +10,16 @@ function create_tab()
 );
 
 
-//Je retourne le tableau pour pouvoir le stocker dans la session "tab_produits2"
+    //Je retourne le tableau pour pouvoir le stocker dans la session "tab_produits2"
 
 
-return $tab_provi;
+    return $tab_provi;
 }
 // Verification du type de requête en PHP (ici POST), si la requête est définie et non nulle (isset)
 // via le button d'envoi de la fiche ajout_produit
-if ($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['form2']))
-{
-   
-  array_push($_SESSION['tab_produit2'],create_tab());
-    
+if ($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['form2'])) {
+
+    array_push($_SESSION['tab_produit2'], create_tab());
 }
 
 ?>
@@ -69,13 +67,10 @@ function create_html($nb_produit,$ind_div)
                     <input class="btn btn-lg btn-warning float-right" type="submit" name="<?php echo $key ?>" id="<?php echo $key ?>" value="ACHETER">
                 </form>
             </div>
-        </div>
-    </div>
-</div>
-        
 
 
-<?php 
+
+<?php
 
         }
     }
@@ -84,12 +79,12 @@ function create_html($nb_produit,$ind_div)
 
 <?php 
 //Fonction pour modifier une carte d'enchère déjà créée 
-function update(){
+function update()
+{
 
-    //Pour désactiver une carte et la mettre dans le tableau des cartes désactivées
-    if (isset($_POST['delete']) and $_SERVER['REQUEST_METHOD']=== "POST"){
+    if (isset($_POST['delete']) and $_SERVER['REQUEST_METHOD'] === "POST") {
         $j = $_POST['id_produit'];
-        array_push($_SESSION['tab_histo'],$_SESSION['tab_produit2'][$j]);
+        array_push($_SESSION['tab_histo'], $_SESSION['tab_produit2'][$j]);
         unset($_SESSION['tab_produit2'][$j]);
         $_SESSION['tab_produit2'] = array_values($_SESSION['tab_produit2']);
     }
