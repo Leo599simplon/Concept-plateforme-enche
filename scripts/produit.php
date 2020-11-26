@@ -86,11 +86,20 @@ function create_html($nb_produit,$ind_div)
 //Fonction pour modifier une carte d'enchère déjà créée 
 function update(){
 
+    //Pour désactiver une carte et la mettre dans le tableau des cartes désactivées
     if (isset($_POST['delete']) and $_SERVER['REQUEST_METHOD']=== "POST"){
         $j = $_POST['id_produit'];
         array_push($_SESSION['tab_histo'],$_SESSION['tab_produit2'][$j]);
         unset($_SESSION['tab_produit2'][$j]);
         $_SESSION['tab_produit2'] = array_values($_SESSION['tab_produit2']);
+    }
+
+    //Pour activer une carte et la mettre dans le tableau des cartes activées
+    if (isset($_POST['activate']) and $_SERVER['REQUEST_METHOD']=== "POST"){
+        $d = $_POST['disabled_id'];
+        array_push($_SESSION['tab_produit2'],$_SESSION['tab_histo'][$d]);
+        unset($_SESSION['tab_histo'][$d]);
+        $_SESSION['tab_histo'] = array_values($_SESSION['tab_histo']);
     }
 
     if (isset($_POST['form_modif']) and $_SERVER['REQUEST_METHOD']=== "POST"){
