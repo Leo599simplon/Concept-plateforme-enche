@@ -20,6 +20,10 @@
 <body>
 
     <h1 class="text-center" style="color:red;">Historique des enchères désactivées</h1>
+    <div class="d-flex justify-content-center">
+    <button type="button" class="btn btn-primary ">Acceuil</button>
+    </div>
+    
     <?php
     //on démarre manuellemnent la session : voir si possible en auto(session.auto_star ?)
     session_start();
@@ -27,7 +31,7 @@
     //une boucle foreach qui recherche dans la variable session(le tableau histo), pour chaque valeur (qu'on redefini a key) dans la variable $session: affiche carte desactivé !
     foreach ($_SESSION['tab_histo'] as $key => $value) {
     ?>
-
+        
         <div class="col h-100 d-flex justify-content-center my-5">
             <div class="card" style="width: 18rem;">
                 <h5 class="card-title text-center py-2 border-bottom"><?php echo $value['nom2']; ?></h5>

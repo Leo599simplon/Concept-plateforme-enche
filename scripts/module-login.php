@@ -1,8 +1,17 @@
 <?php 
+   
+session_start();
+    
+
+
     //condition pour vérifier la session login
    if ( isset($_POST['user']) and $_POST['user'] === "admin" and isset($_POST['mdp']) and $_POST['mdp'] === "test") {
-        header('Location: ajout_produit.html');
+        $_SESSION['nomBouton'] = 'admin';
+        $_SESSION['pageAdmin'] = 'scripts/ajout_produit.html';
+        header('Location: ../index.php');
     }else {
-        echo 'Permission refusée';
+        header('Location: page-login.html');
+       
     }
+    
 ?>

@@ -3,6 +3,7 @@
 
 session_start();
 
+
 function liste_deroulante()
 {
     foreach ($_SESSION['tab_produit2'] as $key => $value) {
@@ -18,7 +19,7 @@ function liste_deroulante()
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page Login</title>
+    <title>Page Modification</title>
 
     <link rel="stylesheet" href="../styles/style-login.css">
 
@@ -47,6 +48,7 @@ function liste_deroulante()
                     </select>
                     <br>
                     <input type="submit" class="btn btn-primary mt-3" name="btn_modif" id="btn_modif" value="Modifier">
+                    <a class="btn btn-secondary mr-auto ml-3 mb-5 mt-4 p-2 border-0" href="../index.php">Acceuil</a>
                 </form>
 
             </section>
