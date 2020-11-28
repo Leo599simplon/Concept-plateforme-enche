@@ -43,7 +43,7 @@ include('scripts/produit.php');
 
 
 
-update();                                   //???????
+update();   //???????
 ?>
 
 <!DOCTYPE html>
